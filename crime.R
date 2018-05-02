@@ -10,3 +10,4 @@ crimeTimeData = rbind(crimeTimeData, crimeTime[12,])
 crimeTimeData = rbind(crimeTimeData, crimeTime[13,])
 crimeTimeData = rbind(crimeTimeData, crimeTime[16,])
 
+write.csv(crimeTimeData,"crimeTimeData.csv")
