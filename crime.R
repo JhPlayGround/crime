@@ -12,7 +12,7 @@ for(i in 1:7)
 
 for(i in 1:7)
 {
-  crimeAge[i,8] = round(crimeAge[i,7]/sum(crimeAge[1:7,7])*100, digits=0)
+  crimeAge[i,8] = crimeAge[i,7]/sum(crimeAge[1:7,7])
 }
 
 for(i in 1:7)
@@ -20,93 +20,78 @@ for(i in 1:7)
   crimeAge[i,9] = crimeAge[i,8]* 100
 }
 
-write.csv(crimeAge,"crimeAge.csv")
+for(i in 101:200)
+{
+  criminal[i,1] = criminal[i-100,1]
+}
+for(i in 201:300)
+{
+  criminal[i,1] = criminal[i-100,1]
+}
+for(i in 301:400)
+{
+  criminal[i,1] = criminal[i-100,1]
+}
+for(i in 401:500)
+{
+  criminal[i,1] = criminal[i-100,1]
+}
+for(i in 501:600)
+{
+  criminal[i,1] = criminal[i-100,1]
+}
+for(i in 601:700)
+{
+  criminal[i,1] = criminal[i-100,1]
+}
+for(i in 701:800)
+{
+  criminal[i,1] = criminal[i-100,1]
+}
+for(i in 801:900)
+{
+  criminal[i,1] = criminal[i-100,1]
+}
+for(i in 901:1000)
+{
+  criminal[i,1] = criminal[i-100,1]
+}
+for(i in 1001:2000)
+{
+  criminal[i,1] = criminal[i-1000,1]
+}
+for(i in 2001:3000)
+{
+  criminal[i,1] = criminal[i-1000,1]
+}
+for(i in 3001:4000)
+{
+  criminal[i,1] = criminal[i-1000,1]
+}
+for(i in 4001:5000)
+{
+  criminal[i,1] = criminal[i-1000,1]
+}
+for(i in 5001:6000)
+{
+  criminal[i,1] = criminal[i-1000,1]
+}
+for(i in 6001:7000)
+{
+  criminal[i,1] = criminal[i-1000,1]
+}
+for(i in 7001:8000)
+{
+  criminal[i,1] = criminal[i-1000,1]
+}
+for(i in 8001:9000)
+{
+  criminal[i,1] = criminal[i-1000,1]
+}
+for(i in 9001:10000)
+{
+  criminal[i,1] = criminal[i-1000,1]
+}
 
-age10 = 0
-age20 = 0
-age30 = 0
-age40 = 0
-age50 = 0
-age60 = 0
-age70 = 0
-for(i in 1:10000)
-{
-  if(age70 == 200)
-  {
-    if(age60 == 600)
-    {
-      if(age10 == 1600)
-      {
-        if(age20 == 1600)
-        {
-          if(age30 == 1800)
-          {
-            if(age50 == 1900)
-            {
-              criminal[i,1] = 4
-            }
-            else
-            {
-              criminal[i,1] = sample(4:5,1)
-            }
-          }
-          else
-          {
-            criminal[i,1] = sample(3:5,1)
-          }
-        }
-        else
-        {
-          criminal[i,1] = sample(2:5,1)
-        }
-      }
-      else
-      {
-        criminal[i,1] = sample(1:5,1)
-      }
-    }
-    else
-    {
-      criminal[i,1] = sample(1:6,1)
-    }
-    
-  }
-  else
-  {
-    criminal[i,1] = sample(1:7,1)
-  }
-  
-  if(criminal[i,1] == 1)
-  {
-    age10 = age10 + 1
-  }
-  else if(criminal[i,1] == 2)
-  {
-    age20 = age20 + 1
-  }
-  else if(criminal[i,1] == 3)
-  {
-    age30 = age30 + 1
-  }
-  else if(criminal[i,1] == 4)
-  {
-    age40 = age40 + 1
-  }
-  else if(criminal[i,1] == 5)
-  {
-    age50 = age50 + 1
-  }
-  else if(criminal[i,1] == 6)
-  {
-    age60 = age60 + 1
-  }
-  else
-  {
-    age70 = age70 + 1
-  }
-}
-for(i in 1:10000)
-{
-  criminal[i,1] = criminal[i,1] * 10
-}
 write.csv(criminal,"criminal.csv")
+
