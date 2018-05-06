@@ -163,7 +163,7 @@ number5 = rep(5,times=19)
 number6 = rep(6,times=6)
 number7 = rep(7,times=2)
 
-for(i in 1:84)
+for(i in 1:10001)
 {
   if(age == 1)
   {
@@ -198,19 +198,19 @@ for(i in 1:84)
     
   }
   
-  if (age10 == 16)
+  if (age10 == 1600)
   {
-    if (age20 == 16)
+    if (age20 == 1600)
     {
-      if (age30 == 18)
+      if (age30 == 1800)
       {
-        if (age40 == 23)
+        if (age40 == 2300)
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1111111
                 print("다 채웠다.")
@@ -225,7 +225,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,3,4,5,7o 6x
                 number = c(number6)
@@ -243,9 +243,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,3,4,6,7o 5x
                 number = c(number5)
@@ -262,7 +262,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,3,4,7o 5,6x
                 number = c(number5,number6)
@@ -281,11 +281,11 @@ for(i in 1:84)
         }
         else
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,3,5,6,7o 4x
                 number = c(number4)
@@ -302,7 +302,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,3,5,7o 4,6x
                 number = c(number4,number6)
@@ -320,9 +320,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,3,6,7o 4,5x
                 number = c(number4,number5)
@@ -339,7 +339,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,3,7o 4,5,6x
                 number = c(number4,number5,number6)
@@ -359,13 +359,13 @@ for(i in 1:84)
       }
       else
       {
-        if (age40 == 23)
+        if (age40 == 2300)
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,4,5,6,7o 3x
                 number = c(number3)
@@ -382,7 +382,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,4,5,7o 3,6x
                 number = c(number3,number6)
@@ -400,9 +400,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,4,6,7o 3,5x
                 number = c(number3,number5)
@@ -419,7 +419,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,4,7o 3,5,6x
                 number = c(number3,number5,number6)
@@ -438,11 +438,11 @@ for(i in 1:84)
         }
         else
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,25,6,7o 3,4x
                 number = c(number3,number4)
@@ -459,7 +459,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,5,7o 3,4,6x
                 number = c(number3,number4,number6)
@@ -477,9 +477,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,6,7o 3,4,5x
                 number = c(number3,number4,number5)
@@ -496,7 +496,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,7o 3,4,5,6x
                 number = c(number3,number4,number5,number6)
@@ -517,15 +517,15 @@ for(i in 1:84)
     }
     else
     {
-      if (age30 == 18)
+      if (age30 == 1800)
       {
-        if (age40 == 23)
+        if (age40 == 2300)
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3,4,5,6,7o 2x
                 number = c(number2)
@@ -542,7 +542,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3,4,5,7o  2,6x
                 number = c(number2,number6)
@@ -560,9 +560,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3,4,6,7o 2,5x
                 number = c(number2,number5)
@@ -579,7 +579,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3,4,7o 2,5,6x
                 number = c(number2,number5,number6)
@@ -598,11 +598,11 @@ for(i in 1:84)
         }
         else
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3,5,6,7o 2,4x
                 number = c(number2,number4)
@@ -619,7 +619,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3,5,7o 2,4,6x
                 number = c(number2,number4,number6)
@@ -637,9 +637,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3,6,7o 2,4,5x
                 number = c(number2,number4,number5)
@@ -656,7 +656,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3,7o 2,4,5,6x
                 number = c(number2,number4,number5,number6)
@@ -676,13 +676,13 @@ for(i in 1:84)
       }
       else
       {
-        if (age40 == 23)
+        if (age40 == 2300)
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,4,5,6,7o 2,3x
                 number = c(number2,number3)
@@ -699,7 +699,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,4,5,7o 2,3,6x
                 number = c(number2,number3,number6)
@@ -717,9 +717,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,4,6,7o 2,3,5x
                 number = c(number2,number3,number5)
@@ -736,7 +736,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,4,7o 2,3,5,6x
                 number = c(number2,number3,number5,number6)
@@ -755,11 +755,11 @@ for(i in 1:84)
         }
         else
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,5,6,7o 2,3,4x
                 number = c(number2,number3,number4)
@@ -776,7 +776,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,5,7o 2,3,4,6x
                 number = c(number2,number3,number4,number6)
@@ -794,9 +794,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,6,7o 2,3,4,5x
                 number = c(number2,number3,number4,number5)
@@ -813,7 +813,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,7o 2,3,4,5,6x
                 number = c(number2,number3,number4,number5,number6)
@@ -835,17 +835,17 @@ for(i in 1:84)
   }
   else
   {
-    if (age20 == 16)
+    if (age20 == 1600)
     {
-      if (age30 == 18)
+      if (age30 == 1800)
       {
-        if (age40 == 23)
+        if (age40 == 2300)
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1x 2,3,4,5,6,7o
                 number = c(number1)
@@ -862,7 +862,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,6x 2,3,4,5,7o
                 number = c(number1,number6)
@@ -880,9 +880,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,5x 2,3,4,6,7o
                 number = c(number1,number5)
@@ -899,7 +899,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,5,6x 2,3,4,7
                 number = c(number1,number5,number7)
@@ -918,11 +918,11 @@ for(i in 1:84)
         }
         else
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,4x 2,3,5,6,7o
                 number = c(number1,number4)
@@ -939,7 +939,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,4,6x 2,3,5,7o
                 number = c(number1,number4,number6)
@@ -957,9 +957,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,4,5x 2,3,6,7o
                 number = c(number1,number4,number5)
@@ -976,7 +976,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,4,5,6x 2,37o
                 number = c(number1,number4,number5,number6)
@@ -996,13 +996,13 @@ for(i in 1:84)
       }
       else
       {
-        if (age40 == 23)
+        if (age40 == 2300)
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3x 2,4,5,6,7o
                 number = c(number1,number3)
@@ -1019,7 +1019,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3,6x 2,4,5,7o
                 number = c(number1,number3,number6)
@@ -1037,9 +1037,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3,5x 2,4,6,7o
                 number = c(number1,number3,number5)
@@ -1056,7 +1056,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3,5,6x 2,4,7o
                 number = c(number1,number3,number5,number6)
@@ -1075,11 +1075,11 @@ for(i in 1:84)
         }
         else
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3,4x 2,5,6,7o
                 number = c(number1,number3,number4)
@@ -1096,7 +1096,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3,4,6x 2,5,7o
                 number = c(number1,number3,number4,number6)
@@ -1114,9 +1114,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3,4,5x 2,6,7o
                 number = c(number1,number3,number4,number5)
@@ -1133,7 +1133,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,3,4,5,6x 2,7o
                 number = c(number1,number3,number4,number6,number7)
@@ -1154,15 +1154,15 @@ for(i in 1:84)
     }
     else
     {
-      if (age30 == 18)
+      if (age30 == 1800)
       {
-        if (age40 == 23)
+        if (age40 == 2300)
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2x 3,4,5,6,7o
                 number = c(number1,number2)
@@ -1179,7 +1179,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,6x 3,4,5,7
                 number = c(number1,number2,number6)
@@ -1197,9 +1197,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,5x 3,4,6,7o
                 number = c(number1,number2,number5)
@@ -1216,7 +1216,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,5,6x 3,4,7o
                 number = c(number1,number2,number5,number6)
@@ -1235,11 +1235,11 @@ for(i in 1:84)
         }
         else
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,4x 3,5,6,7o
                 number = c(number3,number5,number6,number7)
@@ -1256,7 +1256,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,4,6x 3,5,7o
                 number = c(number1,number2,number4,number6)
@@ -1274,9 +1274,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #3,6,7o 1,2,4,5x
                 number = c(number1,number2,number4,number5)
@@ -1293,7 +1293,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #3,7o 1,2,4,5,6x
                 number = c(number1,number2,number4,number5,number6)
@@ -1313,13 +1313,13 @@ for(i in 1:84)
       }
       else
       {
-        if (age40 == 23)
+        if (age40 == 2300)
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,3x 4,5,6,7o
                 number = c(number1,number2,number3)
@@ -1336,7 +1336,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,3,6x 4,5,7o
                 number = c(number1,number2,number3,number6)
@@ -1354,9 +1354,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,3,5x 4,6,7o
                 number = c(number1,number2,number3,number5)
@@ -1373,7 +1373,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,3,5,6x 4,7o
                 number = c(number1,number2,number3,number5,number6)
@@ -1392,11 +1392,11 @@ for(i in 1:84)
         }
         else
         {
-          if (age50 == 19)
+          if (age50 == 1900)
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,3,4x 5,6,7o
                 number = c(number1,number2,number3,number4)
@@ -1413,7 +1413,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,3,4,6x 5,7o
                 number = c(number1,number2,number3,number4,number6)
@@ -1431,9 +1431,9 @@ for(i in 1:84)
           }
           else
           {
-            if (age60 == 6)
+            if (age60 == 600)
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,3,4,5x 6,7o
                 number = c(number1,number2,number3,number4,number5)
@@ -1450,7 +1450,7 @@ for(i in 1:84)
             }
             else
             {
-              if (age70 == 2)
+              if (age70 == 200)
               {
                 #1,2,3,4,5,6x 7o
                 number = c(number1,number2,number3,number4,number5,number6)
@@ -1472,3 +1472,22 @@ for(i in 1:84)
   }
 }
 
+##########################################가상 범죄자의 나이 생성 완료 후 저장 ####
+write.csv(criminal,"criminal.csv")
+
+
+
+###############################기존의 범죄자 성별 분석하기 ########################
+crimeSexAndAge[32,1] = "남성"
+crimeSexAndAge[33,1] = "여성"
+crimeSexAndAge[31,2] = "2012"
+crimeSexAndAge[31,3] = "2013"
+crimeSexAndAge[31,4] = "2014"
+crimeSexAndAge[31,5] = "2015"
+crimeSexAndAge[31,6] = "2016"
+crimeSexAndAge[31,7] = "Total"
+crimeSexAndAge[31,8] = "Percentage"
+
+
+
+write.csv(crimeSexAndAge,"sexAndage.csv")
