@@ -163,7 +163,7 @@ number5 = rep(5,times=19)
 number6 = rep(6,times=6)
 number7 = rep(7,times=2)
 
-for(i in 1:10001)
+for(i in 1:10000)
 {
   if(age == 1)
   {
@@ -1488,6 +1488,150 @@ crimeSexAndAge[31,6] = "2016"
 crimeSexAndAge[31,7] = "Total"
 crimeSexAndAge[31,8] = "Percentage"
 
+for(j in 2:8)
+{
+  for(i in 3:8)
+  {
+    crimeSexAndAge[32,2] = as.integer(crimeSexAndAge[32,2]) + as.integer(crimeSexAndAge[i,j])
+  }
+}
 
+for(j in 2:8)
+{
+  for(i in 14:19)
+  {
+    crimeSexAndAge[33,2] = as.integer(crimeSexAndAge[33,2]) + as.integer(crimeSexAndAge[i,j])
+  }
+}
+
+
+for(j in 9:15)
+{
+  for(i in 3:8)
+  {
+    crimeSexAndAge[32,3] = as.integer(crimeSexAndAge[32,3]) + as.integer(crimeSexAndAge[i,j])
+  }
+}
+
+for(j in 9:15)
+{
+  for(i in 14:19)
+  {
+    crimeSexAndAge[33,3] = as.integer(crimeSexAndAge[33,3]) + as.integer(crimeSexAndAge[i,j])
+  }
+}
+
+for(j in 16:22)
+{
+  for(i in 3:8)
+  {
+    crimeSexAndAge[32,4] = as.integer(crimeSexAndAge[32,4]) + as.integer(crimeSexAndAge[i,j])
+  }
+}
+
+for(j in 16:22)
+{
+  for(i in 14:19)
+  {
+    crimeSexAndAge[33,4] = as.integer(crimeSexAndAge[33,4]) + as.integer(crimeSexAndAge[i,j])
+  }
+}
+
+for(j in 23:29)
+{
+  for(i in 3:8)
+  {
+    crimeSexAndAge[32,5] = as.integer(crimeSexAndAge[32,5]) + as.integer(crimeSexAndAge[i,j])
+  }
+}
+
+for(j in 23:29)
+{
+  for(i in 14:19)
+  {
+    crimeSexAndAge[33,5] = as.integer(crimeSexAndAge[33,5]) + as.integer(crimeSexAndAge[i,j])
+  }
+}
+
+for(j in 30:36)
+{
+  for(i in 3:8)
+  {
+    crimeSexAndAge[32,6] = as.integer(crimeSexAndAge[32,6]) + as.integer(crimeSexAndAge[i,j])
+  }
+}
+
+for(j in 30:36)
+{
+  for(i in 14:19)
+  {
+    crimeSexAndAge[33,6] = as.integer(crimeSexAndAge[33,6]) + as.integer(crimeSexAndAge[i,j])
+  }
+}
+
+
+for(j in 2:6)
+{
+  for(i in 32:33)
+  {
+    crimeSexAndAge[i,7] = as.integer(crimeSexAndAge[i,7]) + as.integer(crimeSexAndAge[i,j])
+  }
+}
+
+crimeSexAndAge[32,8] = as.integer(crimeSexAndAge[32,7]) / sum(as.integer(crimeSexAndAge[32:33,7]))
+crimeSexAndAge[33,8] = as.integer(crimeSexAndAge[33,7]) / sum(as.integer(crimeSexAndAge[32:33,7]))
+#남자 84% 여자 16%
+
+sex = 0
+sexM = 0
+sexW = 0
+numberM = rep(1,times=84)
+numberW = rep(0,times=16)
+
+for(i in 1:10000)
+{
+  if(sex == 1)
+  {
+    sexM = sexM + 1
+  }
+  else
+  {
+    sexW = sexW + 1
+  }
+  
+  if(sexM == 8400)
+  {
+    if(sexW == 1600)
+    {
+      print("다 채웠다.")
+    }
+    else
+    {
+      criminal[i,2] = "여자"
+    }
+  }
+  else
+  {
+    if(sexW == 1600)
+    {
+      criminal[i,2] = "남자"
+    }
+    else
+    {
+      numberS = c(numberM,numberW)
+      sex = sample(numberS,1)
+      if(sex == 1)
+      {
+        criminal[i,2] = "남자"
+      }
+      else
+      {
+        criminal[i,2] = "여자"
+      }
+      
+    }
+  }
+}
 
 write.csv(crimeSexAndAge,"sexAndage.csv")
+write.csv(criminal,"criminal.csv")
