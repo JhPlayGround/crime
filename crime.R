@@ -1585,8 +1585,6 @@ crimeSexAndAge[33,8] = as.integer(crimeSexAndAge[33,7]) / sum(as.integer(crimeSe
 sex = 0
 sexM = 0
 sexW = 0
-numberM = rep(1,times=84)
-numberW = rep(0,times=16)
 
 for(i in 1:10000)
 {
@@ -1607,6 +1605,9 @@ for(i in 1:10000)
     }
     else
     {
+      #1,0
+      number = c(0)
+      sex = sample(number,1)
       criminal[i,2] = "Women"
     }
   }
@@ -1614,12 +1615,15 @@ for(i in 1:10000)
   {
     if(sexW == 1600)
     {
-      criminal[i,2] = "Men"
+      number = c(1)
+      sex = sample(number,1)
+      criminal[i,2]= "Men"
     }
     else
     {
-      numberS = c(numberM,numberW)
-      sex = sample(numberS,1)
+      number = c(0,1)
+      sex = sample(number,1)
+      criminal[i,2] = sex
       if(sex == 1)
       {
         criminal[i,2] = "Men"
@@ -1628,7 +1632,6 @@ for(i in 1:10000)
       {
         criminal[i,2] = "Women"
       }
-      
     }
   }
 }
@@ -3744,3 +3747,186 @@ for(i in 1:10000)
   }
 }
 
+write.csv(criminal,"criminal.csv")
+
+#############################Money###################################
+MoneyMarrigeParent = read.csv("MoneyMarrigeParent.csv",header=T,stringsAsFactors = F)
+
+money = 0
+moneyL = 0
+moneyM = 0
+moneyH = 0
+
+for(i in 1:10000)
+{
+  if(money== 1)
+  {
+    moneyL = moneyL + 1
+  }
+  else if(money == 2)
+  {
+    moneyM = moneyM + 1
+  }
+  else
+  {
+    moneyH = moneyH + 1
+  }
+  
+  if(moneyL == 6600)
+  {
+    if(moneyM == 3300)
+    {
+      if(moneyH == 100)
+      {
+        #111
+        print("Full")
+      }
+      else
+      {
+        #110
+        number = c(3)
+        money = sample(number,1)
+        criminal[i,3] = money
+        if(criminal[i,3] == 1)
+        {
+          criminal[i,3] = "하"
+        }
+        else if(criminal[i,3] == 2)
+        {
+          criminal[i,3] = "중"
+        }
+        else
+        {
+          criminal[i,3] = "상"
+        }
+      }
+    }
+    else
+    {
+      if(moneyH == 100)
+      {
+        #101
+        number = c(2)
+        money = sample(number,1)
+        criminal[i,3] = money
+        if(criminal[i,3] == 1)
+        {
+          criminal[i,3] = "하"
+        }
+        else if(criminal[i,3] == 2)
+        {
+          criminal[i,3] = "중"
+        }
+        else
+        {
+          criminal[i,3] = "상"
+        }
+      }
+      else
+      {
+        #100
+        number = c(2,3)
+        money = sample(number,1)
+        criminal[i,3] = money
+        if(criminal[i,3] == 1)
+        {
+          criminal[i,3] = "하"
+        }
+        else if(criminal[i,3] == 2)
+        {
+          criminal[i,3] = "중"
+        }
+        else
+        {
+          criminal[i,3] = "상"
+        }
+      }
+    }
+  }
+  else
+  {
+    if(moneyM == 3300)
+    {
+      if(moneyH == 100)
+      {
+        #011
+        number = c(1)
+        money = sample(number,1)
+        criminal[i,3] = money
+        if(criminal[i,3] == 1)
+        {
+          criminal[i,3] = "하"
+        }
+        else if(criminal[i,3] == 2)
+        {
+          criminal[i,3] = "중"
+        }
+        else
+        {
+          criminal[i,3] = "상"
+        }
+      }
+      else
+      {
+        #010
+        number = c(1,3)
+        money = sample(number,1)
+        criminal[i,3] = money
+        if(criminal[i,3] == 1)
+        {
+          criminal[i,3] = "하"
+        }
+        else if(criminal[i,3] == 2)
+        {
+          criminal[i,3] = "중"
+        }
+        else
+        {
+          criminal[i,3] = "상"
+        }
+      }
+    }
+    else
+    {
+      if(moneyH == 100)
+      {
+        #001
+        number = c(1,2)
+        money = sample(number,1)
+        criminal[i,3] = money
+        if(criminal[i,3] == 1)
+        {
+          criminal[i,3] = "하"
+        }
+        else if(criminal[i,3] == 2)
+        {
+          criminal[i,3] = "중"
+        }
+        else
+        {
+          criminal[i,3] = "상"
+        }
+      }
+      else
+      {
+        #000
+        number = c(1,2,3)
+        money = sample(number,1)
+        criminal[i,3] = money
+        if(criminal[i,3] == 1)
+        {
+          criminal[i,3] = "하"
+        }
+        else if(criminal[i,3] == 2)
+        {
+          criminal[i,3] = "중"
+        }
+        else
+        {
+          criminal[i,3] = "상"
+        }
+      }
+    }
+  }
+}
+write.csv(criminal,"criminal.csv")
