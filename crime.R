@@ -3936,4 +3936,9 @@ marrige = 0
 marrigeM = 0 #유배우자
 marrigeC = 0 #동거 
 marrigeD = 0 #이혼
-marrigeB = 0 #사별 
+marrigeB = 0 #사별
+
+for(i in 10000)
+{
+  print("HO!!!")
+}
