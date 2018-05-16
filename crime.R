@@ -3789,11 +3789,11 @@ for(i in 1:10000)
         criminal[i,3] = money
         if(criminal[i,3] == 1)
         {
-          criminal[i,3] = "하"
+          criminal[i,3] = "Low"
         }
         else if(criminal[i,3] == 2)
         {
-          criminal[i,3] = "중"
+          criminal[i,3] = "Middle"
         }
         else
         {
@@ -3930,3 +3930,10 @@ for(i in 1:10000)
   }
 }
 write.csv(criminal,"criminal.csv")
+
+
+marrige = 0
+marrigeM = 0 #유배우자
+marrigeC = 0 #동거 
+marrigeD = 0 #이혼
+marrigeB = 0 #사별 
