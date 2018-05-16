@@ -1585,8 +1585,6 @@ crimeSexAndAge[33,8] = as.integer(crimeSexAndAge[33,7]) / sum(as.integer(crimeSe
 sex = 0
 sexM = 0
 sexW = 0
-numberM = rep(1,times=84)
-numberW = rep(0,times=16)
 
 for(i in 1:10000)
 {
@@ -1603,35 +1601,2332 @@ for(i in 1:10000)
   {
     if(sexW == 1600)
     {
-      print("다 채웠다.")
+      print("Full")
     }
     else
     {
-      criminal[i,2] = "여자"
+      #1,0
+      number = c(0)
+      sex = sample(number,1)
+      criminal[i,2] = "Women"
     }
   }
   else
   {
     if(sexW == 1600)
     {
-      criminal[i,2] = "남자"
+      number = c(1)
+      sex = sample(number,1)
+      criminal[i,2]= "Men"
     }
     else
     {
-      numberS = c(numberM,numberW)
-      sex = sample(numberS,1)
+      number = c(0,1)
+      sex = sample(number,1)
+      criminal[i,2] = sex
       if(sex == 1)
       {
-        criminal[i,2] = "남자"
+        criminal[i,2] = "Men"
       }
       else
       {
-        criminal[i,2] = "여자"
+        criminal[i,2] = "Women"
       }
-      
     }
   }
 }
 
 write.csv(crimeSexAndAge,"sexAndage.csv")
+write.csv(criminal,"criminal.csv")
+
+edu = 0
+eduE = 0
+eduM = 0
+eduH = 0
+eduU2 = 0
+eduU4 = 0
+eduG = 0
+
+numbereduE = rep(1, times=9)
+numbereduM = rep(2, times=13)
+numbereduH = rep(3, times=54)
+numbereduU2 = rep(4, times=6)
+numbereduU4 = rep(5, times=15)
+numbereduG = rep(6, times=2)
+
+
+for(i in 1:10000)
+{
+  if(edu == 1)
+  {
+    eduE = eduE + 1
+  }
+  else if(edu == 2)
+  {
+    eduM = eduM + 1
+  }
+  else if(edu == 3)
+  {
+    eduH = eduH + 1
+  }
+  else if(edu == 4)
+  {
+    eduU2 = eduU2 + 1
+  }
+  else if(edu == 5)
+  {
+    eduU4 = eduU4 + 1
+  }
+  else if(edu == 6)
+  {
+    eduG = eduG + 1
+  }
+  else
+  {
+    
+  }
+  
+  if(eduE == 900)
+  {
+    if(eduM == 1300)
+    {
+      if(eduH == 5400)
+      {
+        if(eduU2 == 600)
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #111111
+              print("Full")
+            }
+            else
+            {
+              #111110
+              number = c(numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+              #111101
+              number = c(numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #111100
+              number = c(numbereduG,numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+        }
+        else
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #111011
+              number = c(numbereduU2)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #111010
+              number = c(numbereduG,numbereduU2)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+              #111001
+              number = c(numbereduU2,numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #111000
+              number = c(numbereduG,numbereduU2,numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(eduU2 == 600)
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #110111
+              number = c(numbereduH)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #110110
+              number = c(numbereduG,numbereduH)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+              #110101
+              number = c(numbereduH,numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #110100
+              number = c(numbereduH,numbereduU4,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+        }
+        else
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #110011
+              number = c(numbereduH,numbereduU2)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #110010
+              number = c(numbereduH,numbereduU2,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+              #110001
+              number = c(numbereduH,numbereduU2,numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #110000
+              number = c(numbereduH,numbereduU2,numbereduU4,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+        }
+      }
+    }
+    else
+    {
+      if(eduH == 5400)
+      {
+        if(eduU2 == 600)
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #101111
+              number = c(numbereduM)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #101110
+              number = c(numbereduM,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+              #101101
+              number = c(numbereduM,numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #101100
+              number = c(numbereduM,numbereduU4,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+        }
+        else
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #101011
+              number = c(numbereduM,numbereduU2)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #101010
+              number = c(numbereduM,numbereduU2,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+             #101001
+              number = c(numbereduM,numbereduU2,numbereduU4)
+              edu = sample(number,1)
+              criminal[i,4] = edu
+            }
+            else
+            {
+              #101000
+              number = c(numbereduM,numbereduU2,numbereduU4,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(eduU2 == 600)
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #100111
+              number = c(numbereduM,numbereduH)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #100110
+              number = c(numbereduM,numbereduH,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+              #100101
+              number = c(numbereduM,numbereduH,numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #100100
+              number = c(numbereduM,numbereduH,numbereduU4,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+        }
+        else
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #100011
+              number = c(numbereduM,numbereduH,numbereduU2)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #100010
+              number = c(numbereduM,numbereduH,numbereduU2,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+              #100001
+              number = c(numbereduM,numbereduH,numbereduU2,numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #100000
+              number = c(numbereduM,numbereduH,numbereduU2,numbereduU4,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  else
+  {
+    if(eduM == 1300)
+    {
+      if(eduH == 5400)
+      {
+        if(eduU2 == 600)
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #011111
+              number = c(numbereduE)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #011110
+              number = c(numbereduE,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+              #011101
+              number = c(numbereduE,numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #011100
+              number = c(numbereduE,numbereduU4,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+        }
+        else
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #011011
+              number = c(numbereduE,numbereduU2)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #011010
+              number = c(numbereduE,numbereduU2,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+              #011001
+              number = c(numbereduE,numbereduU2,numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #011000
+              number = c(numbereduE,numbereduU2,numbereduU4,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(eduU2 == 600)
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #010111
+              number = c(numbereduE,numbereduH)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #010110
+              number = c(numbereduE,numbereduH,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+              #010101
+              number = c(numbereduE,numbereduH,numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #010100
+              number = c(numbereduE,numbereduH,numbereduU4,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+        }
+        else
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #010011
+              number = c(numbereduE,numbereduH,numbereduU2)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #010010
+              number = c(numbereduE,numbereduH,numbereduU2,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+              #010001
+              number = c(numbereduE,numbereduH,numbereduU2,numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #010000
+              number = c(numbereduE,numbereduH,numbereduU2,numbereduU4,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+        }
+      }
+    }
+    else
+    {
+      if(eduH == 5400)
+      {
+        if(eduU2 == 600)
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #001111
+              number = c(numbereduE,numbereduM)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #001110
+              number = c(numbereduE,numbereduM,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+              #001101
+              number = c(numbereduE,numbereduM,numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #001100
+              number = c(numbereduE,numbereduM,numbereduU4,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+        }
+        else
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #001011
+              number = c(numbereduE, numbereduM,numbereduU2)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #001010
+              number = c(numbereduE, numbereduM,numbereduU2,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+              #001001
+              number = c(numbereduE, numbereduM,numbereduU2,numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #001000
+              number = c(numbereduE, numbereduM,numbereduU2,numbereduU4,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(eduU2 == 600)
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #000111
+              number = c(numbereduE, numbereduM,numbereduH)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #000110
+              number = c(numbereduE, numbereduM,numbereduH,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+              #000101
+              number = c(numbereduE, numbereduM,numbereduH,numbereduU4)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #000100
+              number = c(numbereduE, numbereduM,numbereduH,numbereduU4,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+        }
+        else
+        {
+          if(eduU4 == 1500)
+          {
+            if(eduG == 200)
+            {
+              #000011
+              number = c(numbereduE, numbereduM,numbereduH,numbereduU2)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #000010
+              number = c(numbereduE, numbereduM,numbereduH,numbereduU2,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+          }
+          else
+          {
+            if(eduG == 200)
+            {
+              #000001
+              number = c(numbereduE, numbereduM,numbereduH,numbereduU4,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+            }
+            else
+            {
+              #000000
+              number = c(numbereduE,numbereduM,numbereduH,numbereduU2,numbereduU4,numbereduG)
+              edu = sample(number,1)
+              if(edu == 1)
+              {
+                criminal[i,4] = "elementary"
+              }
+              else if(edu == 2)
+              {
+                criminal[i,4] = "middle"
+              }
+              else if(edu == 3)
+              {
+                criminal[i,4] = "High"
+              }
+              else if(edu == 4)
+              {
+                criminal[i,4] = "Univ2"
+              }
+              else if(edu == 5)
+              {
+                criminal[i,4] = "Univ4"
+              }
+              else
+              {
+                criminal[i,4] = "Graduate"
+              }
+              
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+write.csv(criminal,"criminal.csv")
+
+#############################Money###################################
+MoneyMarrigeParent = read.csv("MoneyMarrigeParent.csv",header=T,stringsAsFactors = F)
+
+money = 0
+moneyL = 0
+moneyM = 0
+moneyH = 0
+
+for(i in 1:10000)
+{
+  if(money== 1)
+  {
+    moneyL = moneyL + 1
+  }
+  else if(money == 2)
+  {
+    moneyM = moneyM + 1
+  }
+  else
+  {
+    moneyH = moneyH + 1
+  }
+  
+  if(moneyL == 6600)
+  {
+    if(moneyM == 3300)
+    {
+      if(moneyH == 100)
+      {
+        #111
+        print("Full")
+      }
+      else
+      {
+        #110
+        number = c(3)
+        money = sample(number,1)
+        criminal[i,3] = money
+        if(criminal[i,3] == 1)
+        {
+          criminal[i,3] = "하"
+        }
+        else if(criminal[i,3] == 2)
+        {
+          criminal[i,3] = "중"
+        }
+        else
+        {
+          criminal[i,3] = "상"
+        }
+      }
+    }
+    else
+    {
+      if(moneyH == 100)
+      {
+        #101
+        number = c(2)
+        money = sample(number,1)
+        criminal[i,3] = money
+        if(criminal[i,3] == 1)
+        {
+          criminal[i,3] = "하"
+        }
+        else if(criminal[i,3] == 2)
+        {
+          criminal[i,3] = "중"
+        }
+        else
+        {
+          criminal[i,3] = "상"
+        }
+      }
+      else
+      {
+        #100
+        number = c(2,3)
+        money = sample(number,1)
+        criminal[i,3] = money
+        if(criminal[i,3] == 1)
+        {
+          criminal[i,3] = "하"
+        }
+        else if(criminal[i,3] == 2)
+        {
+          criminal[i,3] = "중"
+        }
+        else
+        {
+          criminal[i,3] = "상"
+        }
+      }
+    }
+  }
+  else
+  {
+    if(moneyM == 3300)
+    {
+      if(moneyH == 100)
+      {
+        #011
+        number = c(1)
+        money = sample(number,1)
+        criminal[i,3] = money
+        if(criminal[i,3] == 1)
+        {
+          criminal[i,3] = "하"
+        }
+        else if(criminal[i,3] == 2)
+        {
+          criminal[i,3] = "중"
+        }
+        else
+        {
+          criminal[i,3] = "상"
+        }
+      }
+      else
+      {
+        #010
+        number = c(1,3)
+        money = sample(number,1)
+        criminal[i,3] = money
+        if(criminal[i,3] == 1)
+        {
+          criminal[i,3] = "하"
+        }
+        else if(criminal[i,3] == 2)
+        {
+          criminal[i,3] = "중"
+        }
+        else
+        {
+          criminal[i,3] = "상"
+        }
+      }
+    }
+    else
+    {
+      if(moneyH == 100)
+      {
+        #001
+        number = c(1,2)
+        money = sample(number,1)
+        criminal[i,3] = money
+        if(criminal[i,3] == 1)
+        {
+          criminal[i,3] = "하"
+        }
+        else if(criminal[i,3] == 2)
+        {
+          criminal[i,3] = "중"
+        }
+        else
+        {
+          criminal[i,3] = "상"
+        }
+      }
+      else
+      {
+        #000
+        number = c(1,2,3)
+        money = sample(number,1)
+        criminal[i,3] = money
+        if(criminal[i,3] == 1)
+        {
+          criminal[i,3] = "하"
+        }
+        else if(criminal[i,3] == 2)
+        {
+          criminal[i,3] = "중"
+        }
+        else
+        {
+          criminal[i,3] = "상"
+        }
+      }
+    }
+  }
+}
 write.csv(criminal,"criminal.csv")
