@@ -3938,7 +3938,415 @@ marrigeC = 0 #동거
 marrigeD = 0 #이혼
 marrigeB = 0 #사별
 
-for(i in 10000)
+for(i in 1:10000)
 {
-  print("HO!!!")
+  if(marrige == 1)
+  {
+    marrigeM = marrigeM + 1
+  }
+  else if(marrige == 2)
+  {
+    marrigeC = marrigeC + 1
+  }
+  else if(marrige == 3)
+  {
+    marrigeD = marrigeD + 1
+  }
+  else
+  {
+    marrigeB = marrigeB + 1
+  }
+  
+  if(marrigeM == 7300)
+  {
+    if(marrigeC == 500)
+    {
+      if(marrigeD == 1800)
+      {
+        if(marrigeB == 400)
+        {
+          #1111
+          print("Full")
+        }
+        else
+        {
+          #1110
+          number = c(4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,3] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,3] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+      else
+      {
+        if(marrigeB == 400)
+        {
+          #1101
+          number = c(3)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,3] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,3] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+        else
+        {
+          #1100
+          number = c(3,4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,3] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,3] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+    }
+    else
+    {
+      if(marrigeD == 1800)
+      {
+        if(marrigeB == 400)
+        {
+          #1011
+          number = c(2)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,3] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,3] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+        else
+        {
+          #1010
+          number = c(2,4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,3] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,3] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+      else
+      {
+        if(marrigeB == 400)
+        {
+          #1001
+          number = c(2,3)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,3] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,3] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+        else
+        {
+          #1000
+          number = c(2,3,4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,3] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,3] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+    }
+  }
+  else
+  {
+    if(marrigeC == 500)
+    {
+      if(marrigeD == 1800)
+      {
+        if(marrigeB == 400)
+        {
+          #0111
+          number = c(1)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,3] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,3] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+        else
+        {
+          #0110
+          number = c(1,4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,3] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,3] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+      else
+      {
+        if(marrigeB == 400)
+        {
+          #0101
+          number = c(1,3)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,3] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,3] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+        else
+        {
+          #0100
+          number = c(1,3,4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,3] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,3] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+    }
+    else
+    {
+      if(marrigeD == 1800)
+      {
+        if(marrigeB == 400)
+        {
+          #0011
+          number = c(1,2)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,3] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,3] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+        else
+        {
+          #0010
+          number = c(1,2,4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,3] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,3] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+      else
+      {
+        if(marrigeB == 400)
+        {
+          #0001
+          number = c(1,2,3)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,3] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,3] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+        else
+        {
+          #0000
+          number = c(1,2,3,4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,3] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,3] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+    }
+  }
 }
