@@ -1,3 +1,4 @@
+setwd("C:/Users/Hello world/Documents/Crime backup/CrimeEducation")
 crimeeducation = read.csv("CrimeEducationAll.csv",stringsAsFactors=F)
 crimeeducationtotal = read.csv("CrimeEducationTotal.csv",stringsAsFactors=F)
 
@@ -11,8 +12,6 @@ CE_2012UV2=sum(crimeeducation$X2012UV2)
 CE_2012UV4=sum(crimeeducation$X2012UV4)
 CE_2012GS=sum(crimeeducation$X2012GS)
 crimeeducationtotal$X2012 = c(CE_2012ES,CE_2012MS,CE_2012HS,CE_2012UV2,CE_2012UV4,CE_2012GS)
-
-View(crimeeducationtotal)
 
 #2013 crime
 CE_2013ES = sum(crimeeducation$X2013ES)
@@ -49,6 +48,29 @@ CE_2016UV2 = sum(crimeeducation$X2016UV2)
 CE_2016UV4 = sum(crimeeducation$X2016UV4)
 CE_2016GS = sum(crimeeducation$X2016GS)
 crimeeducationtotal$X2016 = c(CE_2016ES,CE_2016MS,CE_2016HS,CE_2016UV2,CE_2016UV4,CE_2016GS)
+
+
+#Total crime
+  for(i in 1:6){
+    
+    crimeeducationtotal[i,7] = sum(as.numeric(crimeeducationtotal[i,2:6]))
+ 
+}
+
+#Percentage crime √— ≈‰≈ª ≥™¥©±‚ ≈‰≈ª
+#Alltotal/total
+Alltotal=0
+for(i in 1:6){
+
+Alltotal = sum(as.numeric(crimeeducationtotal[i,7])) + Alltotal
+
+}
+for(i in 1:6){
+  
+  crimeeducationtotal[i,8] = crimeeducationtotal[i,7]/Alltotal
+
+  }
+
 View(crimeeducationtotal)
 
 write.csv(crimeeducationtotal, file = "CrimeEducation.csv")
