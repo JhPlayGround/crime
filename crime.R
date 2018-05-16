@@ -1,4 +1,4 @@
-setwd("D:/crime")
+setwd("C:/opensource")
 
 library(dplyr)
 
@@ -220,7 +220,7 @@ for(i in 1:10000)
                 #1,2,3,4,5,6ㅇ, 7x
                 number = c(number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -230,14 +230,14 @@ for(i in 1:10000)
                 #1,2,3,4,5,7o 6x
                 number = c(number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,4,5 o 6,7x
                 number = c(number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -250,14 +250,14 @@ for(i in 1:10000)
                 #1,2,3,4,6,7o 5x
                 number = c(number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,4,6o 5,7x
                 number = c(number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -267,14 +267,14 @@ for(i in 1:10000)
                 #1,2,3,4,7o 5,6x
                 number = c(number5,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,4o 5,6,7x
                 number = c(number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -290,14 +290,14 @@ for(i in 1:10000)
                 #1,2,3,5,6,7o 4x
                 number = c(number4)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,5,6o 4,7x
                 number = c(number4,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -307,14 +307,14 @@ for(i in 1:10000)
                 #1,2,3,5,7o 4,6x
                 number = c(number4,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,5o 4,6,7x
                 number = c(number4,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -327,14 +327,14 @@ for(i in 1:10000)
                 #1,2,3,6,7o 4,5x
                 number = c(number4,number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,6o 4,5,7x
                 number = c(number4,number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -344,14 +344,14 @@ for(i in 1:10000)
                 #1,2,3,7o 4,5,6x
                 number = c(number4,number5,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3o 4,5,6,7x
                 number = c(number4,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -370,14 +370,14 @@ for(i in 1:10000)
                 #1,2,4,5,6,7o 3x
                 number = c(number3)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,4,5,6o 3,7x
                 number = c(number3,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -387,14 +387,14 @@ for(i in 1:10000)
                 #1,2,4,5,7o 3,6x
                 number = c(number3,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,4,5o 3,6,7x
                 number = c(number3,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -407,14 +407,14 @@ for(i in 1:10000)
                 #1,2,4,6,7o 3,5x
                 number = c(number3,number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,4,6o 3,5,7x
                 number = c(number3,number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -424,14 +424,14 @@ for(i in 1:10000)
                 #1,2,4,7o 3,5,6x
                 number = c(number3,number5,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,4o 3,5,6,7x
                 number = c(number3,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -447,14 +447,14 @@ for(i in 1:10000)
                 #1,25,6,7o 3,4x
                 number = c(number3,number4)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,5,6o 3,4,7x
                 number = c(number3,number4,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -464,14 +464,14 @@ for(i in 1:10000)
                 #1,2,5,7o 3,4,6x
                 number = c(number3,number4,number6)
                 age = sample(number,1)
-                criminal[i,1]= age
+                criminal[i,1]= age*10
               }
               else
               {
                 #1,2,5o 3,4,6,7x
                 number = c(number3,number4,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -484,14 +484,14 @@ for(i in 1:10000)
                 #1,2,6,7o 3,4,5x
                 number = c(number3,number4,number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,6o 3,4,5,7x
                 number = c(number3,number4,number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -501,14 +501,14 @@ for(i in 1:10000)
                 #1,2,7o 3,4,5,6x
                 number = c(number3,number4,number5,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2o 3,4,5,6,7x
                 number = c(number3,number4,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -530,14 +530,14 @@ for(i in 1:10000)
                 #1,3,4,5,6,7o 2x
                 number = c(number2)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4,5,6o 2,7x
                 number = c(number2,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -547,14 +547,14 @@ for(i in 1:10000)
                 #1,3,4,5,7o  2,6x
                 number = c(number2,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4,5o 2,6,7x
                 number = c(number2,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -567,14 +567,14 @@ for(i in 1:10000)
                 #1,3,4,6,7o 2,5x
                 number = c(number2,number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4,6o 2,5,7x
                 number = c(number2,number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -584,14 +584,14 @@ for(i in 1:10000)
                 #1,3,4,7o 2,5,6x
                 number = c(number2,number5,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4o 2,5,6,7x
                 number = c(number2,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -607,14 +607,14 @@ for(i in 1:10000)
                 #1,3,5,6,7o 2,4x
                 number = c(number2,number4)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3,5,6o 2,4,7x
                 number = c(number2,number4,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -624,14 +624,14 @@ for(i in 1:10000)
                 #1,3,5,7o 2,4,6x
                 number = c(number2,number4,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3,5o 2,4,6,7x
                 number = c(number2,number4,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -644,14 +644,14 @@ for(i in 1:10000)
                 #1,3,6,7o 2,4,5x
                 number = c(number2,number4,number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3,6o 2,4,5,7x
                 number = c(number2,number4,number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -661,14 +661,14 @@ for(i in 1:10000)
                 #1,3,7o 2,4,5,6x
                 number = c(number2,number4,number5,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3o 2,4,5,6,7x
                 number = c(number2,number4,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -687,14 +687,14 @@ for(i in 1:10000)
                 #1,4,5,6,7o 2,3x
                 number = c(number2,number3)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,4,5,6o 2,3,7x
                 number = c(number2,number3,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -704,14 +704,14 @@ for(i in 1:10000)
                 #1,4,5,7o 2,3,6x
                 number = c(number2,number3,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,4,5o 2,3,6,7x
                 number = c(number2,number3,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -724,14 +724,14 @@ for(i in 1:10000)
                 #1,4,6,7o 2,3,5x
                 number = c(number2,number3,number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,4,6o 2,3,5,7x
                 number = c(number2,number3,number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -741,14 +741,14 @@ for(i in 1:10000)
                 #1,4,7o 2,3,5,6x
                 number = c(number2,number3,number5,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,4o 2,3,5,6,7x
                 number = c(number2,number3,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -764,14 +764,14 @@ for(i in 1:10000)
                 #1,5,6,7o 2,3,4x
                 number = c(number2,number3,number4)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,5,6o 2,3,4,7x
                 number = c(number2,number3,number4,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -781,14 +781,14 @@ for(i in 1:10000)
                 #1,5,7o 2,3,4,6x
                 number = c(number2,number3,number4,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,5o 2,3,4,6,7x
                 number = c(number2,number3,number4,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -801,14 +801,14 @@ for(i in 1:10000)
                 #1,6,7o 2,3,4,5x
                 number = c(number2,number3,number4,number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,6o 2,3,4,5,7x
                 number = c(number,number3,number4,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -818,14 +818,14 @@ for(i in 1:10000)
                 #1,7o 2,3,4,5,6x
                 number = c(number2,number3,number4,number5,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1o 2,3,4,5,6x
                 number = c(number2,number3,number4,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -850,14 +850,14 @@ for(i in 1:10000)
                 #1x 2,3,4,5,6,7o
                 number = c(number1)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,7x 2,3,4,5,6o
                 number = c(number1,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -867,14 +867,14 @@ for(i in 1:10000)
                 #1,6x 2,3,4,5,7o
                 number = c(number1,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,6,7x 2,3,4,5o
                 number = c(number1,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -887,14 +887,14 @@ for(i in 1:10000)
                 #1,5x 2,3,4,6,7o
                 number = c(number1,number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,5,7x 2,3,4,6o
                 number = c(number1,number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -904,14 +904,14 @@ for(i in 1:10000)
                 #1,5,6x 2,3,4,7
                 number = c(number1,number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,5,6,7x 2,3,4o
                 number = c(number1,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -927,14 +927,14 @@ for(i in 1:10000)
                 #1,4x 2,3,5,6,7o
                 number = c(number1,number4)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,4,7x 2,3,5,6o
                 number = c(number1,number4,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -944,14 +944,14 @@ for(i in 1:10000)
                 #1,4,6x 2,3,5,7o
                 number = c(number1,number4,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,4,6,7x 2,3,5o
                 number = c(number1,number4,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -964,14 +964,14 @@ for(i in 1:10000)
                 #1,4,5x 2,3,6,7o
                 number = c(number1,number4,number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,4,5,7x 2,3,6o
                 number = c(number1,number4,number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -981,14 +981,14 @@ for(i in 1:10000)
                 #1,4,5,6x 2,37o
                 number = c(number1,number4,number5,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,4,5,6,7x 2,3o
                 number = c(number1,number4,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -1007,14 +1007,14 @@ for(i in 1:10000)
                 #1,3x 2,4,5,6,7o
                 number = c(number1,number3)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3,7x 2,4,5,6o
                 number = c(number1,number3,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -1024,14 +1024,14 @@ for(i in 1:10000)
                 #1,3,6x 2,4,5,7o
                 number = c(number1,number3,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3,6,7x 2,4,5o
                 number = c(number1,number3,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -1044,14 +1044,14 @@ for(i in 1:10000)
                 #1,3,5x 2,4,6,7o
                 number = c(number1,number3,number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3,5,7x 2,4,6o
                 number = c(number1,number3,number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -1061,14 +1061,14 @@ for(i in 1:10000)
                 #1,3,5,6x 2,4,7o
                 number = c(number1,number3,number5,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3,5,6,7x 2,4o
                 number = c(number1,number3,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -1084,14 +1084,14 @@ for(i in 1:10000)
                 #1,3,4x 2,5,6,7o
                 number = c(number1,number3,number4)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4,7x 2,5,6o
                 number = c(number1,number3,number4,number7)
                 age =sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -1101,14 +1101,14 @@ for(i in 1:10000)
                 #1,3,4,6x 2,5,7o
                 number = c(number1,number3,number4,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4,6,7x 2,5o
                 number = c(number1,number3,number4,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -1121,14 +1121,14 @@ for(i in 1:10000)
                 #1,3,4,5x 2,6,7o
                 number = c(number1,number3,number4,number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4,5,7x 2,6o
                 number = c(number1,number3,number4,number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -1138,14 +1138,14 @@ for(i in 1:10000)
                 #1,3,4,5,6x 2,7o
                 number = c(number1,number3,number4,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4,5,6,7x 2o
                 number = c(number1,number3,number4,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -1167,14 +1167,14 @@ for(i in 1:10000)
                 #1,2x 3,4,5,6,7o
                 number = c(number1,number2)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,7x 3,4,5,6o
                 number = c(number1,number2,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -1184,14 +1184,14 @@ for(i in 1:10000)
                 #1,2,6x 3,4,5,7
                 number = c(number1,number2,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,6,7x 3,4,5o
                 number = c(number1,number2,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -1204,14 +1204,14 @@ for(i in 1:10000)
                 #1,2,5x 3,4,6,7o
                 number = c(number1,number2,number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,5,7x 3,4,6o
                 number = c(number1,number2,number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -1221,14 +1221,14 @@ for(i in 1:10000)
                 #1,2,5,6x 3,4,7o
                 number = c(number1,number2,number5,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,5,6,7x 3,4o
                 number = c(number1,number2,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -1244,14 +1244,14 @@ for(i in 1:10000)
                 #1,2,4x 3,5,6,7o
                 number = c(number3,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,4,7x 3,5,6o
                 number = c(number1,number2,number4,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -1261,14 +1261,14 @@ for(i in 1:10000)
                 #1,2,4,6x 3,5,7o
                 number = c(number1,number2,number4,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #3,5o 1,2,5,6,7x
                 number = c(number1,number2,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -1281,14 +1281,14 @@ for(i in 1:10000)
                 #3,6,7o 1,2,4,5x
                 number = c(number1,number2,number4,number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #3,6o 1,2,4,5,7x
                 number = c(number1,number2,number4,number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -1298,14 +1298,14 @@ for(i in 1:10000)
                 #3,7o 1,2,4,5,6x
                 number = c(number1,number2,number4,number5,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #3o 1,2,4,5,6,7x
                 number = c(number1,number2,number4,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -1324,14 +1324,14 @@ for(i in 1:10000)
                 #1,2,3x 4,5,6,7o
                 number = c(number1,number2,number3)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,7x 4,5,6o
                 number = c(number1,number2,number3,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -1341,14 +1341,14 @@ for(i in 1:10000)
                 #1,2,3,6x 4,5,7o
                 number = c(number1,number2,number3,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,6,7x 4,5o
                 number = c(number1,number2,number3,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -1361,14 +1361,14 @@ for(i in 1:10000)
                 #1,2,3,5x 4,6,7o
                 number = c(number1,number2,number3,number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,5,7x 4,6o
                 number = c(number1,number2,number3,number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -1378,14 +1378,14 @@ for(i in 1:10000)
                 #1,2,3,5,6x 4,7o
                 number = c(number1,number2,number3,number5,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,5,6,7x 4o
                 number = c(number1,number2,number3,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -1401,14 +1401,14 @@ for(i in 1:10000)
                 #1,2,3,4x 5,6,7o
                 number = c(number1,number2,number3,number4)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,4,7x 5,6o
                 number = c(number1,number2,number3,number4,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -1418,14 +1418,14 @@ for(i in 1:10000)
                 #1,2,3,4,6x 5,7o
                 number = c(number1,number2,number3,number4,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,4,6,7x 5o
                 number = c(number1,number2,number3,number4,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -1438,14 +1438,14 @@ for(i in 1:10000)
                 #1,2,3,4,5x 6,7o
                 number = c(number1,number2,number3,number4,number5)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,4,5,7x 6o
                 number = c(number1,number2,number3,number4,number5,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
             else
@@ -1455,14 +1455,14 @@ for(i in 1:10000)
                 #1,2,3,4,5,6x 7o
                 number = c(number1,number2,number3,number4,number5,number6)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,4,5,6,7x
                 number = c(number1,number2,number3,number4,number5,number6,number7)
                 age = sample(number,1)
-                criminal[i,1] = age
+                criminal[i,1] = age*10
               }
             }
           }
@@ -1580,6 +1580,8 @@ for(j in 2:6)
 
 crimeSexAndAge[32,8] = as.integer(crimeSexAndAge[32,7]) / sum(as.integer(crimeSexAndAge[32:33,7]))
 crimeSexAndAge[33,8] = as.integer(crimeSexAndAge[33,7]) / sum(as.integer(crimeSexAndAge[32:33,7]))
+
+
 #남자 84% 여자 16%
 
 sex = 0
@@ -3789,15 +3791,15 @@ for(i in 1:10000)
         criminal[i,3] = money
         if(criminal[i,3] == 1)
         {
-          criminal[i,3] = "하"
+          criminal[i,3] = "low"
         }
         else if(criminal[i,3] == 2)
         {
-          criminal[i,3] = "중"
+          criminal[i,3] = "middle"
         }
         else
         {
-          criminal[i,3] = "상"
+          criminal[i,3] = "high"
         }
       }
     }
@@ -3811,15 +3813,15 @@ for(i in 1:10000)
         criminal[i,3] = money
         if(criminal[i,3] == 1)
         {
-          criminal[i,3] = "하"
+          criminal[i,3] = "low"
         }
         else if(criminal[i,3] == 2)
         {
-          criminal[i,3] = "중"
+          criminal[i,3] = "middle"
         }
         else
         {
-          criminal[i,3] = "상"
+          criminal[i,3] = "high"
         }
       }
       else
@@ -3830,15 +3832,15 @@ for(i in 1:10000)
         criminal[i,3] = money
         if(criminal[i,3] == 1)
         {
-          criminal[i,3] = "하"
+          criminal[i,3] = "low"
         }
         else if(criminal[i,3] == 2)
         {
-          criminal[i,3] = "중"
+          criminal[i,3] = "middle"
         }
         else
         {
-          criminal[i,3] = "상"
+          criminal[i,3] = "high"
         }
       }
     }
@@ -3855,15 +3857,15 @@ for(i in 1:10000)
         criminal[i,3] = money
         if(criminal[i,3] == 1)
         {
-          criminal[i,3] = "하"
+          criminal[i,3] = "low"
         }
         else if(criminal[i,3] == 2)
         {
-          criminal[i,3] = "중"
+          criminal[i,3] = "middle"
         }
         else
         {
-          criminal[i,3] = "상"
+          criminal[i,3] = "high"
         }
       }
       else
@@ -3874,15 +3876,15 @@ for(i in 1:10000)
         criminal[i,3] = money
         if(criminal[i,3] == 1)
         {
-          criminal[i,3] = "하"
+          criminal[i,3] = "low"
         }
         else if(criminal[i,3] == 2)
         {
-          criminal[i,3] = "중"
+          criminal[i,3] = "middle"
         }
         else
         {
-          criminal[i,3] = "상"
+          criminal[i,3] = "high"
         }
       }
     }
@@ -3896,15 +3898,15 @@ for(i in 1:10000)
         criminal[i,3] = money
         if(criminal[i,3] == 1)
         {
-          criminal[i,3] = "하"
+          criminal[i,3] = "low"
         }
         else if(criminal[i,3] == 2)
         {
-          criminal[i,3] = "중"
+          criminal[i,3] = "middle"
         }
         else
         {
-          criminal[i,3] = "상"
+          criminal[i,3] = "high"
         }
       }
       else
@@ -3915,18 +3917,19 @@ for(i in 1:10000)
         criminal[i,3] = money
         if(criminal[i,3] == 1)
         {
-          criminal[i,3] = "하"
+          criminal[i,3] = "low"
         }
         else if(criminal[i,3] == 2)
         {
-          criminal[i,3] = "중"
+          criminal[i,3] = "middle"
         }
         else
         {
-          criminal[i,3] = "상"
+          criminal[i,3] = "high"
         }
       }
     }
   }
 }
 write.csv(criminal,"criminal.csv")
+
