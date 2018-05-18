@@ -4351,3 +4351,201 @@ for(i in 1:10000)
   }
 }
 write.csv(criminal,"criminal.csv")
+
+parents = 0
+parentsB = 0 #both
+parentsF = 0 #only father 
+parentsM= 0 #only mather
+parentsX = 0 #no one
+for(i in 1:10000)
+{
+  if(parents == 1)
+  {
+    parentsB = parentsB + 1
+  }
+  else if(parents == 2)
+  {
+    parentsF = parentsF + 1
+  }
+  else if(parents == 3)
+  {
+    parentsM = parentsM + 1
+  }
+  else
+  {
+    parentsX = parentsX + 1
+  }
+  
+  if(parentsB == 7200)
+  {
+    if(parentsF == 700)
+    {
+      if(parentsM == 1200)
+      {
+        if(parentsX == 900)
+        {
+          #1111
+          print("Full")
+        }
+        else
+        {
+          #1110
+          number = c(4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+      else
+      {
+        if(parentsX == 900)
+        {
+          #1101
+          number = c(3)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+        else
+        {
+          #1100
+          number = c(3,4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+    }
+    else
+    {
+      if(parentsM == 1200)
+      {
+        if(parentsX == 900)
+        {
+          #1011
+          number = c(2)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+        else
+        {
+          #1010
+          number = c(2,4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+      else
+      {
+        if(parentsX == 900)
+        {
+          #1001
+          number = c(2,3)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+        else
+        {
+          #1000
+          number = c(2,3,4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+    }
+  }
+  else
+  {
+    if(parentsF == 700)
+    {
+      if(parentsM == 1200)
+      {
+        if(parentsX == 900)
+        {
+          #0111
+          number = c(1)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+        else
+        {
+          #0110
+          number = c(1,4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+      else
+      {
+        if(parentsX == 900)
+        {
+          #0101
+          number = c(1,3)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+        else
+        {
+          #0100
+          number = c(1,3,4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+    }
+    else
+    {
+      if(parentsM == 1200)
+      {
+        if(parentsX == 900)
+        {
+          #0011
+          number = c(1,2)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+        else
+        {
+          #0010
+          number = c(1,2,4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+      else
+      {
+        if(parentsX == 900)
+        {
+          #0001
+          number = c(1,2,3)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+        else
+        {
+          #0000
+          number = c(1,2,3,4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+    }
+  }
+}
+for(i in 1:10000)
+{
+  if(criminal[i,5] == 1)
+  {
+    criminal[i,5] = "Both"
+  }
+  else if(criminal[i,5] == 2)
+  {
+    criminal[i,5] = "Only Father"
+  }
+  else if(criminal[i,5] == 3)
+  {
+    criminal[i,5] = "Only Mather"
+  }
+  else
+  {
+    criminal[i,5] = "No one"
+  }
+}
+write.csv(criminal,"criminal.csv")
