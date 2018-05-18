@@ -3978,11 +3978,11 @@ for(i in 1:10000)
           {
             criminal[i,6] = "Marriage"
           }
-          else if(criminal[i,3] == 2)
+          else if(criminal[i,6] == 2)
           {
             criminal[i,6] = "Cohabit"
           }
-          else if(criminal[i,3] == 3)
+          else if(criminal[i,6] == 3)
           {
             criminal[i,6] = "Divorce"
           }
@@ -4004,11 +4004,11 @@ for(i in 1:10000)
           {
             criminal[i,6] = "Marriage"
           }
-          else if(criminal[i,3] == 2)
+          else if(criminal[i,6] == 2)
           {
             criminal[i,6] = "Cohabit"
           }
-          else if(criminal[i,3] == 3)
+          else if(criminal[i,6] == 3)
           {
             criminal[i,6] = "Divorce"
           }
@@ -4027,11 +4027,11 @@ for(i in 1:10000)
           {
             criminal[i,6] = "Marriage"
           }
-          else if(criminal[i,3] == 2)
+          else if(criminal[i,6] == 2)
           {
             criminal[i,6] = "Cohabit"
           }
-          else if(criminal[i,3] == 3)
+          else if(criminal[i,6] == 3)
           {
             criminal[i,6] = "Divorce"
           }
@@ -4056,11 +4056,11 @@ for(i in 1:10000)
           {
             criminal[i,6] = "Marriage"
           }
-          else if(criminal[i,3] == 2)
+          else if(criminal[i,6] == 2)
           {
             criminal[i,6] = "Cohabit"
           }
-          else if(criminal[i,3] == 3)
+          else if(criminal[i,6] == 3)
           {
             criminal[i,6] = "Divorce"
           }
@@ -4079,11 +4079,11 @@ for(i in 1:10000)
           {
             criminal[i,6] = "Marriage"
           }
-          else if(criminal[i,3] == 2)
+          else if(criminal[i,6] == 2)
           {
             criminal[i,6] = "Cohabit"
           }
-          else if(criminal[i,3] == 3)
+          else if(criminal[i,6] == 3)
           {
             criminal[i,6] = "Divorce"
           }
@@ -4105,11 +4105,11 @@ for(i in 1:10000)
           {
             criminal[i,6] = "Marriage"
           }
-          else if(criminal[i,3] == 2)
+          else if(criminal[i,6] == 2)
           {
             criminal[i,6] = "Cohabit"
           }
-          else if(criminal[i,3] == 3)
+          else if(criminal[i,6] == 3)
           {
             criminal[i,6] = "Divorce"
           }
@@ -4128,11 +4128,11 @@ for(i in 1:10000)
           {
             criminal[i,6] = "Marriage"
           }
-          else if(criminal[i,3] == 2)
+          else if(criminal[i,6] == 2)
           {
             criminal[i,6] = "Cohabit"
           }
-          else if(criminal[i,3] == 3)
+          else if(criminal[i,6] == 3)
           {
             criminal[i,6] = "Divorce"
           }
@@ -4160,11 +4160,11 @@ for(i in 1:10000)
           {
             criminal[i,6] = "Marriage"
           }
-          else if(criminal[i,3] == 2)
+          else if(criminal[i,6] == 2)
           {
             criminal[i,6] = "Cohabit"
           }
-          else if(criminal[i,3] == 3)
+          else if(criminal[i,6] == 3)
           {
             criminal[i,6] = "Divorce"
           }
@@ -4183,11 +4183,11 @@ for(i in 1:10000)
           {
             criminal[i,6] = "Marriage"
           }
-          else if(criminal[i,3] == 2)
+          else if(criminal[i,6] == 2)
           {
             criminal[i,6] = "Cohabit"
           }
-          else if(criminal[i,3] == 3)
+          else if(criminal[i,6] == 3)
           {
             criminal[i,6] = "Divorce"
           }
@@ -4209,11 +4209,11 @@ for(i in 1:10000)
           {
             criminal[i,6] = "Marriage"
           }
-          else if(criminal[i,3] == 2)
+          else if(criminal[i,6] == 2)
           {
             criminal[i,6] = "Cohabit"
           }
-          else if(criminal[i,3] == 3)
+          else if(criminal[i,6] == 3)
           {
             criminal[i,6] = "Divorce"
           }
@@ -4232,11 +4232,11 @@ for(i in 1:10000)
           {
             criminal[i,6] = "Marriage"
           }
-          else if(criminal[i,3] == 2)
+          else if(criminal[i,6] == 2)
           {
             criminal[i,6] = "Cohabit"
           }
-          else if(criminal[i,3] == 3)
+          else if(criminal[i,6] == 3)
           {
             criminal[i,6] = "Divorce"
           }
@@ -4261,11 +4261,11 @@ for(i in 1:10000)
           {
             criminal[i,6] = "Marriage"
           }
-          else if(criminal[i,3] == 2)
+          else if(criminal[i,6] == 2)
           {
             criminal[i,6] = "Cohabit"
           }
-          else if(criminal[i,3] == 3)
+          else if(criminal[i,6] == 3)
           {
             criminal[i,6] = "Divorce"
           }
@@ -4284,11 +4284,11 @@ for(i in 1:10000)
           {
             criminal[i,6] = "Marriage"
           }
-          else if(criminal[i,3] == 2)
+          else if(criminal[i,6] == 2)
           {
             criminal[i,6] = "Cohabit"
           }
-          else if(criminal[i,3] == 3)
+          else if(criminal[i,6] == 3)
           {
             criminal[i,6] = "Divorce"
           }
@@ -4310,11 +4310,11 @@ for(i in 1:10000)
           {
             criminal[i,6] = "Marriage"
           }
-          else if(criminal[i,3] == 2)
+          else if(criminal[i,6] == 2)
           {
             criminal[i,6] = "Cohabit"
           }
-          else if(criminal[i,3] == 3)
+          else if(criminal[i,6] == 3)
           {
             criminal[i,6] = "Divorce"
           }
@@ -4333,11 +4333,11 @@ for(i in 1:10000)
           {
             criminal[i,6] = "Marriage"
           }
-          else if(criminal[i,3] == 2)
+          else if(criminal[i,6] == 2)
           {
             criminal[i,6] = "Cohabit"
           }
-          else if(criminal[i,3] == 3)
+          else if(criminal[i,6] == 3)
           {
             criminal[i,6] = "Divorce"
           }
@@ -4350,3 +4350,4 @@ for(i in 1:10000)
     }
   }
 }
+write.csv(criminal,"criminal.csv")
