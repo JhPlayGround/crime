@@ -1,5 +1,7 @@
 setwd("c:/opensource")
 
+library(dplyr)
+
 crimeSexAndAge = read.csv("sexAndage.csv",header=T,stringsAsFactors = F)
 criminal = read.csv("criminal.csv",header=T,stringsAsFactors = F)
 crimeday = read.csv("crimeday.csv",header=T,stringsAsFactors = F)
