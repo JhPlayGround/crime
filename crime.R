@@ -1,9 +1,8 @@
-setwd("C:/opensource")
-
-library(dplyr)
+setwd("c:/opensource")
 
 crimeSexAndAge = read.csv("sexAndage.csv",header=T,stringsAsFactors = F)
 criminal = read.csv("criminal.csv",header=T,stringsAsFactors = F)
+crimeday = read.csv("crimeday.csv",header=T,stringsAsFactors = F)
 
 crimeSexAndAge[22,1] = "10~19"
 crimeSexAndAge[23,1] = "20~29"
@@ -145,7 +144,7 @@ title(main = "나이별 범죄자 수", col.main="red")
 title(xlab = "나이", col.lab = "black")
 title(ylab = "범죄자 수", col.lab="blue")
 write.csv(crimeSexAndAge,"sexAndage.csv")
-########################가상범죄자 만들기?##########################################
+########################가HIgh범죄자 만들기?##########################################
 age = 0
 age10 = 0
 age20 = 0
@@ -155,13 +154,6 @@ age50 = 0
 age60 = 0
 age70 = 0
 
-number1 = rep(1,times=16)
-number2 = rep(2,times=16)
-number3 = rep(3,times=18)
-number4 = rep(4,times=23)
-number5 = rep(5,times=19)
-number6 = rep(6,times=6)
-number7 = rep(7,times=2)
 
 for(i in 1:10000)
 {
@@ -218,7 +210,7 @@ for(i in 1:10000)
               else
               {
                 #1,2,3,4,5,6ㅇ, 7x
-                number = c(number7)
+                number = c(7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -228,14 +220,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,3,4,5,7o 6x
-                number = c(number6)
+                number = c(6)
                 age = sample(number,1)
-                criminal[i,1] = age*10
+                criminal[i,1] = age*10*10
               }
               else
               {
                 #1,2,3,4,5 o 6,7x
-                number = c(number6,number7)
+                number = c(6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -248,14 +240,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,3,4,6,7o 5x
-                number = c(number5)
+                number = c(5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,4,6o 5,7x
-                number = c(number5,number7)
+                number = c(5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -265,14 +257,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,3,4,7o 5,6x
-                number = c(number5,number6)
+                number = c(5,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,4o 5,6,7x
-                number = c(number5,number6,number7)
+                number = c(5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -288,14 +280,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,3,5,6,7o 4x
-                number = c(number4)
+                number = c(4)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,5,6o 4,7x
-                number = c(number4,number7)
+                number = c(4,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -305,14 +297,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,3,5,7o 4,6x
-                number = c(number4,number6)
+                number = c(4,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,5o 4,6,7x
-                number = c(number4,number6,number7)
+                number = c(4,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -325,14 +317,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,3,6,7o 4,5x
-                number = c(number4,number5)
+                number = c(4,5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,6o 4,5,7x
-                number = c(number4,number5,number7)
+                number = c(4,5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -342,14 +334,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,3,7o 4,5,6x
-                number = c(number4,number5,number6)
+                number = c(4,5,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3o 4,5,6,7x
-                number = c(number4,number5,number6,number7)
+                number = c(4,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -368,14 +360,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,4,5,6,7o 3x
-                number = c(number3)
+                number = c(3)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,4,5,6o 3,7x
-                number = c(number3,number7)
+                number = c(3,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -385,14 +377,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,4,5,7o 3,6x
-                number = c(number3,number6)
+                number = c(3,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,4,5o 3,6,7x
-                number = c(number3,number6,number7)
+                number = c(3,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -405,14 +397,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,4,6,7o 3,5x
-                number = c(number3,number5)
+                number = c(3,5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,4,6o 3,5,7x
-                number = c(number3,number5,number7)
+                number = c(3,5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -422,14 +414,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,4,7o 3,5,6x
-                number = c(number3,number5,number6)
+                number = c(3,5,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,4o 3,5,6,7x
-                number = c(number3,number5,number6,number7)
+                number = c(3,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -445,14 +437,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,25,6,7o 3,4x
-                number = c(number3,number4)
+                number = c(3,4)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,5,6o 3,4,7x
-                number = c(number3,number4,number7)
+                number = c(3,4,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -462,14 +454,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,5,7o 3,4,6x
-                number = c(number3,number4,number6)
+                number = c(3,4,6)
                 age = sample(number,1)
-                criminal[i,1]= age*10
+                criminal[i,1]= age
               }
               else
               {
                 #1,2,5o 3,4,6,7x
-                number = c(number3,number4,number6,number7)
+                number = c(3,4,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -482,14 +474,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,6,7o 3,4,5x
-                number = c(number3,number4,number5)
+                number = c(3,4,5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,6o 3,4,5,7x
-                number = c(number3,number4,number5,number7)
+                number = c(3,4,5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -499,14 +491,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,7o 3,4,5,6x
-                number = c(number3,number4,number5,number6)
+                number = c(3,4,5,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2o 3,4,5,6,7x
-                number = c(number3,number4,number5,number6,number7)
+                number = c(3,4,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -528,14 +520,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3,4,5,6,7o 2x
-                number = c(number2)
+                number = c(2)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4,5,6o 2,7x
-                number = c(number2,number7)
+                number = c(2,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -545,14 +537,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3,4,5,7o  2,6x
-                number = c(number2,number6)
+                number = c(2,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4,5o 2,6,7x
-                number = c(number2,number6,number7)
+                number = c(2,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -565,14 +557,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3,4,6,7o 2,5x
-                number = c(number2,number5)
+                number = c(2,5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4,6o 2,5,7x
-                number = c(number2,number5,number7)
+                number = c(2,5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -582,14 +574,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3,4,7o 2,5,6x
-                number = c(number2,number5,number6)
+                number = c(2,5,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4o 2,5,6,7x
-                number = c(number2,number5,number6,number7)
+                number = c(2,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -605,14 +597,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3,5,6,7o 2,4x
-                number = c(number2,number4)
+                number = c(2,4)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3,5,6o 2,4,7x
-                number = c(number2,number4,number7)
+                number = c(2,4,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -622,14 +614,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3,5,7o 2,4,6x
-                number = c(number2,number4,number6)
+                number = c(2,4,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3,5o 2,4,6,7x
-                number = c(number2,number4,number6,number7)
+                number = c(2,4,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -642,14 +634,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3,6,7o 2,4,5x
-                number = c(number2,number4,number5)
+                number = c(2,4,5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3,6o 2,4,5,7x
-                number = c(number2,number4,number5,number7)
+                number = c(2,4,5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -659,14 +651,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3,7o 2,4,5,6x
-                number = c(number2,number4,number5,number6)
+                number = c(2,4,5,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3o 2,4,5,6,7x
-                number = c(number2,number4,number5,number6,number7)
+                number = c(2,4,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -685,14 +677,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,4,5,6,7o 2,3x
-                number = c(number2,number3)
+                number = c(2,3)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,4,5,6o 2,3,7x
-                number = c(number2,number3,number7)
+                number = c(2,3,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -702,14 +694,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,4,5,7o 2,3,6x
-                number = c(number2,number3,number6)
+                number = c(2,3,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,4,5o 2,3,6,7x
-                number = c(number2,number3,number6,number7)
+                number = c(2,3,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -722,14 +714,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,4,6,7o 2,3,5x
-                number = c(number2,number3,number5)
+                number = c(2,3,5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,4,6o 2,3,5,7x
-                number = c(number2,number3,number5,number7)
+                number = c(2,3,5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -739,14 +731,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,4,7o 2,3,5,6x
-                number = c(number2,number3,number5,number6)
+                number = c(2,3,5,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,4o 2,3,5,6,7x
-                number = c(number2,number3,number5,number6,number7)
+                number = c(2,3,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -762,14 +754,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,5,6,7o 2,3,4x
-                number = c(number2,number3,number4)
+                number = c(2,3,4)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,5,6o 2,3,4,7x
-                number = c(number2,number3,number4,number7)
+                number = c(2,3,4,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -779,14 +771,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,5,7o 2,3,4,6x
-                number = c(number2,number3,number4,number6)
+                number = c(2,3,4,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,5o 2,3,4,6,7x
-                number = c(number2,number3,number4,number6,number7)
+                number = c(2,3,4,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -799,14 +791,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,6,7o 2,3,4,5x
-                number = c(number2,number3,number4,number5)
+                number = c(2,3,4,5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,6o 2,3,4,5,7x
-                number = c(number,number3,number4,number6,number7)
+                number = c(2,3,4,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -816,14 +808,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,7o 2,3,4,5,6x
-                number = c(number2,number3,number4,number5,number6)
+                number = c(2,3,4,5,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1o 2,3,4,5,6x
-                number = c(number2,number3,number4,number5,number6,number7)
+                number = c(2,3,4,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -848,14 +840,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1x 2,3,4,5,6,7o
-                number = c(number1)
+                number = c(1)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,7x 2,3,4,5,6o
-                number = c(number1,number7)
+                number = c(1,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -865,14 +857,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,6x 2,3,4,5,7o
-                number = c(number1,number6)
+                number = c(1,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,6,7x 2,3,4,5o
-                number = c(number1,number6,number7)
+                number = c(1,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -885,14 +877,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,5x 2,3,4,6,7o
-                number = c(number1,number5)
+                number = c(1,5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,5,7x 2,3,4,6o
-                number = c(number1,number5,number7)
+                number = c(1,5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -902,14 +894,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,5,6x 2,3,4,7
-                number = c(number1,number5,number7)
+                number = c(1,5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,5,6,7x 2,3,4o
-                number = c(number1,number5,number6,number7)
+                number = c(1,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -925,14 +917,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,4x 2,3,5,6,7o
-                number = c(number1,number4)
+                number = c(1,4)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,4,7x 2,3,5,6o
-                number = c(number1,number4,number7)
+                number = c(1,4,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -942,14 +934,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,4,6x 2,3,5,7o
-                number = c(number1,number4,number6)
+                number = c(1,4,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,4,6,7x 2,3,5o
-                number = c(number1,number4,number6,number7)
+                number = c(1,4,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -962,14 +954,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,4,5x 2,3,6,7o
-                number = c(number1,number4,number5)
+                number = c(1,4,5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,4,5,7x 2,3,6o
-                number = c(number1,number4,number5,number7)
+                number = c(1,4,5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -979,14 +971,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,4,5,6x 2,37o
-                number = c(number1,number4,number5,number6)
+                number = c(1,4,5,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,4,5,6,7x 2,3o
-                number = c(number1,number4,number5,number6,number7)
+                number = c(1,4,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1005,14 +997,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3x 2,4,5,6,7o
-                number = c(number1,number3)
+                number = c(1,3)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3,7x 2,4,5,6o
-                number = c(number1,number3,number7)
+                number = c(1,3,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1022,14 +1014,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3,6x 2,4,5,7o
-                number = c(number1,number3,number6)
+                number = c(1,3,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3,6,7x 2,4,5o
-                number = c(number1,number3,number6,number7)
+                number = c(1,3,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1042,14 +1034,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3,5x 2,4,6,7o
-                number = c(number1,number3,number5)
+                number = c(1,3,5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3,5,7x 2,4,6o
-                number = c(number1,number3,number5,number7)
+                number = c(1,3,5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1059,14 +1051,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3,5,6x 2,4,7o
-                number = c(number1,number3,number5,number6)
+                number = c(1,3,5,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3,5,6,7x 2,4o
-                number = c(number1,number3,number5,number6,number7)
+                number = c(1,3,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1082,14 +1074,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3,4x 2,5,6,7o
-                number = c(number1,number3,number4)
+                number = c(1,3,4)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4,7x 2,5,6o
-                number = c(number1,number3,number4,number7)
+                number = c(1,3,4,7)
                 age =sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1099,14 +1091,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3,4,6x 2,5,7o
-                number = c(number1,number3,number4,number6)
+                number = c(1,3,4,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4,6,7x 2,5o
-                number = c(number1,number3,number4,number6,number7)
+                number = c(1,3,4,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1119,14 +1111,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3,4,5x 2,6,7o
-                number = c(number1,number3,number4,number5)
+                number = c(1,3,4,5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4,5,7x 2,6o
-                number = c(number1,number3,number4,number5,number7)
+                number = c(1,3,4,5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1136,14 +1128,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,3,4,5,6x 2,7o
-                number = c(number1,number3,number4,number6,number7)
+                number = c(1,3,4,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,3,4,5,6,7x 2o
-                number = c(number1,number3,number4,number5,number6,number7)
+                number = c(1,3,4,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1165,14 +1157,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2x 3,4,5,6,7o
-                number = c(number1,number2)
+                number = c(1,2)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,7x 3,4,5,6o
-                number = c(number1,number2,number7)
+                number = c(1,2,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1182,14 +1174,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,6x 3,4,5,7
-                number = c(number1,number2,number6)
+                number = c(1,2,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,6,7x 3,4,5o
-                number = c(number1,number2,number6,number7)
+                number = c(1,2,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1202,14 +1194,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,5x 3,4,6,7o
-                number = c(number1,number2,number5)
+                number = c(1,2,5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,5,7x 3,4,6o
-                number = c(number1,number2,number5,number7)
+                number = c(1,2,5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1219,14 +1211,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,5,6x 3,4,7o
-                number = c(number1,number2,number5,number6)
+                number = c(1,2,5,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,5,6,7x 3,4o
-                number = c(number1,number2,number5,number6,number7)
+                number = c(1,2,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1242,14 +1234,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,4x 3,5,6,7o
-                number = c(number3,number5,number6,number7)
+                number = c(3,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,4,7x 3,5,6o
-                number = c(number1,number2,number4,number7)
+                number = c(1,2,4,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1259,14 +1251,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,4,6x 3,5,7o
-                number = c(number1,number2,number4,number6)
+                number = c(1,2,4,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #3,5o 1,2,5,6,7x
-                number = c(number1,number2,number5,number6,number7)
+                number = c(1,2,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1279,14 +1271,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #3,6,7o 1,2,4,5x
-                number = c(number1,number2,number4,number5)
+                number = c(1,2,4,5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #3,6o 1,2,4,5,7x
-                number = c(number1,number2,number4,number5,number7)
+                number = c(1,2,4,5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1296,14 +1288,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #3,7o 1,2,4,5,6x
-                number = c(number1,number2,number4,number5,number6)
+                number = c(1,2,4,5,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #3o 1,2,4,5,6,7x
-                number = c(number1,number2,number4,number5,number6,number7)
+                number = c(1,2,4,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1322,14 +1314,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,3x 4,5,6,7o
-                number = c(number1,number2,number3)
+                number = c(1,2,3)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,7x 4,5,6o
-                number = c(number1,number2,number3,number7)
+                number = c(1,2,3,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1339,14 +1331,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,3,6x 4,5,7o
-                number = c(number1,number2,number3,number6)
+                number = c(1,2,3,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,6,7x 4,5o
-                number = c(number1,number2,number3,number6,number7)
+                number = c(1,2,3,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1359,14 +1351,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,3,5x 4,6,7o
-                number = c(number1,number2,number3,number5)
+                number = c(1,2,3,5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,5,7x 4,6o
-                number = c(number1,number2,number3,number5,number7)
+                number = c(1,2,3,5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1376,14 +1368,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,3,5,6x 4,7o
-                number = c(number1,number2,number3,number5,number6)
+                number = c(1,2,3,5,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,5,6,7x 4o
-                number = c(number1,number2,number3,number5,number6,number7)
+                number = c(1,2,3,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1399,14 +1391,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,3,4x 5,6,7o
-                number = c(number1,number2,number3,number4)
+                number = c(1,2,3,4)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,4,7x 5,6o
-                number = c(number1,number2,number3,number4,number7)
+                number = c(1,2,3,4,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1416,14 +1408,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,3,4,6x 5,7o
-                number = c(number1,number2,number3,number4,number6)
+                number = c(1,2,3,4,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,4,6,7x 5o
-                number = c(number1,number2,number3,number4,number6,number7)
+                number = c(1,2,3,4,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1436,14 +1428,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,3,4,5x 6,7o
-                number = c(number1,number2,number3,number4,number5)
+                number = c(1,2,3,4,5)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,4,5,7x 6o
-                number = c(number1,number2,number3,number4,number5,number7)
+                number = c(1,2,3,4,5,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1453,14 +1445,14 @@ for(i in 1:10000)
               if (age70 == 200)
               {
                 #1,2,3,4,5,6x 7o
-                number = c(number1,number2,number3,number4,number5,number6)
+                number = c(1,2,3,4,5,6)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
               else
               {
                 #1,2,3,4,5,6,7x
-                number = c(number1,number2,number3,number4,number5,number6,number7)
+                number = c(1,2,3,4,5,6,7)
                 age = sample(number,1)
                 criminal[i,1] = age*10
               }
@@ -1472,12 +1464,12 @@ for(i in 1:10000)
   }
 }
 
-##########################################가상 범죄자의 나이 생성 완료 후 저장 ####
+##########################################가HIgh 범죄자의 나이 생성 완료 후 저장 ####
 write.csv(criminal,"criminal.csv")
 
 
 
-###############################기존의 범죄자 성별 분석하기 ########################
+###############################기존의 범죄자 성별 분석Low기 ########################
 crimeSexAndAge[32,1] = "남성"
 crimeSexAndAge[33,1] = "여성"
 crimeSexAndAge[31,2] = "2012"
@@ -1580,8 +1572,6 @@ for(j in 2:6)
 
 crimeSexAndAge[32,8] = as.integer(crimeSexAndAge[32,7]) / sum(as.integer(crimeSexAndAge[32:33,7]))
 crimeSexAndAge[33,8] = as.integer(crimeSexAndAge[33,7]) / sum(as.integer(crimeSexAndAge[32:33,7]))
-
-
 #남자 84% 여자 16%
 
 sex = 0
@@ -2392,7 +2382,7 @@ for(i in 1:10000)
           {
             if(eduG == 200)
             {
-             #101001
+              #101001
               number = c(numbereduM,numbereduU2,numbereduU4)
               edu = sample(number,1)
               criminal[i,4] = edu
@@ -3791,15 +3781,15 @@ for(i in 1:10000)
         criminal[i,3] = money
         if(criminal[i,3] == 1)
         {
-          criminal[i,3] = "low"
+          criminal[i,3] = "Low"
         }
         else if(criminal[i,3] == 2)
         {
-          criminal[i,3] = "middle"
+          criminal[i,3] = "Middle"
         }
         else
         {
-          criminal[i,3] = "high"
+          criminal[i,3] = "HIgh"
         }
       }
     }
@@ -3813,15 +3803,15 @@ for(i in 1:10000)
         criminal[i,3] = money
         if(criminal[i,3] == 1)
         {
-          criminal[i,3] = "low"
+          criminal[i,3] = "Low"
         }
         else if(criminal[i,3] == 2)
         {
-          criminal[i,3] = "middle"
+          criminal[i,3] = "Middle"
         }
         else
         {
-          criminal[i,3] = "high"
+          criminal[i,3] = "HIgh"
         }
       }
       else
@@ -3832,15 +3822,15 @@ for(i in 1:10000)
         criminal[i,3] = money
         if(criminal[i,3] == 1)
         {
-          criminal[i,3] = "low"
+          criminal[i,3] = "Low"
         }
         else if(criminal[i,3] == 2)
         {
-          criminal[i,3] = "middle"
+          criminal[i,3] = "Middle"
         }
         else
         {
-          criminal[i,3] = "high"
+          criminal[i,3] = "HIgh"
         }
       }
     }
@@ -3857,15 +3847,15 @@ for(i in 1:10000)
         criminal[i,3] = money
         if(criminal[i,3] == 1)
         {
-          criminal[i,3] = "low"
+          criminal[i,3] = "Low"
         }
         else if(criminal[i,3] == 2)
         {
-          criminal[i,3] = "middle"
+          criminal[i,3] = "Middle"
         }
         else
         {
-          criminal[i,3] = "high"
+          criminal[i,3] = "HIgh"
         }
       }
       else
@@ -3876,15 +3866,15 @@ for(i in 1:10000)
         criminal[i,3] = money
         if(criminal[i,3] == 1)
         {
-          criminal[i,3] = "low"
+          criminal[i,3] = "Low"
         }
         else if(criminal[i,3] == 2)
         {
-          criminal[i,3] = "middle"
+          criminal[i,3] = "Middle"
         }
         else
         {
-          criminal[i,3] = "high"
+          criminal[i,3] = "HIgh"
         }
       }
     }
@@ -3898,15 +3888,15 @@ for(i in 1:10000)
         criminal[i,3] = money
         if(criminal[i,3] == 1)
         {
-          criminal[i,3] = "low"
+          criminal[i,3] = "Low"
         }
         else if(criminal[i,3] == 2)
         {
-          criminal[i,3] = "middle"
+          criminal[i,3] = "Middle"
         }
         else
         {
-          criminal[i,3] = "high"
+          criminal[i,3] = "HIgh"
         }
       }
       else
@@ -3917,15 +3907,15 @@ for(i in 1:10000)
         criminal[i,3] = money
         if(criminal[i,3] == 1)
         {
-          criminal[i,3] = "low"
+          criminal[i,3] = "Low"
         }
         else if(criminal[i,3] == 2)
         {
-          criminal[i,3] = "middle"
+          criminal[i,3] = "Middle"
         }
         else
         {
-          criminal[i,3] = "high"
+          criminal[i,3] = "HIgh"
         }
       }
     }
@@ -3933,3 +3923,1968 @@ for(i in 1:10000)
 }
 write.csv(criminal,"criminal.csv")
 
+
+marrige = 0
+marrigeM = 0 #유배우자
+marrigeC = 0 #동거 
+marrigeD = 0 #이혼
+marrigeB = 0 #사별
+
+for(i in 1:10000)
+{
+  if(marrige == 1)
+  {
+    marrigeM = marrigeM + 1
+  }
+  else if(marrige == 2)
+  {
+    marrigeC = marrigeC + 1
+  }
+  else if(marrige == 3)
+  {
+    marrigeD = marrigeD + 1
+  }
+  else
+  {
+    marrigeB = marrigeB + 1
+  }
+  
+  if(marrigeM == 7300)
+  {
+    if(marrigeC == 500)
+    {
+      if(marrigeD == 1800)
+      {
+        if(marrigeB == 400)
+        {
+          #1111
+          print("Full")
+        }
+        else
+        {
+          #1110
+          number = c(4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,6] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,6] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+      else
+      {
+        if(marrigeB == 400)
+        {
+          #1101
+          number = c(3)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,6] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,6] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+        else
+        {
+          #1100
+          number = c(3,4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,6] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,6] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+    }
+    else
+    {
+      if(marrigeD == 1800)
+      {
+        if(marrigeB == 400)
+        {
+          #1011
+          number = c(2)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,6] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,6] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+        else
+        {
+          #1010
+          number = c(2,4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,6] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,6] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+      else
+      {
+        if(marrigeB == 400)
+        {
+          #1001
+          number = c(2,3)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,6] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,6] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+        else
+        {
+          #1000
+          number = c(2,3,4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,6] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,6] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+    }
+  }
+  else
+  {
+    if(marrigeC == 500)
+    {
+      if(marrigeD == 1800)
+      {
+        if(marrigeB == 400)
+        {
+          #0111
+          number = c(1)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,6] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,6] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+        else
+        {
+          #0110
+          number = c(1,4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,6] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,6] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+      else
+      {
+        if(marrigeB == 400)
+        {
+          #0101
+          number = c(1,3)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,6] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,6] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+        else
+        {
+          #0100
+          number = c(1,3,4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,6] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,6] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+    }
+    else
+    {
+      if(marrigeD == 1800)
+      {
+        if(marrigeB == 400)
+        {
+          #0011
+          number = c(1,2)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,6] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,6] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+        else
+        {
+          #0010
+          number = c(1,2,4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,6] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,6] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+      else
+      {
+        if(marrigeB == 400)
+        {
+          #0001
+          number = c(1,2,3)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,6] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,6] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+        else
+        {
+          #0000
+          number = c(1,2,3,4)
+          marrige = sample(number,1)
+          criminal[i,6] = marrige 
+          if(criminal[i,6] == 1)
+          {
+            criminal[i,6] = "Marriage"
+          }
+          else if(criminal[i,6] == 2)
+          {
+            criminal[i,6] = "Cohabit"
+          }
+          else if(criminal[i,6] == 3)
+          {
+            criminal[i,6] = "Divorce"
+          }
+          else
+          {
+            criminal[i,6] = "Bereave"
+          }
+        }
+      }
+    }
+  }
+}
+write.csv(criminal,"criminal.csv")
+
+parents = 0
+parentsB = 0 #both
+parentsF = 0 #only father 
+parentsM= 0 #only mather
+parentsX = 0 #no one
+for(i in 1:10000)
+{
+  if(parents == 1)
+  {
+    parentsB = parentsB + 1
+  }
+  else if(parents == 2)
+  {
+    parentsF = parentsF + 1
+  }
+  else if(parents == 3)
+  {
+    parentsM = parentsM + 1
+  }
+  else
+  {
+    parentsX = parentsX + 1
+  }
+  
+  if(parentsB == 7200)
+  {
+    if(parentsF == 700)
+    {
+      if(parentsM == 1200)
+      {
+        if(parentsX == 900)
+        {
+          #1111
+          print("Full")
+        }
+        else
+        {
+          #1110
+          number = c(4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+      else
+      {
+        if(parentsX == 900)
+        {
+          #1101
+          number = c(3)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+        else
+        {
+          #1100
+          number = c(3,4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+    }
+    else
+    {
+      if(parentsM == 1200)
+      {
+        if(parentsX == 900)
+        {
+          #1011
+          number = c(2)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+        else
+        {
+          #1010
+          number = c(2,4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+      else
+      {
+        if(parentsX == 900)
+        {
+          #1001
+          number = c(2,3)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+        else
+        {
+          #1000
+          number = c(2,3,4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+    }
+  }
+  else
+  {
+    if(parentsF == 700)
+    {
+      if(parentsM == 1200)
+      {
+        if(parentsX == 900)
+        {
+          #0111
+          number = c(1)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+        else
+        {
+          #0110
+          number = c(1,4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+      else
+      {
+        if(parentsX == 900)
+        {
+          #0101
+          number = c(1,3)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+        else
+        {
+          #0100
+          number = c(1,3,4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+    }
+    else
+    {
+      if(parentsM == 1200)
+      {
+        if(parentsX == 900)
+        {
+          #0011
+          number = c(1,2)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+        else
+        {
+          #0010
+          number = c(1,2,4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+      else
+      {
+        if(parentsX == 900)
+        {
+          #0001
+          number = c(1,2,3)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+        else
+        {
+          #0000
+          number = c(1,2,3,4)
+          parents = sample(number,1)
+          criminal[i,5] = parents
+        }
+      }
+    }
+  }
+}
+for(i in 1:10000)
+{
+  if(criminal[i,5] == 1)
+  {
+    criminal[i,5] = "Both"
+  }
+  else if(criminal[i,5] == 2)
+  {
+    criminal[i,5] = "Only Father"
+  }
+  else if(criminal[i,5] == 3)
+  {
+    criminal[i,5] = "Only Mather"
+  }
+  else
+  {
+    criminal[i,5] = "No one"
+  }
+}
+write.csv(criminal,"criminal.csv")
+#####################################day######################################################
+day = 0
+day1 = 0
+day2 = 0
+day3 = 0
+day4 = 0
+day5 = 0
+day6 = 0
+day7 = 0
+
+for(i in 1:10000)
+{
+  if(day == 1)
+  {
+    day1 = day1 + 1
+  }
+  else if(day == 2)
+  {
+    day2 = day2 + 1
+  }
+  else if(day == 3)
+  {
+    day3 = day3 + 1
+  }
+  else if(day == 4)
+  {
+    day4 = day4 + 1
+  }
+  else if(day == 5)
+  {
+    day5 = day5 + 1
+  }
+  else if(day == 6)
+  {
+    day6 = day6 + 1
+  }
+  else
+  {
+    day7 = day7 + 1
+  }
+  
+  if(day1 == 1300)
+  {
+    if(day2 == 1400)
+    {
+      if(day3 == 1400)
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1111111
+                print("Full")
+              }
+              else
+              {
+                #1111110
+                number = c(7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1111101
+                number = c(6)
+                day = sample(number,1)
+                criminal[i,8] = day
+                
+              }
+              else
+              {
+                #1111100
+                number = c(6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1111011
+                number = c(5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1111010
+                number = c(5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1111001
+                number = c(5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1111000
+                number = c(5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1110111
+                number = c(4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1110110
+                number = c(4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1110101
+                number = c(4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1110100
+                number = c(4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1110011
+                number = c(4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1110010
+                number = c(4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1110001
+                number = c(4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1110000
+                number = c(4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1101111
+                number = c(3)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1101110
+                number = c(3,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1101101
+                number = c(3,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1101100
+                number = c(3,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1101011
+                number = c(3,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1101010
+                number = c(3,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1101001
+                number = c(3,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1101000
+                number = c(3,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1100111
+                number = c(3,4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1100110
+                number = c(3,4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1100101
+                number = c(3,4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1100100
+                number = c(3,4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1100011
+                number = c(3,4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1100010
+                number = c(3,4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1100001
+                number = c(3,4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1100000
+                number = c(3,4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+    }
+    else
+    {
+      if(day3 == 1400)
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1011111
+                number = c(2)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1011110
+                number = c(2,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1011101
+                number = c(2,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1011100
+                number = c(2,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1011011
+                number = c(2,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1011010
+                number = c(2,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1011001
+                number = c(2,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1011000
+                number = c(2,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1010111
+                number = c(2,4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1010110
+                number = c(2,4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1010101
+                number = c(2,4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1010100
+                number = c(2,4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1010011
+                number = c(2,4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1010010
+                number = c(2,4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1010001
+                number = c(2,4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1010000
+                number = c(2,4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1001111
+                number = c(2,3)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1001110
+                number = c(2,3,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1001101
+                number = c(2,3,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1001100
+                number = c(2,3,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1001011
+                number = c(2,3,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1001010
+                number = c(2,3,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1001001
+                number = c(2,3,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1001000
+                number = c(2,3,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1000111
+                number = c(2,3,4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1000110
+                number = c(2,3,4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1000101
+                number = c(2,3,4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1000100
+                number = c(2,3,4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1000011
+                number = c(2,3,4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1000010
+                number = c(2,3,4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1000001
+                number = c(2,3,4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1000000
+                number = c(2,3,4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  else
+  {
+    if(day2 == 1400)
+    {
+      if(day3 == 1400)
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0111111
+                number = c(1)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0111110
+                number = c(1,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0111101
+                number = c(1,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0111100
+                number = c(1,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0111011
+                number = c(1,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0111010
+                number = c(1,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0111001
+                number = c(1,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0111000
+                number = c(1,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0110111
+                number = c(1,4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0110110
+                number = c(1,4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0110101
+                number = c(1,4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0110100
+                number = c(1,4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0110011
+                number = c(1,4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0110010
+                number = c(1,4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0110001
+                number = c(1,4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0110000
+                number = c(1,4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0101111
+                number = c(1,3)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0101110
+                number = c(1,3,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0101101
+                number = c(1,3,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0101100
+                number = c(1,3,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0101011
+                number = c(1,3,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0101010
+                number = c(1,3,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0101001
+                number = c(1,3,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0101000
+                number = c(1,3,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0100111
+                number = c(1,3,4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0100110
+                number = c(1,3,4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0100101
+                number = c(1,3,4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0100100
+                number = c(1,3,4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0100011
+                number = c(1,3,4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0100010
+                number = c(1,3,4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0100001
+                number = c(1,3,4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0100000
+                number = c(1,3,4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+    }
+    else
+    {
+      if(day3 == 1400)
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0011111
+                number = c(1,2)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0011110
+                number = c(1,2,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0011101
+                number = c(1,2,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0011100
+                number = c(1,2,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0011011
+                number = c(1,2,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0011010 
+                number = c(1,2,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0011001
+                number = c(1,2,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0011000
+                number = c(1,2,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0010111
+                number = c(1,2,4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0010110
+                number = c(1,2,4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0010101
+                number = c(1,2,4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0010100
+                number = c(1,2,4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0010011
+                number = c(1,2,4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0010010
+                number = c(1,2,4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0010001
+                number = c(1,2,4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0010000
+                number = c(1,2,4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0001111
+                number = c(1,2,3)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0001110
+                number = c(1,2,3,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0001101
+                number = c(1,2,3,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0001100
+                number = c(1,2,3,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0001011
+                number = c(1,2,3,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0001010
+                number = c(1,2,3,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0001001
+                number = c(1,2,3,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0001000
+                number = c(1,2,3,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0000111
+                number = c(1,2,3,4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0000110
+                number = c(1,2,3,4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0000101
+                number = c(1,2,3,4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0000100
+                number = c(1,2,3,4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0000011
+                number = c(1,2,3,4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0000010
+                number = c(1,2,3,4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0000001
+                number = c(1,2,3,4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0000000
+                number = c(1,2,3,4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+for(i in 1:10000)
+{
+  if(criminal[i,8] == 1)
+  {
+    criminal[i,8] = "Mon"
+  }
+  else if(criminal[i,8] == 2)
+  {
+    criminal[i,8] = "Tue"
+  }
+  else if(criminal[i,8] == 3)
+  {
+    criminal[i,8] = "Wed"
+  }
+  else if(criminal[i,8] == 4)
+  {
+    criminal[i,8] = "Thur"
+  }
+  else if(criminal[i,8] == 5)
+  {
+    criminal[i,8] = "Fri"
+  }
+  else if(criminal[i,8] == 6)
+  {
+    criminal[i,8] = "Sat"
+  }
+  else
+  {
+    criminal[i,8] = "Sun"
+  }
+}
+write.csv(criminal,"criminal.csv")
