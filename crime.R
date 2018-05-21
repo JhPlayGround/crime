@@ -1,9 +1,8 @@
 setwd("D:/crime")
 
-library(dplyr)
-
 crimeSexAndAge = read.csv("sexAndage.csv",header=T,stringsAsFactors = F)
 criminal = read.csv("criminal.csv",header=T,stringsAsFactors = F)
+crimeday = read.csv("crimeday.csv",header=T,stringsAsFactors = F)
 
 crimeSexAndAge[22,1] = "10~19"
 crimeSexAndAge[23,1] = "20~29"
@@ -4546,6 +4545,1353 @@ for(i in 1:10000)
   else
   {
     criminal[i,5] = "No one"
+  }
+}
+write.csv(criminal,"criminal.csv")
+#####################################day######################################################
+day = 0
+day1 = 0
+day2 = 0
+day3 = 0
+day4 = 0
+day5 = 0
+day6 = 0
+day7 = 0
+
+for(i in 1:10000)
+{
+  if(day == 1)
+  {
+    day1 = day1 + 1
+  }
+  else if(day == 2)
+  {
+    day2 = day2 + 1
+  }
+  else if(day == 3)
+  {
+    day3 = day3 + 1
+  }
+  else if(day == 4)
+  {
+    day4 = day4 + 1
+  }
+  else if(day == 5)
+  {
+    day5 = day5 + 1
+  }
+  else if(day == 6)
+  {
+    day6 = day6 + 1
+  }
+  else
+  {
+    day7 = day7 + 1
+  }
+  
+  if(day1 == 1300)
+  {
+    if(day2 == 1400)
+    {
+      if(day3 == 1400)
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1111111
+                print("Full")
+              }
+              else
+              {
+                #1111110
+                number = c(7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1111101
+                number = c(6)
+                day = sample(number,1)
+                criminal[i,8] = day
+                
+              }
+              else
+              {
+                #1111100
+                number = c(6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1111011
+                number = c(5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1111010
+                number = c(5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1111001
+                number = c(5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1111000
+                number = c(5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1110111
+                number = c(4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1110110
+                number = c(4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1110101
+                number = c(4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1110100
+                number = c(4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1110011
+                number = c(4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1110010
+                number = c(4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1110001
+                number = c(4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1110000
+                number = c(4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1101111
+                number = c(3)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1101110
+                number = c(3,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1101101
+                number = c(3,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1101100
+                number = c(3,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1101011
+                number = c(3,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1101010
+                number = c(3,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1101001
+                number = c(3,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1101000
+                number = c(3,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1100111
+                number = c(3,4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1100110
+                number = c(3,4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1100101
+                number = c(3,4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1100100
+                number = c(3,4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1100011
+                number = c(3,4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1100010
+                number = c(3,4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1100001
+                number = c(3,4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1100000
+                number = c(3,4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+    }
+    else
+    {
+      if(day3 == 1400)
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1011111
+                number = c(2)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1011110
+                number = c(2,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1011101
+                number = c(2,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1011100
+                number = c(2,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1011011
+                number = c(2,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1011010
+                number = c(2,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1011001
+                number = c(2,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1011000
+                number = c(2,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1010111
+                number = c(2,4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1010110
+                number = c(2,4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1010101
+                number = c(2,4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1010100
+                number = c(2,4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1010011
+                number = c(2,4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1010010
+                number = c(2,4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1010001
+                number = c(2,4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1010000
+                number = c(2,4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1001111
+                number = c(2,3)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1001110
+                number = c(2,3,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1001101
+                number = c(2,3,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1001100
+                number = c(2,3,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1001011
+                number = c(2,3,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1001010
+                number = c(2,3,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1001001
+                number = c(2,3,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1001000
+                number = c(2,3,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1000111
+                number = c(2,3,4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1000110
+                number = c(2,3,4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1000101
+                number = c(2,3,4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1000100
+                number = c(2,3,4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #1000011
+                number = c(2,3,4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1000010
+                number = c(2,3,4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #1000001
+                number = c(2,3,4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #1000000
+                number = c(2,3,4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  else
+  {
+    if(day2 == 1400)
+    {
+      if(day3 == 1400)
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0111111
+                number = c(1)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0111110
+                number = c(1,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0111101
+                number = c(1,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0111100
+                number = c(1,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0111011
+                number = c(1,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0111010
+                number = c(1,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0111001
+                number = c(1,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0111000
+                number = c(1,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0110111
+                number = c(1,4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0110110
+                number = c(1,4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0110101
+                number = c(1,4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0110100
+                number = c(1,4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0110011
+                number = c(1,4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0110010
+                number = c(1,4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0110001
+                number = c(1,4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0110000
+                number = c(1,4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0101111
+                number = c(1,3)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0101110
+                number = c(1,3,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0101101
+                number = c(1,3,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0101100
+                number = c(1,3,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0101011
+                number = c(1,3,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0101010
+                number = c(1,3,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0101001
+                number = c(1,3,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0101000
+                number = c(1,3,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0100111
+                number = c(1,3,4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0100110
+                number = c(1,3,4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0100101
+                number = c(1,3,4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0100100
+                number = c(1,3,4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0100011
+                number = c(1,3,4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0100010
+                number = c(1,3,4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0100001
+                number = c(1,3,4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0100000
+                number = c(1,3,4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+    }
+    else
+    {
+      if(day3 == 1400)
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0011111
+                number = c(1,2)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0011110
+                number = c(1,2,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0011101
+                number = c(1,2,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0011100
+                number = c(1,2,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0011011
+                number = c(1,2,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0011010 
+                number = c(1,2,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0011001
+                number = c(1,2,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0011000
+                number = c(1,2,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0010111
+                number = c(1,2,4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0010110
+                number = c(1,2,4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0010101
+                number = c(1,2,4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0010100
+                number = c(1,2,4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0010011
+                number = c(1,2,4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0010010
+                number = c(1,2,4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0010001
+                number = c(1,2,4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0010000
+                number = c(1,2,4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(day4 == 1400)
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0001111
+                number = c(1,2,3)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0001110
+                number = c(1,2,3,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0001101
+                number = c(1,2,3,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0001100
+                number = c(1,2,3,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0001011
+                number = c(1,2,3,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0001010
+                number = c(1,2,3,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0001001
+                number = c(1,2,3,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0001000
+                number = c(1,2,3,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+        else
+        {
+          if(day5 == 1500)
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0000111
+                number = c(1,2,3,4)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0000110
+                number = c(1,2,3,4,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0000101
+                number = c(1,2,3,4,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0000100
+                number = c(1,2,3,4,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+          else
+          {
+            if(day6 == 1600)
+            {
+              if(day7 == 1400)
+              {
+                #0000011
+                number = c(1,2,3,4,5)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0000010
+                number = c(1,2,3,4,5,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+            else
+            {
+              if(day7 == 1400)
+              {
+                #0000001
+                number = c(1,2,3,4,5,6)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+              else
+              {
+                #0000000
+                number = c(1,2,3,4,5,6,7)
+                day = sample(number,1)
+                criminal[i,8] = day
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+for(i in 1:10000)
+{
+  if(criminal[i,8] == 1)
+  {
+    criminal[i,8] = "Mon"
+  }
+  else if(criminal[i,8] == 2)
+  {
+    criminal[i,8] = "Tue"
+  }
+  else if(criminal[i,8] == 3)
+  {
+    criminal[i,8] = "Wed"
+  }
+  else if(criminal[i,8] == 4)
+  {
+    criminal[i,8] = "Thur"
+  }
+  else if(criminal[i,8] == 5)
+  {
+    criminal[i,8] = "Fri"
+  }
+  else if(criminal[i,8] == 6)
+  {
+    criminal[i,8] = "Sat"
+  }
+  else
+  {
+    criminal[i,8] = "Sun"
   }
 }
 write.csv(criminal,"criminal.csv")
