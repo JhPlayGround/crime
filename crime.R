@@ -3,7 +3,7 @@ setwd("D:/crime")
 crimeSexAndAge = read.csv("sexAndage.csv",header=T,stringsAsFactors = F)
 criminal = read.csv("criminal.csv",header=T,stringsAsFactors = F)
 crimeday = read.csv("crimeday.csv",header=T,stringsAsFactors = F)
-
+crimeTime = read.csv("crimeTime.csv",header=T,stringsAsFactors = F)
 crimeSexAndAge[22,1] = "10~19"
 crimeSexAndAge[23,1] = "20~29"
 crimeSexAndAge[24,1] = "30~39"
@@ -5893,5 +5893,2642 @@ for(i in 1:10000)
   {
     criminal[i,8] = "Sun"
   }
+}
+write.csv(criminal,"criminal.csv")
+######################################Time########################################3
+
+time = 0
+time1 = 0 #0~2:59
+time2 = 0 #3~5:59
+time3 = 0 #6~8:59
+time4 = 0 #9~11:59
+time5 = 0 #12~14:59
+time6 = 0 #15~17:59
+time7 = 0 #18:00~20:59
+time8 = 0 #21:00~23:59
+
+for(i in 1:10000)
+{
+  if(time == 1)
+  {
+    time1 = time1 + 1
+  }
+  else if(time == 2)
+  {
+    time2 = time2 + 1
+  }
+  else if(time == 3)
+  {
+    time3 = time3 + 1
+  }
+  else if(time == 4)
+  {
+    time4 = time4 + 1
+  }
+  else if(time == 5)
+  {
+    time5 = time5 + 1
+  }
+  else if(time == 6)
+  {
+    time6 = time6 + 1
+  }
+  else if(time == 7)
+  {
+    time7 = time7 + 1
+  }
+  else
+  {
+    time8 = time8 + 1
+  }
+  
+  if(time1 == 1200)
+  {
+    if(time2 == 1100)
+    {
+      if(time3 == 700)
+      {
+        if(time4 == 1000)
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11111111
+                  print("Full")
+                }
+                else
+                {
+                  #11111110
+                  number = c(8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11111101
+                  number = c(7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11111100
+                  number = c(7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11111011
+                  number = c(6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11111010
+                  number = c(6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11111001
+                  number = c(6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11111000
+                  number = c(6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11110111
+                  number = c(5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11110110
+                  number = c(5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11110101
+                  number = c(5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11110100
+                  number = c(5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11110011
+                  number = c(5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11110010
+                  number = c(5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11110001
+                  number = c(5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11110000
+                  number = c(5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11101111
+                  number = c(4)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11101110
+                  number = c(4,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11101101
+                  number = c(4,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11101100
+                  number = c(4,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11101011
+                  number = c(4,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11101010
+                  number = c(4,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11101001
+                  number = c(4,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11101000
+                  number = c(4,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11100111
+                  number = c(4,5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11100110
+                  number = c(4,5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11100101 
+                  number = c(4,5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11100100
+                  number = c(4,5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11100011
+                  number = c(4,5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11100010
+                  number = c(4,5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11100001
+                  number = c(4,5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11100000
+                  number = c(4,5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(time4 == 1000)
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11011111
+                  number = c(3)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11011110
+                  number = c(3,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11011101
+                  number = c(3,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11011100
+                  number = c(3,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11011011
+                  number = c(3,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11011010
+                  number = c(3,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11011001
+                  number = c(3,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11011000
+                  number = c(3,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11010111
+                  number = c(3,5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11010110
+                  number = c(3,5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11010101
+                  number = c(3,5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11010100
+                  number = c(3,5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11010011
+                  number = c(3,5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11010010
+                  number = c(3,5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11010001
+                  number = c(3,5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #1101000
+                  number = c(3,5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11001111
+                  number = c(3,4)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11001110
+                  number = c(3,4,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11001101
+                  number = c(3,4,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11001100
+                  number = c(3,4,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11001011
+                  number = c(3,4,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11001010
+                  number = c(3,4,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11001001
+                  number = c(3,4,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11001000
+                  number = c(3,4,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11000111
+                  number = c(3,4,5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11000110
+                  number = c(3,4,5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11000101
+                  number = c(3,4,5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11000100
+                  number = c(3,4,5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #11000011
+                  number = c(3,4,5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11000010
+                  number = c(3,4,5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #11000001
+                  number = c(3,4,5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #11000000
+                  number = c(3,4,5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    else
+    {
+      if(time3 == 700)
+      {
+        if(time4 == 1000)
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10111111
+                  number = c(2)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10111110
+                  number = c(2,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10111101
+                  number = c(2,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10111100
+                  number = c(2,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10111011
+                  number = c(2,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10111010
+                  number = c(2,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10111001
+                  number = c(2,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10111000
+                  number = c(2,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10110111
+                  number = c(2,5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10110110
+                  number = c(2,5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10110101
+                  number = c(2,5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10110100
+                  number = c(2,5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10110011
+                  number = c(2,5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10110010
+                  number = c(2,5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10110001
+                  number = c(2,5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10110000
+                  number = c(2,5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10101111
+                  number = c(2,4)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10101110
+                  number = c(2,4,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10101101
+                  number = c(2,4,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10101100
+                  number = c(2,4,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10101011
+                  number = c(2,4,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10101010
+                  number = c(2,4,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10101001
+                  number = c(2,4,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10101000 
+                  number = c(2,4,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10100111
+                  number = c(2,4,5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10100110
+                  number = c(2,4,5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10100101
+                  number = c(2,4,5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10100100
+                  number = c(2,4,5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10100011
+                  number = c(2,4,5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10100010
+                  number = c(2,4,5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10100001
+                  number = c(2,4,5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10100000
+                  number = c(2,4,5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(time4 == 1000)
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10011111
+                  number = c(2,3)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10011110
+                  number = c(2,3,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10011101
+                  number = c(2,3,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10011100
+                  number = c(2,3,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10011011
+                  number = c(2,3,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10011010
+                  number = c(2,3,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10011001
+                  number = c(2,3,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10011000
+                  number = c(2,3,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10010111
+                  number = c(2,3,5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10010110
+                  number = c(2,3,5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10010101
+                  number = c(2,3,5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10010100
+                  number = c(2,3,5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10010011
+                  number = c(2,3,5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10010010
+                  number = c(2,3,5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10010001
+                  number = c(2,3,5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10010000
+                  number = c(2,3,5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10001111
+                  number = c(2,3,4)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10001110
+                  number = c(2,3,4,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10001101
+                  number = c(2,3,4,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10001100
+                  number = c(2,3,4,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10001011
+                  number = c(2,3,4,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10001010
+                  number = c(2,3,4,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10001001
+                  number = c(2,3,4,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10001000
+                  number = c(2,3,4,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10000111
+                  number = c(2,3,4,5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10000110
+                  number = c(2,3,4,5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10000101
+                  number = c(2,3,4,5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10000100
+                  number = c(2,3,4,5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #10000011
+                  number = c(2,3,4,5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10000010
+                  number = c(2,3,4,5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #10000001
+                  number = c(2,3,4,5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #10000000
+                  number = c(2,3,4,5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  else
+  {
+    if(time2 == 1100)
+    {
+      if(time3 == 700)
+      {
+        if(time4 == 1000)
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01111111
+                  number = c(1)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01111110
+                  number = c(1,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01111101
+                  number = c(1,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01111100
+                  number = c(1,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01111011
+                  number = c(1,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01111010
+                  number = c(1,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01111001
+                  number = c(1,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01111000
+                  number = c(1,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01110111
+                  number = c(1,5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01110110
+                  number = c(1,5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01110101
+                  number = c(1,5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01110100
+                  number = c(1,5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01110011
+                  number = c(1,5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01110010
+                  number = c(1,5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01110001
+                  number = c(1,5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01110000
+                  number = c(1,5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01101111
+                  number = c(1,4)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                 #01101110 
+                  number = c(1,4,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01101101
+                  number = c(1,4,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01101100
+                  number = c(1,4,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01101011
+                  number = c(1,4,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01101010
+                  number = c(1,4,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01101001
+                  number = c(1,4,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01101000
+                  number = c(1,4,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01100111
+                  number = c(1,4,5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01100110
+                  number = c(1,4,5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01100101
+                  number = c(1,4,5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01100100
+                  number = c(1,4,5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01100011
+                  number = c(1,4,5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01100010
+                  number = c(1,4,5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01100001
+                  number = c(1,4,5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01100000
+                  number = c(1,4,5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(time4 == 1000)
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01011111
+                  number = c(1,3)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01011110
+                  number = c(1,3,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01011101
+                  number = c(1,3,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01011100
+                  number = c(1,3,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01011011
+                  number = c(1,3,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01011010
+                  number = c(1,3,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01011001
+                  number = c(1,3,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01011000
+                  number = c(1,3,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01010111
+                  number = c(1,3,5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01010110
+                  number = c(1,3,5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01010101
+                  number = c(1,3,5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01010100
+                  number = c(1,3,5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01010011
+                  number = c(1,3,5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01010010
+                  number = c(1,3,5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01010001
+                  number = c(1,3,5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01010000
+                  number = c(1,3,5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01001111
+                  number = c(1,3,4)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01001110
+                  number = c(1,3,4,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01001101
+                  number = c(1,3,4,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01001100
+                  number = c(1,3,4,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01001011
+                  number = c(1,3,4,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01001010
+                  number = c(1,3,4,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01001001
+                  number = c(1,3,4,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01001000
+                  number = c(1,3,4,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01000111
+                  number = c(1,3,4,5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01000110
+                  number = c(1,3,4,5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01000101
+                  number = c(1,3,4,5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01000100
+                  number = c(1,3,4,5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #01000011
+                  number = c(1,3,4,5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01000010
+                  number = c(1,3,4,5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #01000001
+                  number = c(1,3,4,5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #01000000
+                  number = c(1,3,4,5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    else
+    {
+      if(time3 == 700)
+      {
+        if(time4 == 1000)
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00111111
+                  number = c(1,2)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00111110
+                  number = c(1,2,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00111101
+                  number = c(1,2,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00111100
+                  number = c(1,2,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00111011
+                  number = c(1,2,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00111010
+                  number = c(1,2,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00111001
+                  number = c(1,2,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00111000
+                  number = c(1,2,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00110111
+                  number = c(1,2,5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00110110
+                  number = c(1,2,5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00110101
+                  number = c(1,2,5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00110100
+                  number = c(1,2,5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00110011
+                  number = c(1,2,5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00110010
+                  number = c(1,2,5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00110001
+                  number = c(1,2,5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00110000
+                  number = c(1,2,5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00101111
+                  number = c(1,2,4)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00101110
+                  number = c(1,2,4,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00101101
+                  number = c(1,2,4,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00101100
+                  number = c(1,2,4,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00101011
+                  number = c(1,2,4,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00101010
+                  number = c(1,2,4,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00101001
+                  number = c(1,2,4,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00101000
+                  number = c(1,2,4,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00100111
+                  number = c(1,2,4,5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00100110
+                  number = c(1,2,4,5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00100101
+                  number = c(1,2,4,5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00100100
+                  number = c(1,2,4,5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00100011
+                  number = c(1,2,4,5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00100010
+                  number = c(1,2,4,5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00100001
+                  number = c(1,2,4,5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00100000
+                  number = c(1,2,4,5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(time4 == 1000)
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00011111
+                  number = c(1,2,3)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00011110
+                  number = c(1,2,3,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00011101
+                  number = c(1,2,3,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00011100
+                  number = c(1,2,3,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00011011
+                  number = c(1,2,3,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00011010
+                  number = c(1,2,3,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00011001
+                  number = c(1,2,3,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00011000
+                  number = c(1,2,3,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00010111
+                  number = c(1,2,3,5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00010110
+                  number = c(1,2,3,5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00010101
+                  number = c(1,2,3,5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00010100
+                  number = c(1,2,3,5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00010011
+                  number = c(1,2,3,5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00010010
+                  number = c(1,2,3,5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00010001
+                  number = c(1,2,3,5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00010000
+                  number = c(1,2,3,5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(time5 == 1200)
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00001111
+                  number = c(1,2,3,4)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00001110
+                  number = c(1,2,3,4,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00001101
+                  number = c(1,2,3,4,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00001100
+                  number = c(1,2,3,4,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00001011
+                  number = c(1,2,3,4,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00001010
+                  number = c(1,2,3,4,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00001001
+                  number = c(1,2,3,4,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00001000
+                  number = c(1,2,3,4,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+          else
+          {
+            if(time6 == 1300)
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00000111
+                  number = c(1,2,3,4,5)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00000110
+                  number = c(1,2,3,4,5,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00000101
+                  number = c(1,2,3,4,5,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00000100
+                  number = c(1,2,3,4,5,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+            else
+            {
+              if(time7 == 1600)
+              {
+                if(time8 == 1900)
+                {
+                  #00000011
+                  number = c(1,2,3,4,5,6)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00000010
+                  number = c(1,2,3,4,5,6,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+              else
+              {
+                if(time8 == 1900)
+                {
+                  #00000001
+                  number = c(1,2,3,4,5,6,7)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+                else
+                {
+                  #00000000
+                  number = c(1,2,3,4,5,6,7,8)
+                  time = sample(number,1)
+                  criminal[i,9] = time
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+for(i in 1:10000)
+{
+  if(criminal[i,9] == 1)
+  {
+    criminal[i,9] = "0~2:59"
+  }
+  else if(criminal[i,9] == 2)
+  {
+    criminal[i,9] = "3~5:59"
+  }
+  else if(criminal[i,9] == 3)
+  {
+    criminal[i,9] = "6~8:59"
+  }
+  else if(criminal[i,9] == 4)
+  {
+    criminal[i,9] = "9~11:59"
+  }
+  else if(criminal[i,9] == 5)
+  {
+    criminal[i,9] = "12~14:59"
+  }
+  else if(criminal[i,9] == 6)
+  {
+    criminal[i,9] = "15~17:59"
+  }
+  else if(criminal[i,9] == 7)
+  {
+    criminal[i,9] = "18~20:59"
+  }
+  else
+  {
+    criminal[i,9] = "21~23:59"
+  }
+  
 }
 write.csv(criminal,"criminal.csv")
