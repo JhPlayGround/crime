@@ -1579,7 +1579,6 @@ for(j in 2:6)
 
 crimeSexAndAge[32,8] = as.integer(crimeSexAndAge[32,7]) / sum(as.integer(crimeSexAndAge[32:33,7]))
 crimeSexAndAge[33,8] = as.integer(crimeSexAndAge[33,7]) / sum(as.integer(crimeSexAndAge[32:33,7]))
-#남자 84% 여자 16%
 
 sex = 0
 sexM = 0
@@ -1607,7 +1606,7 @@ for(i in 1:10000)
       #1,0
       number = c(0)
       sex = sample(number,1)
-      criminal[i,2] = "Women"
+      criminal[i,2] = sex
     }
   }
   else
@@ -1616,21 +1615,13 @@ for(i in 1:10000)
     {
       number = c(1)
       sex = sample(number,1)
-      criminal[i,2]= "Men"
+      criminal[i,2]= sex
     }
     else
     {
       number = c(0,1)
       sex = sample(number,1)
       criminal[i,2] = sex
-      if(sex == 1)
-      {
-        criminal[i,2] = "Men"
-      }
-      else
-      {
-        criminal[i,2] = "Women"
-      }
     }
   }
 }
@@ -1705,30 +1696,7 @@ for(i in 1:10000)
               #111110
               number = c(numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -1738,60 +1706,14 @@ for(i in 1:10000)
               #111101
               number = c(numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #111100
               number = c(numbereduG,numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
         }
@@ -1804,60 +1726,14 @@ for(i in 1:10000)
               #111011
               number = c(numbereduU2)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #111010
               number = c(numbereduG,numbereduU2)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -1867,60 +1743,14 @@ for(i in 1:10000)
               #111001
               number = c(numbereduU2,numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #111000
               number = c(numbereduG,numbereduU2,numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
         }
@@ -1936,60 +1766,14 @@ for(i in 1:10000)
               #110111
               number = c(numbereduH)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #110110
               number = c(numbereduG,numbereduH)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -1999,60 +1783,14 @@ for(i in 1:10000)
               #110101
               number = c(numbereduH,numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #110100
               number = c(numbereduH,numbereduU4,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
         }
@@ -2065,60 +1803,14 @@ for(i in 1:10000)
               #110011
               number = c(numbereduH,numbereduU2)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #110010
               number = c(numbereduH,numbereduU2,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -2128,60 +1820,14 @@ for(i in 1:10000)
               #110001
               number = c(numbereduH,numbereduU2,numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #110000
               number = c(numbereduH,numbereduU2,numbereduU4,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
         }
@@ -2200,60 +1846,14 @@ for(i in 1:10000)
               #101111
               number = c(numbereduM)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #101110
               number = c(numbereduM,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -2263,60 +1863,14 @@ for(i in 1:10000)
               #101101
               number = c(numbereduM,numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #101100
               number = c(numbereduM,numbereduU4,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
         }
@@ -2329,60 +1883,14 @@ for(i in 1:10000)
               #101011
               number = c(numbereduM,numbereduU2)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #101010
               number = c(numbereduM,numbereduU2,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -2399,30 +1907,7 @@ for(i in 1:10000)
               #101000
               number = c(numbereduM,numbereduU2,numbereduU4,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
         }
@@ -2438,60 +1923,14 @@ for(i in 1:10000)
               #100111
               number = c(numbereduM,numbereduH)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #100110
               number = c(numbereduM,numbereduH,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -2501,60 +1940,14 @@ for(i in 1:10000)
               #100101
               number = c(numbereduM,numbereduH,numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #100100
               number = c(numbereduM,numbereduH,numbereduU4,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
         }
@@ -2567,60 +1960,14 @@ for(i in 1:10000)
               #100011
               number = c(numbereduM,numbereduH,numbereduU2)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #100010
               number = c(numbereduM,numbereduH,numbereduU2,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -2630,60 +1977,14 @@ for(i in 1:10000)
               #100001
               number = c(numbereduM,numbereduH,numbereduU2,numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #100000
               number = c(numbereduM,numbereduH,numbereduU2,numbereduU4,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
         }
@@ -2705,60 +2006,14 @@ for(i in 1:10000)
               #011111
               number = c(numbereduE)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #011110
               number = c(numbereduE,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -2768,60 +2023,14 @@ for(i in 1:10000)
               #011101
               number = c(numbereduE,numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #011100
               number = c(numbereduE,numbereduU4,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
         }
@@ -2834,60 +2043,14 @@ for(i in 1:10000)
               #011011
               number = c(numbereduE,numbereduU2)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #011010
               number = c(numbereduE,numbereduU2,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -2897,60 +2060,14 @@ for(i in 1:10000)
               #011001
               number = c(numbereduE,numbereduU2,numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #011000
               number = c(numbereduE,numbereduU2,numbereduU4,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
         }
@@ -2966,60 +2083,14 @@ for(i in 1:10000)
               #010111
               number = c(numbereduE,numbereduH)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #010110
               number = c(numbereduE,numbereduH,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -3029,60 +2100,14 @@ for(i in 1:10000)
               #010101
               number = c(numbereduE,numbereduH,numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #010100
               number = c(numbereduE,numbereduH,numbereduU4,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
         }
@@ -3095,60 +2120,14 @@ for(i in 1:10000)
               #010011
               number = c(numbereduE,numbereduH,numbereduU2)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #010010
               number = c(numbereduE,numbereduH,numbereduU2,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -3158,60 +2137,14 @@ for(i in 1:10000)
               #010001
               number = c(numbereduE,numbereduH,numbereduU2,numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #010000
               number = c(numbereduE,numbereduH,numbereduU2,numbereduU4,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
         }
@@ -3230,60 +2163,14 @@ for(i in 1:10000)
               #001111
               number = c(numbereduE,numbereduM)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #001110
               number = c(numbereduE,numbereduM,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -3293,60 +2180,14 @@ for(i in 1:10000)
               #001101
               number = c(numbereduE,numbereduM,numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #001100
               number = c(numbereduE,numbereduM,numbereduU4,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
         }
@@ -3359,60 +2200,14 @@ for(i in 1:10000)
               #001011
               number = c(numbereduE, numbereduM,numbereduU2)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #001010
               number = c(numbereduE, numbereduM,numbereduU2,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -3422,60 +2217,14 @@ for(i in 1:10000)
               #001001
               number = c(numbereduE, numbereduM,numbereduU2,numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #001000
               number = c(numbereduE, numbereduM,numbereduU2,numbereduU4,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
         }
@@ -3491,60 +2240,14 @@ for(i in 1:10000)
               #000111
               number = c(numbereduE, numbereduM,numbereduH)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #000110
               number = c(numbereduE, numbereduM,numbereduH,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -3554,60 +2257,14 @@ for(i in 1:10000)
               #000101
               number = c(numbereduE, numbereduM,numbereduH,numbereduU4)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #000100
               number = c(numbereduE, numbereduM,numbereduH,numbereduU4,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
         }
@@ -3620,60 +2277,14 @@ for(i in 1:10000)
               #000011
               number = c(numbereduE, numbereduM,numbereduH,numbereduU2)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #000010
               number = c(numbereduE, numbereduM,numbereduH,numbereduU2,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
           }
           else
@@ -3683,61 +2294,14 @@ for(i in 1:10000)
               #000001
               number = c(numbereduE, numbereduM,numbereduH,numbereduU4,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
+              criminal[i,4] = edu
             }
             else
             {
               #000000
               number = c(numbereduE,numbereduM,numbereduH,numbereduU2,numbereduU4,numbereduG)
               edu = sample(number,1)
-              if(edu == 1)
-              {
-                criminal[i,4] = "elementary"
-              }
-              else if(edu == 2)
-              {
-                criminal[i,4] = "middle"
-              }
-              else if(edu == 3)
-              {
-                criminal[i,4] = "High"
-              }
-              else if(edu == 4)
-              {
-                criminal[i,4] = "Univ2"
-              }
-              else if(edu == 5)
-              {
-                criminal[i,4] = "Univ4"
-              }
-              else
-              {
-                criminal[i,4] = "Graduate"
-              }
-              
+              criminal[i,4] = edu
             }
           }
         }
@@ -3786,18 +2350,6 @@ for(i in 1:10000)
         number = c(3)
         money = sample(number,1)
         criminal[i,3] = money
-        if(criminal[i,3] == 1)
-        {
-          criminal[i,3] = "Low"
-        }
-        else if(criminal[i,3] == 2)
-        {
-          criminal[i,3] = "Middle"
-        }
-        else
-        {
-          criminal[i,3] = "HIgh"
-        }
       }
     }
     else
@@ -3808,18 +2360,6 @@ for(i in 1:10000)
         number = c(2)
         money = sample(number,1)
         criminal[i,3] = money
-        if(criminal[i,3] == 1)
-        {
-          criminal[i,3] = "Low"
-        }
-        else if(criminal[i,3] == 2)
-        {
-          criminal[i,3] = "Middle"
-        }
-        else
-        {
-          criminal[i,3] = "HIgh"
-        }
       }
       else
       {
@@ -3827,18 +2367,6 @@ for(i in 1:10000)
         number = c(2,3)
         money = sample(number,1)
         criminal[i,3] = money
-        if(criminal[i,3] == 1)
-        {
-          criminal[i,3] = "Low"
-        }
-        else if(criminal[i,3] == 2)
-        {
-          criminal[i,3] = "Middle"
-        }
-        else
-        {
-          criminal[i,3] = "HIgh"
-        }
       }
     }
   }
@@ -3852,18 +2380,6 @@ for(i in 1:10000)
         number = c(1)
         money = sample(number,1)
         criminal[i,3] = money
-        if(criminal[i,3] == 1)
-        {
-          criminal[i,3] = "Low"
-        }
-        else if(criminal[i,3] == 2)
-        {
-          criminal[i,3] = "Middle"
-        }
-        else
-        {
-          criminal[i,3] = "HIgh"
-        }
       }
       else
       {
@@ -3871,18 +2387,6 @@ for(i in 1:10000)
         number = c(1,3)
         money = sample(number,1)
         criminal[i,3] = money
-        if(criminal[i,3] == 1)
-        {
-          criminal[i,3] = "Low"
-        }
-        else if(criminal[i,3] == 2)
-        {
-          criminal[i,3] = "Middle"
-        }
-        else
-        {
-          criminal[i,3] = "HIgh"
-        }
       }
     }
     else
@@ -3893,18 +2397,6 @@ for(i in 1:10000)
         number = c(1,2)
         money = sample(number,1)
         criminal[i,3] = money
-        if(criminal[i,3] == 1)
-        {
-          criminal[i,3] = "Low"
-        }
-        else if(criminal[i,3] == 2)
-        {
-          criminal[i,3] = "Middle"
-        }
-        else
-        {
-          criminal[i,3] = "HIgh"
-        }
       }
       else
       {
@@ -3912,18 +2404,6 @@ for(i in 1:10000)
         number = c(1,2,3)
         money = sample(number,1)
         criminal[i,3] = money
-        if(criminal[i,3] == 1)
-        {
-          criminal[i,3] = "Low"
-        }
-        else if(criminal[i,3] == 2)
-        {
-          criminal[i,3] = "Middle"
-        }
-        else
-        {
-          criminal[i,3] = "HIgh"
-        }
       }
     }
   }
@@ -3973,22 +2453,6 @@ for(i in 1:10000)
           number = c(4)
           marrige = sample(number,1)
           criminal[i,6] = marrige 
-          if(criminal[i,6] == 1)
-          {
-            criminal[i,6] = "Marriage"
-          }
-          else if(criminal[i,6] == 2)
-          {
-            criminal[i,6] = "Cohabit"
-          }
-          else if(criminal[i,6] == 3)
-          {
-            criminal[i,6] = "Divorce"
-          }
-          else
-          {
-            criminal[i,6] = "Bereave"
-          }
         }
       }
       else
@@ -3999,22 +2463,6 @@ for(i in 1:10000)
           number = c(3)
           marrige = sample(number,1)
           criminal[i,6] = marrige
-          if(criminal[i,6] == 1)
-          {
-            criminal[i,6] = "Marriage"
-          }
-          else if(criminal[i,6] == 2)
-          {
-            criminal[i,6] = "Cohabit"
-          }
-          else if(criminal[i,6] == 3)
-          {
-            criminal[i,6] = "Divorce"
-          }
-          else
-          {
-            criminal[i,6] = "Bereave"
-          }
         }
         else
         {
@@ -4022,22 +2470,6 @@ for(i in 1:10000)
           number = c(3,4)
           marrige = sample(number,1)
           criminal[i,6] = marrige 
-          if(criminal[i,6] == 1)
-          {
-            criminal[i,6] = "Marriage"
-          }
-          else if(criminal[i,6] == 2)
-          {
-            criminal[i,6] = "Cohabit"
-          }
-          else if(criminal[i,6] == 3)
-          {
-            criminal[i,6] = "Divorce"
-          }
-          else
-          {
-            criminal[i,6] = "Bereave"
-          }
         }
       }
     }
@@ -4051,22 +2483,6 @@ for(i in 1:10000)
           number = c(2)
           marrige = sample(number,1)
           criminal[i,6] = marrige 
-          if(criminal[i,6] == 1)
-          {
-            criminal[i,6] = "Marriage"
-          }
-          else if(criminal[i,6] == 2)
-          {
-            criminal[i,6] = "Cohabit"
-          }
-          else if(criminal[i,6] == 3)
-          {
-            criminal[i,6] = "Divorce"
-          }
-          else
-          {
-            criminal[i,6] = "Bereave"
-          }
         }
         else
         {
@@ -4074,22 +2490,6 @@ for(i in 1:10000)
           number = c(2,4)
           marrige = sample(number,1)
           criminal[i,6] = marrige 
-          if(criminal[i,6] == 1)
-          {
-            criminal[i,6] = "Marriage"
-          }
-          else if(criminal[i,6] == 2)
-          {
-            criminal[i,6] = "Cohabit"
-          }
-          else if(criminal[i,6] == 3)
-          {
-            criminal[i,6] = "Divorce"
-          }
-          else
-          {
-            criminal[i,6] = "Bereave"
-          }
         }
       }
       else
@@ -4100,22 +2500,6 @@ for(i in 1:10000)
           number = c(2,3)
           marrige = sample(number,1)
           criminal[i,6] = marrige 
-          if(criminal[i,6] == 1)
-          {
-            criminal[i,6] = "Marriage"
-          }
-          else if(criminal[i,6] == 2)
-          {
-            criminal[i,6] = "Cohabit"
-          }
-          else if(criminal[i,6] == 3)
-          {
-            criminal[i,6] = "Divorce"
-          }
-          else
-          {
-            criminal[i,6] = "Bereave"
-          }
         }
         else
         {
@@ -4123,22 +2507,6 @@ for(i in 1:10000)
           number = c(2,3,4)
           marrige = sample(number,1)
           criminal[i,6] = marrige 
-          if(criminal[i,6] == 1)
-          {
-            criminal[i,6] = "Marriage"
-          }
-          else if(criminal[i,6] == 2)
-          {
-            criminal[i,6] = "Cohabit"
-          }
-          else if(criminal[i,6] == 3)
-          {
-            criminal[i,6] = "Divorce"
-          }
-          else
-          {
-            criminal[i,6] = "Bereave"
-          }
         }
       }
     }
@@ -4155,22 +2523,6 @@ for(i in 1:10000)
           number = c(1)
           marrige = sample(number,1)
           criminal[i,6] = marrige 
-          if(criminal[i,6] == 1)
-          {
-            criminal[i,6] = "Marriage"
-          }
-          else if(criminal[i,6] == 2)
-          {
-            criminal[i,6] = "Cohabit"
-          }
-          else if(criminal[i,6] == 3)
-          {
-            criminal[i,6] = "Divorce"
-          }
-          else
-          {
-            criminal[i,6] = "Bereave"
-          }
         }
         else
         {
@@ -4178,22 +2530,6 @@ for(i in 1:10000)
           number = c(1,4)
           marrige = sample(number,1)
           criminal[i,6] = marrige 
-          if(criminal[i,6] == 1)
-          {
-            criminal[i,6] = "Marriage"
-          }
-          else if(criminal[i,6] == 2)
-          {
-            criminal[i,6] = "Cohabit"
-          }
-          else if(criminal[i,6] == 3)
-          {
-            criminal[i,6] = "Divorce"
-          }
-          else
-          {
-            criminal[i,6] = "Bereave"
-          }
         }
       }
       else
@@ -4204,22 +2540,6 @@ for(i in 1:10000)
           number = c(1,3)
           marrige = sample(number,1)
           criminal[i,6] = marrige 
-          if(criminal[i,6] == 1)
-          {
-            criminal[i,6] = "Marriage"
-          }
-          else if(criminal[i,6] == 2)
-          {
-            criminal[i,6] = "Cohabit"
-          }
-          else if(criminal[i,6] == 3)
-          {
-            criminal[i,6] = "Divorce"
-          }
-          else
-          {
-            criminal[i,6] = "Bereave"
-          }
         }
         else
         {
@@ -4227,22 +2547,6 @@ for(i in 1:10000)
           number = c(1,3,4)
           marrige = sample(number,1)
           criminal[i,6] = marrige
-          if(criminal[i,6] == 1)
-          {
-            criminal[i,6] = "Marriage"
-          }
-          else if(criminal[i,6] == 2)
-          {
-            criminal[i,6] = "Cohabit"
-          }
-          else if(criminal[i,6] == 3)
-          {
-            criminal[i,6] = "Divorce"
-          }
-          else
-          {
-            criminal[i,6] = "Bereave"
-          }
         }
       }
     }
@@ -4256,22 +2560,6 @@ for(i in 1:10000)
           number = c(1,2)
           marrige = sample(number,1)
           criminal[i,6] = marrige 
-          if(criminal[i,6] == 1)
-          {
-            criminal[i,6] = "Marriage"
-          }
-          else if(criminal[i,6] == 2)
-          {
-            criminal[i,6] = "Cohabit"
-          }
-          else if(criminal[i,6] == 3)
-          {
-            criminal[i,6] = "Divorce"
-          }
-          else
-          {
-            criminal[i,6] = "Bereave"
-          }
         }
         else
         {
@@ -4279,22 +2567,6 @@ for(i in 1:10000)
           number = c(1,2,4)
           marrige = sample(number,1)
           criminal[i,6] = marrige 
-          if(criminal[i,6] == 1)
-          {
-            criminal[i,6] = "Marriage"
-          }
-          else if(criminal[i,6] == 2)
-          {
-            criminal[i,6] = "Cohabit"
-          }
-          else if(criminal[i,6] == 3)
-          {
-            criminal[i,6] = "Divorce"
-          }
-          else
-          {
-            criminal[i,6] = "Bereave"
-          }
         }
       }
       else
@@ -4305,22 +2577,6 @@ for(i in 1:10000)
           number = c(1,2,3)
           marrige = sample(number,1)
           criminal[i,6] = marrige 
-          if(criminal[i,6] == 1)
-          {
-            criminal[i,6] = "Marriage"
-          }
-          else if(criminal[i,6] == 2)
-          {
-            criminal[i,6] = "Cohabit"
-          }
-          else if(criminal[i,6] == 3)
-          {
-            criminal[i,6] = "Divorce"
-          }
-          else
-          {
-            criminal[i,6] = "Bereave"
-          }
         }
         else
         {
@@ -4328,22 +2584,6 @@ for(i in 1:10000)
           number = c(1,2,3,4)
           marrige = sample(number,1)
           criminal[i,6] = marrige 
-          if(criminal[i,6] == 1)
-          {
-            criminal[i,6] = "Marriage"
-          }
-          else if(criminal[i,6] == 2)
-          {
-            criminal[i,6] = "Cohabit"
-          }
-          else if(criminal[i,6] == 3)
-          {
-            criminal[i,6] = "Divorce"
-          }
-          else
-          {
-            criminal[i,6] = "Bereave"
-          }
         }
       }
     }
@@ -4526,25 +2766,6 @@ for(i in 1:10000)
         }
       }
     }
-  }
-}
-for(i in 1:10000)
-{
-  if(criminal[i,5] == 1)
-  {
-    criminal[i,5] = "Both"
-  }
-  else if(criminal[i,5] == 2)
-  {
-    criminal[i,5] = "Only Father"
-  }
-  else if(criminal[i,5] == 3)
-  {
-    criminal[i,5] = "Only Mather"
-  }
-  else
-  {
-    criminal[i,5] = "No one"
   }
 }
 write.csv(criminal,"criminal.csv")
@@ -5863,37 +4084,7 @@ for(i in 1:10000)
     }
   }
 }
-for(i in 1:10000)
-{
-  if(criminal[i,8] == 1)
-  {
-    criminal[i,8] = "Mon"
-  }
-  else if(criminal[i,8] == 2)
-  {
-    criminal[i,8] = "Tue"
-  }
-  else if(criminal[i,8] == 3)
-  {
-    criminal[i,8] = "Wed"
-  }
-  else if(criminal[i,8] == 4)
-  {
-    criminal[i,8] = "Thur"
-  }
-  else if(criminal[i,8] == 5)
-  {
-    criminal[i,8] = "Fri"
-  }
-  else if(criminal[i,8] == 6)
-  {
-    criminal[i,8] = "Sat"
-  }
-  else
-  {
-    criminal[i,8] = "Sun"
-  }
-}
+
 write.csv(criminal,"criminal.csv")
 ######################################Time########################################3
 
@@ -8494,41 +6685,5 @@ for(i in 1:10000)
       }
     }
   }
-}
-for(i in 1:10000)
-{
-  if(criminal[i,9] == 1)
-  {
-    criminal[i,9] = "0~2:59"
-  }
-  else if(criminal[i,9] == 2)
-  {
-    criminal[i,9] = "3~5:59"
-  }
-  else if(criminal[i,9] == 3)
-  {
-    criminal[i,9] = "6~8:59"
-  }
-  else if(criminal[i,9] == 4)
-  {
-    criminal[i,9] = "9~11:59"
-  }
-  else if(criminal[i,9] == 5)
-  {
-    criminal[i,9] = "12~14:59"
-  }
-  else if(criminal[i,9] == 6)
-  {
-    criminal[i,9] = "15~17:59"
-  }
-  else if(criminal[i,9] == 7)
-  {
-    criminal[i,9] = "18~20:59"
-  }
-  else
-  {
-    criminal[i,9] = "21~23:59"
-  }
-  
 }
 write.csv(criminal,"criminal.csv")
