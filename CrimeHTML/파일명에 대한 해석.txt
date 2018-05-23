@@ -9,3 +9,7 @@ day = 요일
 time = 시간
 spot = 장소
 type = 죄종
+
+이미지 목록
+Top = 상단 이미지
+Main = 메인 이미지
