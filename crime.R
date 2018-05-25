@@ -6687,3 +6687,674 @@ for(i in 1:10000)
   }
 }
 write.csv(criminal,"criminal.csv")
+##########################################TYPE####################################3
+
+type = 0
+type1 = 0 #살인
+type2 = 0 #강도
+type3 = 0 #강간
+type4 = 0 #방화
+type5 = 0 #절도
+type6 = 0 #폭행
+
+for(i in 1:10000)
+{
+  if(type == 1)
+  {
+    type1 = type1 + 1
+  }
+  else if(type == 2)
+  {
+    type2 = type2 + 1
+  }
+  else if(type == 3)
+  {
+    type3 = type3 + 1
+  }
+  else if(type == 4)
+  {
+    type4 = type4 + 1
+  }
+  else if(type == 5)
+  {
+    type5 = type5 + 1
+  }
+  else
+  {
+    type6 = type6 + 1
+  }
+  
+  if(type1 == 9)
+  {
+    if(type2 == 39)
+    {
+      if(type3 == 446)
+      {
+        if(type4 == 42)
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #111111
+              print("Full")
+            }
+            else
+            {
+              #111110
+              number = c(6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+              #111101
+              number = c(5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #111100
+              number = c(5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+        else
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #111011
+              number = c(4)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #111010
+              number = c(4,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+              #111001
+              number = c(4,5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #111000
+              number = c(4,5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+      }
+      else
+      {
+        if(type4 == 42)
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #110111
+              number = c(3)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #110110
+              number = c(3,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+              #110101
+              number = c(3,5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #110100
+              number = c(3,5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+        else
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #110011
+              number = c(3,4)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #110010
+              number = c(3,4,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+             #110001
+              number = c(3,4,5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #110000
+              number = c(3,4,5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+      }
+    }
+    else
+    {
+      if(type3 == 446)
+      {
+        if(type4 == 42)
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #101111
+              number = c(2)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #101110
+              number = c(2,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+              #101101
+              number = c(2,5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #101100
+              number = c(2,5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+        else
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #101011
+              number = c(2,4)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #101010
+              number = c(2,4,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+              #101001
+              number = c(2,4,5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #101000
+              number = c(2,4,5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+      }
+      else
+      {
+        if(type4 == 42)
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #100111
+              number = c(2,3)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #100110
+              number = c(2,3,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+              #100101
+              number = c(2,3,5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #100100
+              number = c(2,3,5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+        else
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #100011
+              number = c(2,3,4)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #100010
+              number = c(2,3,4,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+              #100001
+              number = c(2,3,4,5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #100000
+              number = c(2,3,4,5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+      }
+    }
+  }
+  else
+  {
+    if(type2 == 39)
+    {
+      if(type3 == 446)
+      {
+        if(type4 == 42)
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #011111
+              number = c(1)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #011110
+              number = c(1,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+              #011101
+              number = c(1,5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #011100
+              number = c(1,5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+        else
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #011011
+              number = c(1,4)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #011010
+              number = c(1,4,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+              #011001
+              number = c(1,4,5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #011000
+              number = c(1,4,5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+      }
+      else
+      {
+        if(type4 == 42)
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #010111
+              number = c(1,3)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #010110
+              number = c(1,3,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+              #010101
+              number = c(1,3,5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #010100
+              number = c(1,3,5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+        else
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #010011
+              number = c(1,3,4)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #010010
+              number = c(1,3,4,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+              #010001
+              number = c(1,3,4,5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #010000
+              number = c(1,3,4,5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+      }
+    }
+    else
+    {
+      if(type3 == 446)
+      {
+        if(type4 == 42)
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #001111
+              number = c(1,2)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #001110
+              number = c(1,2,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+              #001101
+              number = c(1,2,5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #001100
+              number = c(1,2,5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+        else
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #001011
+              number = c(1,2,4)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #001010
+              number = c(1,2,4,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+              #001001
+              number = c(1,2,4,5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #001000
+              number = c(1,2,4,5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+      }
+      else
+      {
+        if(type4 == 42)
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #000111
+              number = c(1,2,3)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #000110
+              number = c(1,2,3,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+              #000101
+              number = c(1,2,3,5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #000100
+              number = c(1,2,3,5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+        else
+        {
+          if(type5 == 6066)
+          {
+            if(type6 == 3398)
+            {
+              #000011
+              number = c(1,2,3,4)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #000010
+              number = c(1,2,3,4,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+          else
+          {
+            if(type6 == 3398)
+            {
+              #000001
+              number = c(1,2,3,4,5)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+            else
+            {
+              #000000
+              number = c(1,2,3,4,5,6)
+              type = sample(number,1)
+              criminal[i,11] = type
+            }
+          }
+        }
+      }
+    }
+  }
+}
+write.csv(criminal,"criminal.csv")
