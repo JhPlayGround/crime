@@ -4,6 +4,7 @@ crimeSexAndAge = read.csv("sexAndage.csv",header=T,stringsAsFactors = F)
 criminal = read.csv("criminal.csv",header=T,stringsAsFactors = F)
 crimeday = read.csv("crimeday.csv",header=T,stringsAsFactors = F)
 crimeTime = read.csv("crimeTime.csv",header=T,stringsAsFactors = F)
+crimePrevious = read.csv("crimePrevious.csv",header=T,stringsAsFactors = F)
 crimeSexAndAge[22,1] = "10~19"
 crimeSexAndAge[23,1] = "20~29"
 crimeSexAndAge[24,1] = "30~39"
@@ -7354,6 +7355,56 @@ for(i in 1:10000)
           }
         }
       }
+    }
+  }
+}
+write.csv(criminal,"criminal.csv")
+##########################Àü°ú###########################
+pre = 0
+preN = 0
+preY = 0
+
+for(i in 1:10000)
+{
+  if(pre == 1)
+  {
+    preN = preN + 1
+  }
+  else
+  {
+    preY = preY + 1
+  }
+  
+  if(preN == 3400)
+  {
+    if(preY == 6600)
+    {
+      #11
+      print("Full")
+    }
+    else
+    {
+      #10
+      number = c(2)
+      pre = sample(number,1)
+      criminal[i,7] = pre
+    }
+  }
+  else
+  {
+    if(preY == 6600)
+    {
+      #01
+      number = c(1)
+      pre = sample(number,1)
+      criminal[i,7] = pre
+    }
+    else
+    {
+      #00
+      number = c(1,2)
+      pre = sample(number,1)
+      criminal[i,7] = pre
     }
   }
 }
