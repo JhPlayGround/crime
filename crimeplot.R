@@ -53,7 +53,11 @@ barplot(time,xlab = " Time ",ylab = "number of persons",main = "Crime Time crimi
 
 barplot(type,xlab = "Type",ylab = "number of persons",main = "Crime Type criminal",col="black",names=c("Muder","Robber","Rape","Arson","Theft","Assault"))
 
-barplot(previous,xlab = "Previous",ylab = "number of persons",main = "Previous criminal",col="black",names=c("No","Yes"))
-pie(previous)
+lab = c("No","Yes")
+pct = previous / sum(previous)*100
+lab = paste(lab,pct,"%")
+pie(previous,main = "Previous criminal\n(number of persons)",labels=lab)
+
+
 
 #barplot(spot,xlab = "0 Woman | 1 Man",ylab = "number of persons",main = "Crime Spot",col="black")
