@@ -1,151 +1,8 @@
 setwd("D:/crime")
 
-crimeSexAndAge = read.csv("sexAndage.csv",header=T,stringsAsFactors = F)
 criminal = read.csv("criminal.csv",header=T,stringsAsFactors = F)
-crimeday = read.csv("crimeday.csv",header=T,stringsAsFactors = F)
-crimeTime = read.csv("crimeTime.csv",header=T,stringsAsFactors = F)
-crimePrevious = read.csv("crimePrevious.csv",header=T,stringsAsFactors = F)
-crimeSexAndAge[22,1] = "10~19"
-crimeSexAndAge[23,1] = "20~29"
-crimeSexAndAge[24,1] = "30~39"
-crimeSexAndAge[25,1] = "40~49"
-crimeSexAndAge[26,1] = "50~59"
-crimeSexAndAge[27,1] = "60~69"
-crimeSexAndAge[28,1] = "70~79"
-crimeSexAndAge[21,2] = "2012"
-crimeSexAndAge[21,3] = "2013"
-crimeSexAndAge[21,4] = "2014"
-crimeSexAndAge[21,5] = "2015"
-crimeSexAndAge[21,6] = "2016"
-crimeSexAndAge[21,7] = "Total"
-crimeSexAndAge[21,8] = "Percentage"
 
-#####################2012  M&W Add Age#######################################
-k = 2
-for(i in 22:28)
-{
-  for(j in 3:8)
-  {
-    crimeSexAndAge[i,2] = as.integer(crimeSexAndAge[i,2]) + as.integer(crimeSexAndAge[j,k])
-  }
-  k = k + 1
-}
-
-k = 2
-for(i in 22:28)
-{
-  for(j in 14:19)
-  {
-    crimeSexAndAge[i,2] = as.integer(crimeSexAndAge[i,2]) + as.integer(crimeSexAndAge[j,k])
-  }
-  k = k + 1
-}
-
-#####################2013  M&W Add Age#######################################
-k = 9
-for(i in 22:28)
-{
-  for(j in 3:8)
-  {
-    crimeSexAndAge[i,3] = as.integer(crimeSexAndAge[i,3]) + as.integer(crimeSexAndAge[j,k])
-  }
-  k = k + 1
-}
-
-k = 9
-for(i in 22:28)
-{
-  for(j in 14:19)
-  {
-    crimeSexAndAge[i,3] = as.integer(crimeSexAndAge[i,3]) + as.integer(crimeSexAndAge[j,k])
-  }
-  k = k + 1
-}
-
-#####################2014  M&W Add Age#######################################
-k = 16
-for(i in 22:28)
-{
-  for(j in 3:8)
-  {
-    crimeSexAndAge[i,4] = as.integer(crimeSexAndAge[i,4]) + as.integer(crimeSexAndAge[j,k])
-  }
-  k = k + 1
-}
-
-k = 16
-for(i in 22:28)
-{
-  for(j in 14:19)
-  {
-    crimeSexAndAge[i,4] = as.integer(crimeSexAndAge[i,4]) + as.integer(crimeSexAndAge[j,k])
-  }
-  k = k + 1
-}
-
-
-#####################2015  M&W Add Age#######################################
-k = 23
-for(i in 22:28)
-{
-  for(j in 3:8)
-  {
-    crimeSexAndAge[i,5] = as.integer(crimeSexAndAge[i,5]) + as.integer(crimeSexAndAge[j,k])
-  }
-  k = k + 1
-}
-
-k = 23
-for(i in 22:28)
-{
-  for(j in 14:19)
-  {
-    crimeSexAndAge[i,5] = as.integer(crimeSexAndAge[i,5]) + as.integer(crimeSexAndAge[j,k])
-  }
-  k = k + 1
-}
-
-
-#####################2016  M&W Add Age#######################################
-k = 30
-for(i in 22:28)
-{
-  for(j in 3:8)
-  {
-    crimeSexAndAge[i,6] = as.integer(crimeSexAndAge[i,6]) + as.integer(crimeSexAndAge[j,k])
-  }
-  k = k + 1
-}
-
-k = 30
-for(i in 22:28)
-{
-  for(j in 14:19)
-  {
-    crimeSexAndAge[i,6] = as.integer(crimeSexAndAge[i,6]) + as.integer(crimeSexAndAge[j,k])
-  }
-  k = k + 1
-}
-##################### Total #######################################
-for(i in 22:28)
-{
-  crimeSexAndAge[i,7] = sum(as.integer(crimeSexAndAge[i,2:6]))
-}
-
-##################### Percentage  #######################################
-for(i in 22:28)
-{
-  crimeSexAndAge[i,8] = as.integer(crimeSexAndAge[i,7])/sum(as.integer(crimeSexAndAge[22:28,7]))
-}
-
-plot(crimeSexAndAge[22:28,7],type="h", axes=F, ann=F)
-axis(1, at=1:7, lab=c("10대","20대","30대","40대","50대","60대","70ㄷ"))
-axis(2, ylim=c(50000:350000))
-title(main = "나이별 범죄자 수", col.main="red")
-title(xlab = "나이", col.lab = "black")
-title(ylab = "범죄자 수", col.lab="blue")
-write.csv(crimeSexAndAge,"sexAndage.csv")
-########################가HIgh범죄자 만들기?##########################################
+########################나이##########################################
 age = 0
 age10 = 0
 age20 = 0
@@ -7409,3 +7266,7266 @@ for(i in 1:10000)
   }
 }
 write.csv(criminal,"criminal.csv")
+##############################################장소#############################################
+spot = 0
+spot1 = 0
+spot2 = 0
+spot3 = 0
+spot4 = 0
+spot5 = 0
+spot6 = 0
+spot7 = 0
+spot8 = 0
+spot9 = 0
+spot10 = 0
+
+for(i in 1:10000)
+{
+  if(spot == 1)
+  {
+    spot1 = spot1 + 1
+  }
+  else if(spot == 2)
+  {
+    spot2 = spot2 + 1
+  }
+  else if(spot == 3)
+  {
+    spot3 = spot3 + 1
+  }
+  else if(spot == 4)
+  {
+    spot4 = spot4 + 1
+  }
+  else if(spot == 5)
+  {
+    spot5 = spot5 + 1
+  }
+  else if(spot == 6)
+  {
+    spot6 = spot6 + 1
+  }
+  else if(spot == 7)
+  {
+    spot7 = spot7 + 1
+  }
+  else if(spot == 8)
+  {
+    spot8 = spot8 + 1
+  }
+  else if(spot == 9)
+  {
+    spot9 = spot9 + 1
+  }
+  else
+  {
+    spot10 = spot10 + 1
+  }
+  
+  if(spot1 == 5550)
+  {
+    if(spot2 == 2160)
+    {
+      if(spot3 == 210)
+      {
+        if(spot4 == 250)
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111111111
+                    }
+                    else
+                    {
+                      #1111111110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111111101
+                    }
+                    else
+                    {
+                      #1111111100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111111011
+                    }
+                    else
+                    {
+                      #1111111010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111111001
+                    }
+                    else
+                    {
+                      #1111111000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111110111
+                    }
+                    else
+                    {
+                      #1111110110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111110101
+                    }
+                    else
+                    {
+                      #1111110100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111110011
+                    }
+                    else
+                    {
+                      #1111110010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111110001
+                    }
+                    else
+                    {
+                      #1111110000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111101111
+                    }
+                    else
+                    {
+                      #1111101110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111101101
+                    }
+                    else
+                    {
+                      #1111101100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111101011
+                    }
+                    else
+                    {
+                      #1111101010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111101001
+                    }
+                    else
+                    {
+                      #1111101000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111100111
+                    }
+                    else
+                    {
+                      #1111100110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111100101
+                    }
+                    else
+                    {
+                      #1111100100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111100011
+                    }
+                    else
+                    {
+                      #1111100010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111100001
+                    }
+                    else
+                    {
+                      #1111100000
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111011111
+                    }
+                    else
+                    {
+                      #1111011110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111011101
+                    }
+                    else
+                    {
+                      #1111011100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111011011
+                    }
+                    else
+                    {
+                      #1111011010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111011001
+                    }
+                    else
+                    {
+                      #1111011000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111010111
+                    }
+                    else
+                    {
+                      #1111010110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111010101
+                    }
+                    else
+                    {
+                      #1111010100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111010011
+                    }
+                    else
+                    {
+                      #1111010010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111010001
+                    }
+                    else
+                    {
+                      #1111010000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111001111
+                    }
+                    else
+                    {
+                      #1111001110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111001101
+                    }
+                    else
+                    {
+                      #1111001100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111001011
+                    }
+                    else
+                    {
+                      #1111001010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111001001
+                    }
+                    else
+                    {
+                      #1111001000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111000111
+                    }
+                    else
+                    {
+                      #1111000110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111000101
+                    }
+                    else
+                    {
+                      #1111000100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111000011
+                    }
+                    else
+                    {
+                      #1111000010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1111000001
+                    }
+                    else
+                    {
+                      #1111000000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110111111
+                    }
+                    else
+                    {
+                      #1110111110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110111101
+                    }
+                    else
+                    {
+                      #1110111100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110111011
+                    }
+                    else
+                    {
+                      #1110111010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110111001
+                    }
+                    else
+                    {
+                      #1110111000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110110111
+                    }
+                    else
+                    {
+                      #1110110110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110110101
+                    }
+                    else
+                    {
+                      #1110110100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110110011
+                    }
+                    else
+                    {
+                      #1110110010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110110001
+                    }
+                    else
+                    {
+                      #1110110000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110101111
+                    }
+                    else
+                    {
+                      #1110101110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110101101
+                    }
+                    else
+                    {
+                      #1110101100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110101011
+                    }
+                    else
+                    {
+                      #1110101010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110101001
+                    }
+                    else
+                    {
+                      #1110101000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110100111
+                    }
+                    else
+                    {
+                      #1110100110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110100101
+                    }
+                    else
+                    {
+                      #1110100100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110100011
+                    }
+                    else
+                    {
+                      #1110100010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110100001
+                    }
+                    else
+                    {
+                      #1110100000
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110011111
+                    }
+                    else
+                    {
+                      #1110011110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110011101
+                    }
+                    else
+                    {
+                      #1110011100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110011011
+                    }
+                    else
+                    {
+                      #1110011010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110011001
+                    }
+                    else
+                    {
+                      #1110011000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110010111
+                    }
+                    else
+                    {
+                      #1110010110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110010101
+                    }
+                    else
+                    {
+                      #1110010100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110010011
+                    }
+                    else
+                    {
+                      #1110010010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110010001
+                    }
+                    else
+                    {
+                      #1110010000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110001111
+                    }
+                    else
+                    {
+                      #1110001110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110001101
+                    }
+                    else
+                    {
+                      #1110001100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110001011
+                    }
+                    else
+                    {
+                      #1110001010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110001001
+                    }
+                    else
+                    {
+                      #1110001000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110000111
+                    }
+                    else
+                    {
+                      #1110000110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110000101
+                    }
+                    else
+                    {
+                      #1110000100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110000011
+                    }
+                    else
+                    {
+                      #1110000010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1110000001
+                    }
+                    else
+                    {
+                      #1110000000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(spot4 == 250)
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101111111
+                    }
+                    else
+                    {
+                      #1101111110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101111101
+                    }
+                    else
+                    {
+                      #1101111100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101111011
+                    }
+                    else
+                    {
+                      #1101111010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101111001
+                    }
+                    else
+                    {
+                      #1101111000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101110111
+                    }
+                    else
+                    {
+                      #1101110110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101110101
+                    }
+                    else
+                    {
+                      #1101110100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101110011
+                    }
+                    else
+                    {
+                      #1101110010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101110001
+                    }
+                    else
+                    {
+                      #1101110000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101101111
+                    }
+                    else
+                    {
+                      #1101101110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101101101
+                    }
+                    else
+                    {
+                      #1101101100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101101011
+                    }
+                    else
+                    {
+                      #1101101010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101101001
+                    }
+                    else
+                    {
+                      #1101101000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101100111
+                    }
+                    else
+                    {
+                      #1101100110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101100101
+                    }
+                    else
+                    {
+                      #1101100100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101100011
+                    }
+                    else
+                    {
+                      #1101100010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101100001
+                    }
+                    else
+                    {
+                      #1101100000
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101011111
+                    }
+                    else
+                    {
+                      #1101011110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101011101
+                    }
+                    else
+                    {
+                      #1101011100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101011011
+                    }
+                    else
+                    {
+                      #1101011010
+                    }
+                  }
+                  else
+                  {
+                    #110101100
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101010111
+                    }
+                    else
+                    {
+                      #1101010110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101010101
+                    }
+                    else
+                    {
+                      #1101010100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101010011
+                    }
+                    else
+                    {
+                      #1101010010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101010001
+                    }
+                    else
+                    {
+                      #1101010000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101001111
+                    }
+                    else
+                    {
+                      #1101001110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101001101
+                    }
+                    else
+                    {
+                      #1101001100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101001011
+                    }
+                    else
+                    {
+                      #1101001010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101001001
+                    }
+                    else
+                    {
+                      #1101001000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101000111
+                    }
+                    else
+                    {
+                      #1101000110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101000101
+                    }
+                    else
+                    {
+                      #1101000100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101000011
+                    }
+                    else
+                    {
+                      #1101000010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1101000001
+                    }
+                    else
+                    {
+                      #1101000000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100111111
+                    }
+                    else
+                    {
+                      #1100111110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100111101
+                    }
+                    else
+                    {
+                      #1100111100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100111011
+                    }
+                    else
+                    {
+                      #1100111010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100111001
+                    }
+                    else
+                    {
+                      #1100111000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100110111
+                    }
+                    else
+                    {
+                      #1100110110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100110101
+                    }
+                    else
+                    {
+                      #1100110100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100110011
+                    }
+                    else
+                    {
+                      #1100110010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100110001
+                    }
+                    else
+                    {
+                      #1100110000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100101111
+                    }
+                    else
+                    {
+                      #1100101110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100101101
+                    }
+                    else
+                    {
+                      #1100101100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100101011
+                    }
+                    else
+                    {
+                      #1100101010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100101001
+                    }
+                    else
+                    {
+                      #1100101000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100100111
+                    }
+                    else
+                    {
+                      #1100100110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100100101
+                    }
+                    else
+                    {
+                      #1100100100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100100011
+                    }
+                    else
+                    {
+                      #1100100010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100100001
+                    }
+                    else
+                    {
+                      #1100100000
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100011111
+                    }
+                    else
+                    {
+                      #1100011110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100011101
+                    }
+                    else
+                    {
+                      #1100011100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100011011
+                    }
+                    else
+                    {
+                      #1100011010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100011001
+                    }
+                    else
+                    {
+                      #1100011000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100010111
+                    }
+                    else
+                    {
+                      #1100010110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100010101
+                    }
+                    else
+                    {
+                      #1100010100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100010011
+                    }
+                    else
+                    {
+                      #1100010010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100010001
+                    }
+                    else
+                    {
+                      #1100010000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100001111
+                    }
+                    else
+                    {
+                      #1100001110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100001101
+                    }
+                    else
+                    {
+                      #1100001100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100001011
+                    }
+                    else
+                    {
+                      #1100001010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100001001
+                    }
+                    else
+                    {
+                      #1100001000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100000111
+                    }
+                    else
+                    {
+                      #1100000110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100000101
+                    }
+                    else
+                    {
+                      #1100000100 
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1100000011
+                    }
+                    else
+                    {
+                      #1100000010
+                    }
+                  }
+                  else
+                  {
+                    
+                    if(spot10 == 190)
+                    {
+                      #1100000001
+                    }
+                    else
+                    {
+                      #1100000000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    else
+    {
+      if(spot3 == 210)
+      {
+        if(spot4 == 250)
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011111111
+                    }
+                    else
+                    {
+                      #1011111110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011111101
+                    }
+                    else
+                    {
+                      #1011111100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011111011
+                    }
+                    else
+                    {
+                      #1011111010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011111001
+                    }
+                    else
+                    {
+                      #1011111000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011110111
+                    }
+                    else
+                    {
+                      #1011110110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011110101
+                    }
+                    else
+                    {
+                      #1011110100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011110011
+                    }
+                    else
+                    {
+                      #1011110010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011110001
+                    }
+                    else
+                    {
+                      #1011110000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011101111
+                    }
+                    else
+                    {
+                      #1011101110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011101101
+                    }
+                    else
+                    {
+                      #1011101100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011101011
+                    }
+                    else
+                    {
+                      #1011101010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011101001
+                    }
+                    else
+                    {
+                      #1011101000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011100111
+                    }
+                    else
+                    {
+                      #1011100110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011100101
+                    }
+                    else
+                    {
+                      #1011100100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011100011
+                    }
+                    else
+                    {
+                      #1011100010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011100001
+                    }
+                    else
+                    {
+                      #1011100000
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011011111
+                    }
+                    else
+                    {
+                      #1011011110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011011101
+                    }
+                    else
+                    {
+                      #1011011100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011011011
+                    }
+                    else
+                    {
+                      #1011011010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011011001
+                    }
+                    else
+                    {
+                      #1011011000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011010111
+                    }
+                    else
+                    {
+                      #1011010110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011010101
+                    }
+                    else
+                    {
+                      #1011010100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011010011
+                    }
+                    else
+                    {
+                      #1011010010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011010001
+                    }
+                    else
+                    {
+                      #1011010000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011001111
+                    }
+                    else
+                    {
+                      #1011001110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011001101
+                    }
+                    else
+                    {
+                      #1011001100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011001011
+                    }
+                    else
+                    {
+                      #1011001010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011001001
+                    }
+                    else
+                    {
+                      #1011001000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011000111
+                    }
+                    else
+                    {
+                      #1011000110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011000101
+                    }
+                    else
+                    {
+                      #1011000100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011000011
+                    }
+                    else
+                    {
+                      #1011000010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1011000001
+                    }
+                    else
+                    {
+                      #1011000000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010111111
+                    }
+                    else
+                    {
+                      #1010111110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010111101
+                    }
+                    else
+                    {
+                      #1010111100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010111011
+                    }
+                    else
+                    {
+                      #1010111010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010111001
+                    }
+                    else
+                    {
+                      #1010111000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010110111
+                    }
+                    else
+                    {
+                      #1010110110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010110101
+                    }
+                    else
+                    {
+                      #1010110100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010110011
+                    }
+                    else
+                    {
+                      #1010110010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010110001
+                    }
+                    else
+                    {
+                      #1010110000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010101111
+                    }
+                    else
+                    {
+                      #1010101110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010101101
+                    }
+                    else
+                    {
+                      #1010101100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010101011
+                    }
+                    else
+                    {
+                      #1010101010 
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010101001
+                    }
+                    else
+                    {
+                      #1010101000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010100111
+                    }
+                    else
+                    {
+                      #1010100110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010100101
+                    }
+                    else
+                    {
+                      #1010100100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010100011
+                    }
+                    else
+                    {
+                      #1010100010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010100001
+                    }
+                    else
+                    {
+                      #1010100000
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010011111
+                    }
+                    else
+                    {
+                      #1010011110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010011101
+                    }
+                    else
+                    {
+                      #1010011100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010011011
+                    }
+                    else
+                    {
+                      #1010011010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010011001
+                    }
+                    else
+                    {
+                      #1010011000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010010111
+                    }
+                    else
+                    {
+                      #1010010110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010010101
+                    }
+                    else
+                    {
+                      #1010010100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010010011
+                    }
+                    else
+                    {
+                      #1010010010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010010001
+                    }
+                    else
+                    {
+                      #1010010000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010001111
+                    }
+                    else
+                    {
+                      #1010001110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010001101
+                    }
+                    else
+                    {
+                      #1010001100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010001011
+                    }
+                    else
+                    {
+                      #1010001010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010001001
+                    }
+                    else
+                    {
+                      #1010001000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010000111
+                    }
+                    else
+                    {
+                      #1010000110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010000101
+                    }
+                    else
+                    {
+                      #1010000100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010000011
+                    }
+                    else
+                    {
+                      #1010000010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1010000001
+                    }
+                    else
+                    {
+                      #1010000000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(spot4 == 250)
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001111111
+                    }
+                    else
+                    {
+                      #1001111110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001111101
+                    }
+                    else
+                    {
+                      #1001111100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001111011
+                    }
+                    else
+                    {
+                      #1001111010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001111001
+                    }
+                    else
+                    {
+                      #1001111000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001110111
+                    }
+                    else
+                    {
+                      #1001110110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001110101
+                    }
+                    else
+                    {
+                      #1001110100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001110011
+                    }
+                    else
+                    {
+                      #1001110010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001110001
+                    }
+                    else
+                    {
+                      #1001110000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001101111
+                    }
+                    else
+                    {
+                      #1001101110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001101101
+                    }
+                    else
+                    {
+                      #1001101100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001101011
+                    }
+                    else
+                    {
+                      #1001101010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001101001
+                    }
+                    else
+                    {
+                      #1001101000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001100111
+                    }
+                    else
+                    {
+                      #1001100110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001100101
+                    }
+                    else
+                    {
+                      #1001100100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001100011
+                    }
+                    else
+                    {
+                      #1001100010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001100001
+                    }
+                    else
+                    {
+                      #1001100000
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001011111
+                    }
+                    else
+                    {
+                      #1001011110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001011101
+                    }
+                    else
+                    {
+                      #1001011100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001011011
+                    }
+                    else
+                    {
+                      #1001011010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001011001
+                    }
+                    else
+                    {
+                      #1001011000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001010111
+                    }
+                    else
+                    {
+                      #1001010110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001010101
+                    }
+                    else
+                    {
+                      #1001010100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001010011
+                    }
+                    else
+                    {
+                      #1001010010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001010001
+                    }
+                    else
+                    {
+                      #1001010000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001001111
+                    }
+                    else
+                    {
+                      #1001001110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001001101
+                    }
+                    else
+                    {
+                      #1001001100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001001011
+                    }
+                    else
+                    {
+                      #1001001010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001001001
+                    }
+                    else
+                    {
+                      #1001001000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001000111
+                    }
+                    else
+                    {
+                      #1001000110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001000101
+                    }
+                    else
+                    {
+                      #1001000100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001000011
+                    }
+                    else
+                    {
+                      #1001000010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1001000001
+                    }
+                    else
+                    {
+                      #1001000000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000111111
+                    }
+                    else
+                    {
+                      #1000111110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000111101
+                    }
+                    else
+                    {
+                      #1000111100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000111011
+                    }
+                    else
+                    {
+                      #1000111010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000111001
+                    }
+                    else
+                    {
+                      #1000111000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000110111
+                    }
+                    else
+                    {
+                      #1000110110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000110101
+                    }
+                    else
+                    {
+                      #1000110100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000110011
+                    }
+                    else
+                    {
+                      #1000110010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000110001
+                    }
+                    else
+                    {
+                      #1000110000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000101111
+                    }
+                    else
+                    {
+                      #1000101110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000101101
+                    }
+                    else
+                    {
+                      #1000101100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000101011
+                    }
+                    else
+                    {
+                      #1000101010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000101001
+                    }
+                    else
+                    {
+                      #1000101000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000100111
+                    }
+                    else
+                    {
+                      #1000100110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000100101
+                    }
+                    else
+                    {
+                      #1000100100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000100011
+                    }
+                    else
+                    {
+                      #1000100010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000100001
+                    }
+                    else
+                    {
+                      #1000100000
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000011111
+                    }
+                    else
+                    {
+                      #1000011110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000011101
+                    }
+                    else
+                    {
+                      #1000011100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000011011
+                    }
+                    else
+                    {
+                      #1000011010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000011001
+                    }
+                    else
+                    {
+                      #1000011000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000010111
+                    }
+                    else
+                    {
+                      #1000010110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000010101
+                    }
+                    else
+                    {
+                      #1000010100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000010011
+                    }
+                    else
+                    {
+                      #1000010010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000010001
+                    }
+                    else
+                    {
+                      #1000010000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000001111
+                    }
+                    else
+                    {
+                      #1000001110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000001101
+                    }
+                    else
+                    {
+                      #1000001100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000001011
+                    }
+                    else
+                    {
+                      #1000001010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000001001
+                    }
+                    else
+                    {
+                      #1000001000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000000111
+                    }
+                    else
+                    {
+                      #1000000110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000000101
+                    }
+                    else
+                    {
+                      #1000000100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000000011
+                    }
+                    else
+                    {
+                      #1000000010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #1000000001
+                    }
+                    else
+                    {
+                      #1000000000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }##########첫 else문#############
+  else
+  {
+    if(spot2 == 2160)
+    {
+      if(spot3 == 210)
+      {
+        if(spot4 == 250)
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111111111
+                    }
+                    else
+                    {
+                      #0111111110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111111101
+                    }
+                    else
+                    {
+                      #0111111100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111111011
+                    }
+                    else
+                    {
+                      #0111111010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111111001
+                    }
+                    else
+                    {
+                      #0111111000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111110111
+                    }
+                    else
+                    {
+                      #0111110110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111110101
+                    }
+                    else
+                    {
+                      #0111110100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111110011
+                    }
+                    else
+                    {
+                      #0111110010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111110001
+                    }
+                    else
+                    {
+                      #0111110000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111101111
+                    }
+                    else
+                    {
+                      #0111101110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111101101
+                    }
+                    else
+                    {
+                      #0111101100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111101011
+                    }
+                    else
+                    {
+                      #0111101010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111101001
+                    }
+                    else
+                    {
+                      #0111101000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111100111
+                    }
+                    else
+                    {
+                      #0111100110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111100101
+                    }
+                    else
+                    {
+                      #0111100100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111100011
+                    }
+                    else
+                    {
+                      #0111100010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111100001
+                    }
+                    else
+                    {
+                      #0111100000
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111011111
+                    }
+                    else
+                    {
+                      #0111011110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111011101
+                    }
+                    else
+                    {
+                      #0111011100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111011011
+                    }
+                    else
+                    {
+                      #0111011010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111011001
+                    }
+                    else
+                    {
+                      #0111011000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111010111
+                    }
+                    else
+                    {
+                      #0111010110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111010101
+                    }
+                    else
+                    {
+                      #0111010100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111010011
+                    }
+                    else
+                    {
+                      #0111010010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111010001
+                    }
+                    else
+                    {
+                      #0111010000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111001111
+                    }
+                    else
+                    {
+                      #0111001110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111001101
+                    }
+                    else
+                    {
+                      #0111001100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111001011
+                    }
+                    else
+                    {
+                      #0111001010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111001001
+                    }
+                    else
+                    {
+                      #0111001000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111000111
+                    }
+                    else
+                    {
+                      #0111000110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111000101
+                    }
+                    else
+                    {
+                      #0111000100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111000011
+                    }
+                    else
+                    {
+                      #0111000010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0111000001
+                    }
+                    else
+                    {
+                      #0111000000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110111111
+                    }
+                    else
+                    {
+                      #0110111110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110111101
+                    }
+                    else
+                    {
+                      #0110111100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110111011
+                    }
+                    else
+                    {
+                      #0110111010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110111001
+                    }
+                    else
+                    {
+                      #0110111000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110110111
+                    }
+                    else
+                    {
+                      #0110110110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110110101
+                    }
+                    else
+                    {
+                      #0110110100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110110011
+                    }
+                    else
+                    {
+                      #0110110010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110110001
+                    }
+                    else
+                    {
+                      #0110110000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110101111
+                    }
+                    else
+                    {
+                      #0110101110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110101101
+                    }
+                    else
+                    {
+                      #0110101100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110101011
+                    }
+                    else
+                    {
+                      #0110101010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110101001
+                    }
+                    else
+                    {
+                      #0110101000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110100111
+                    }
+                    else
+                    {
+                      #0110100110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110100101
+                    }
+                    else
+                    {
+                      #0110100100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110100011
+                    }
+                    else
+                    {
+                      #0110100010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110100001
+                    }
+                    else
+                    {
+                      #0110100000
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110011111
+                    }
+                    else
+                    {
+                      #0110011110 
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110011101
+                    }
+                    else
+                    {
+                      #0110011100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110011011
+                    }
+                    else
+                    {
+                      #0110011010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110011001
+                    }
+                    else
+                    {
+                      #0110011000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110010111
+                    }
+                    else
+                    {
+                      #0110010110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110010101
+                    }
+                    else
+                    {
+                      #0110010100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110010011
+                    }
+                    else
+                    {
+                      #0110010010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110010001
+                    }
+                    else
+                    {
+                      #0110010000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110001111
+                    }
+                    else
+                    {
+                      #0110001110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110001101
+                    }
+                    else
+                    {
+                      #0110001100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110001011
+                    }
+                    else
+                    {
+                      #0110001010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110001001
+                    }
+                    else
+                    {
+                      #0110001000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110000111
+                    }
+                    else
+                    {
+                      #0110000110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110000101
+                    }
+                    else
+                    {
+                      #0110000100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110000011
+                    }
+                    else
+                    {
+                      #0110000010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0110000001
+                    }
+                    else
+                    {
+                      #0110000000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(spot4 == 250)
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101111111
+                    }
+                    else
+                    {
+                      #0101111110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101111101
+                    }
+                    else
+                    {
+                      #0101111100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101111011
+                    }
+                    else
+                    {
+                      #0101111010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101111001
+                    }
+                    else
+                    {
+                      #0101111000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101110111
+                    }
+                    else
+                    {
+                      #0101110110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101110101
+                    }
+                    else
+                    {
+                      #0101110100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101110011
+                    }
+                    else
+                    {
+                      #0101110010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101110001
+                    }
+                    else
+                    {
+                      #0101110000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101101111
+                    }
+                    else
+                    {
+                      #0101101110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101101101
+                    }
+                    else
+                    {
+                      #0101101100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101101011
+                    }
+                    else
+                    {
+                      #0101101010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101101001
+                    }
+                    else
+                    {
+                      #0101101000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101100111
+                    }
+                    else
+                    {
+                      #0101100110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101100101
+                    }
+                    else
+                    {
+                      #0101100100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101100011
+                    }
+                    else
+                    {
+                      #0101100010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101100001
+                    }
+                    else
+                    {
+                      #0101100000
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101011111
+                    }
+                    else
+                    {
+                      #0101011110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101011101
+                    }
+                    else
+                    {
+                      #0101011100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101011011
+                    }
+                    else
+                    {
+                      #0101011010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101011001
+                    }
+                    else
+                    {
+                      #0101011000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101010111
+                    }
+                    else
+                    {
+                      #0101010110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101010101
+                    }
+                    else
+                    {
+                      #0101010100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101010011
+                    }
+                    else
+                    {
+                      #0101010010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101010001
+                    }
+                    else
+                    {
+                      #0101010000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101001111
+                    }
+                    else
+                    {
+                      #0101001110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101001101
+                    }
+                    else
+                    {
+                      #0101001100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101001011
+                    }
+                    else
+                    {
+                      #0101001010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101001001
+                    }
+                    else
+                    {
+                      #0101001000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101000111
+                    }
+                    else
+                    {
+                      #0101000110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101000101
+                    }
+                    else
+                    {
+                      #0101000100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101000011
+                    }
+                    else
+                    {
+                      #0101000010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0101000001
+                    }
+                    else
+                    {
+                      #0101000000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100111111
+                    }
+                    else
+                    {
+                      #0100111110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100111101
+                    }
+                    else
+                    {
+                      #0100111100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100111011
+                    }
+                    else
+                    {
+                      #0100111010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100111001
+                    }
+                    else
+                    {
+                      #0100111000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100110111
+                    }
+                    else
+                    {
+                      #0100110110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100110101
+                    }
+                    else
+                    {
+                      #0100110100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100110011
+                    }
+                    else
+                    {
+                      #0100110010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100110001
+                    }
+                    else
+                    {
+                      #0100110000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100101111
+                    }
+                    else
+                    {
+                      #0100101110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #010010110
+                    }
+                    else
+                    {
+                      #010010110
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100101011
+                    }
+                    else
+                    {
+                      #0100101010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100101001
+                    }
+                    else
+                    {
+                      #0100101000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100100111
+                    }
+                    else
+                    {
+                      #0100100110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100100101
+                    }
+                    else
+                    {
+                      #0100100100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100100011
+                    }
+                    else
+                    {
+                      #0100100010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100100001
+                    }
+                    else
+                    {
+                      #0100100000
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100011111
+                    }
+                    else
+                    {
+                      #0100011110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100011101
+                    }
+                    else
+                    {
+                      #0100011100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100011011
+                    }
+                    else
+                    {
+                      #0100011010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100011001
+                    }
+                    else
+                    {
+                      #0100011000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100010111
+                    }
+                    else
+                    {
+                      #0100010110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100010101
+                    }
+                    else
+                    {
+                      #0100010100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100010011
+                    }
+                    else
+                    {
+                      #0100010010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100010001
+                    }
+                    else
+                    {
+                      #0100010000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100001111
+                    }
+                    else
+                    {
+                      #0100001110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100001101
+                    }
+                    else
+                    {
+                      #0100001100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100001011
+                    }
+                    else
+                    {
+                      #0100001010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100001001
+                    }
+                    else
+                    {
+                      #0100001000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100000111
+                    }
+                    else
+                    {
+                      #0100000110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100000101
+                    }
+                    else
+                    {
+                      #0100000100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100000011
+                    }
+                    else
+                    {
+                      #0100000010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0100000001
+                    }
+                    else
+                    {
+                      #0100000000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    else
+    {
+      if(spot3 == 210)
+      {
+        if(spot4 == 250)
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011111111
+                    }
+                    else
+                    {
+                      #0011111110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011111101
+                    }
+                    else
+                    {
+                      #0011111100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011111011
+                    }
+                    else
+                    {
+                      #0011111010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011111001
+                    }
+                    else
+                    {
+                      #0011111000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011110111
+                    }
+                    else
+                    {
+                      #0011110110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011110101
+                    }
+                    else
+                    {
+                      #0011110100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011110011
+                    }
+                    else
+                    {
+                      #0011110010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011110001
+                    }
+                    else
+                    {
+                      #0011110000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011101111
+                    }
+                    else
+                    {
+                      #0011101110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011101101
+                    }
+                    else
+                    {
+                      #0011101100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011101011
+                    }
+                    else
+                    {
+                      #0011101010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011101001
+                    }
+                    else
+                    {
+                      #0011101000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011100111
+                    }
+                    else
+                    {
+                      #0011100110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011100101
+                    }
+                    else
+                    {
+                      #0011100100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011100011
+                    }
+                    else
+                    {
+                      #0011100010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011100001
+                    }
+                    else
+                    {
+                      #0011100000
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011011111
+                    }
+                    else
+                    {
+                      #0011011110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011011101
+                    }
+                    else
+                    {
+                      #0011011100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011011011
+                    }
+                    else
+                    {
+                      #0011011010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011011001
+                    }
+                    else
+                    {
+                      #0011011000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011010111
+                    }
+                    else
+                    {
+                      #0011010110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011010101
+                    }
+                    else
+                    {
+                      #0011010100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011010011
+                    }
+                    else
+                    {
+                      #0011010010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011010001
+                    }
+                    else
+                    {
+                      #0011010000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011001111
+                    }
+                    else
+                    {
+                      #0011001110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011001101
+                    }
+                    else
+                    {
+                      #0011001100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011001011
+                    }
+                    else
+                    {
+                      #0011001010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011001001
+                    }
+                    else
+                    {
+                      #0011001000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011000111
+                    }
+                    else
+                    {
+                      #0011000110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011000101
+                    }
+                    else
+                    {
+                      #0011000100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011000011
+                    }
+                    else
+                    {
+                      #0011000010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0011000001
+                    }
+                    else
+                    {
+                      #0011000000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010111111
+                    }
+                    else
+                    {
+                      #0010111110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010111101
+                    }
+                    else
+                    {
+                      #0010111100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010111011
+                    }
+                    else
+                    {
+                      #0010111010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010111001
+                    }
+                    else
+                    {
+                      #0010111000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010110111
+                    }
+                    else
+                    {
+                      #0010110110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010110101
+                    }
+                    else
+                    {
+                      #0010110100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010110011
+                    }
+                    else
+                    {
+                      #0010110010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010110001
+                    }
+                    else
+                    {
+                      #0010110000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010101111
+                    }
+                    else
+                    {
+                      #0010101110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010101101
+                    }
+                    else
+                    {
+                      #0010101100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010101011
+                    }
+                    else
+                    {
+                      #0010101010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010101001
+                    }
+                    else
+                    {
+                      #0010101000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010100111
+                    }
+                    else
+                    {
+                      #0010100110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010100101
+                    }
+                    else
+                    {
+                      #0010100100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010100011
+                    }
+                    else
+                    {
+                      #0010100010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010100001
+                    }
+                    else
+                    {
+                      #0010100000
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010011111
+                    }
+                    else
+                    {
+                      #0010011110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010011101
+                    }
+                    else
+                    {
+                      #0010011100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010011011
+                    }
+                    else
+                    {
+                      #0010011010
+                    }
+                  }
+                  else
+                  {
+                    
+                    if(spot10 == 190)
+                    {
+                      #0010011001
+                    }
+                    else
+                    {
+                      #0010011000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    
+                    if(spot10 == 190)
+                    {
+                      #0010010111
+                    }
+                    else
+                    {
+                      #0010010110
+                    }
+                  }
+                  else
+                  {
+                    
+                    if(spot10 == 190)
+                    {
+                      #0010010101
+                    }
+                    else
+                    {
+                      #0010010100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010010011
+                    }
+                    else
+                    {
+                      #0010010010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010010001
+                    }
+                    else
+                    {
+                      #0010010000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010001111
+                    }
+                    else
+                    {
+                      #0010001110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010001101
+                    }
+                    else
+                    {
+                      #0010001100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010001011
+                    }
+                    else
+                    {
+                      #0010001010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010001001
+                    }
+                    else
+                    {
+                      #0010001000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010000111
+                    }
+                    else
+                    {
+                      #0010000110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010000101
+                    }
+                    else
+                    {
+                      #0010000100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010000011
+                    }
+                    else
+                    {
+                      #0010000010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0010000001
+                    }
+                    else
+                    {
+                      #0010000000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      else
+      {
+        if(spot4 == 250)
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001111111
+                    }
+                    else
+                    {
+                      #0001111110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001111101
+                    }
+                    else
+                    {
+                      #0001111100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001111011
+                    }
+                    else
+                    {
+                      #0001111010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001111001
+                    }
+                    else
+                    {
+                      #0001111000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #000111011
+                    }
+                    else
+                    {
+                      #000111011
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001110101
+                    }
+                    else
+                    {
+                      #0001110100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001110011
+                    }
+                    else
+                    {
+                      #0001110010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001110001
+                    }
+                    else
+                    {
+                      #0001110000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001101111
+                    }
+                    else
+                    {
+                      #0001101110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001101101
+                    }
+                    else
+                    {
+                      #0001101100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001101011
+                    }
+                    else
+                    {
+                      #0001101010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001101001
+                    }
+                    else
+                    {
+                      #0001101000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001100111
+                    }
+                    else
+                    {
+                      #0001100110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001100101
+                    }
+                    else
+                    {
+                      #0001100100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001100011
+                    }
+                    else
+                    {
+                      #0001100010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001100001
+                    }
+                    else
+                    {
+                      #0001100000
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001011111
+                    }
+                    else
+                    {
+                      #0001011110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001011101
+                    }
+                    else
+                    {
+                      #0001011100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001011011
+                    }
+                    else
+                    {
+                      #0001011010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001011001
+                    }
+                    else
+                    {
+                      #0001011000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001010111
+                    }
+                    else
+                    {
+                      #0001010110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001010101
+                    }
+                    else
+                    {
+                      #0001010100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001010011
+                    }
+                    else
+                    {
+                      #0001010010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001010001
+                    }
+                    else
+                    {
+                      #0001010000
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001001111
+                    }
+                    else
+                    {
+                      #0001001110
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001001101
+                    }
+                    else
+                    {
+                      #0001001100
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001001011
+                    }
+                    else
+                    {
+                      #0001001010
+                    }
+                  }
+                  else
+                  {
+                    if(spot10 == 190)
+                    {
+                      #0001001001
+                    }
+                    else
+                    {
+                      #0001001000
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    #000100011
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000100010
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    #000100001
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000100000
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        else
+        {
+          if(spot5 == 290)
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    #000011111
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000011110
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    #000011101
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000011100
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  
+                  if(spot9 == 530)
+                  {
+                    #000011011
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000011010
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    #000011001
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000011000
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    #000010111
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000010110
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    #000010101
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000010100
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    #000010011
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000010010
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    #000010001
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000010000
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+              }
+            }
+          }
+          else
+          {
+            if(spot6 == 290)
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    #000001111
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000001110
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    #000001101
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000001100
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  
+                  if(spot9 == 530)
+                  {
+                    #000001011
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000001010
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    #000001001
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000001000
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+              }
+            }
+            else
+            {
+              if(spot7 == 180)
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    #000000111
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000000110
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    #000000101
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000000100
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+              }
+              else
+              {
+                if(spot8 == 350)
+                {
+                  if(spot9 == 530)
+                  {
+                    #000000011
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000000010
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+                else
+                {
+                  if(spot9 == 530)
+                  {
+                    #000000001
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                  else
+                  {
+                    #000000000
+                    if(spot10 == 190)
+                    {
+                      
+                    }
+                    else
+                    {
+                      
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
