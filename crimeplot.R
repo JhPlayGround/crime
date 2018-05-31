@@ -1,5 +1,9 @@
 setwd("C:/Users/Hello world/Documents/crime")
 Total_df = read.csv("criminal.csv")
+gp = read.csv("criminalGP.csv")
+
+barplot(t(a), beside=TRUE)
+legend("topright", c("Woman", "Man"), cex=0.8, fill =c("black","gray"))
 
 #Age
 age = table(Total_df$Age)
@@ -32,7 +36,7 @@ type = table(Total_df$Type)
 previous = table(Total_df$Previous)
 
 #Crime spot
-#spot = table(Total_df$Spot)
+spot = table(Total_df$Spot)
 
 
 barplot(age,xlab = "Age",ylab = "number of persons",main = "Age criminal",col="black",names=c("10~19","20~29","30~39","40~49","50~59","60~69","70~79"))
@@ -56,4 +60,5 @@ barplot(type,xlab = "Type",ylab = "number of persons",main = "Crime Type crimina
 barplot(previous,xlab = "Previous",ylab = "number of persons",main = "Previous criminal",col="black",names=c("No","Yes"))
 pie(previous)
 
-#barplot(spot,xlab = "0 Woman | 1 Man",ylab = "number of persons",main = "Crime Spot",col="black")
+barplot(spot,xlab = "Spot",ylab = "number of persons",main = "Crime Spot",col="black",names=c("광특시","경기", "강원","충북","충남","전북","전남","경북","경남","제주"))
+
