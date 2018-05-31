@@ -60,5 +60,5 @@ barplot(type,xlab = "Type",ylab = "number of persons",main = "Crime Type crimina
 barplot(previous,xlab = "Previous",ylab = "number of persons",main = "Previous criminal",col="black",names=c("No","Yes"))
 pie(previous)
 
-barplot(spot,xlab = "Spot",ylab = "number of persons",main = "Crime Spot",col="black",names=c("광특시","경기", "강원","충북","충남","전북","전남","경북","경남","제주"))
+barplot(spot,xlab = "Spot",ylab = "number of persons",main = "Crime Spot",col="black",names=c("S.C","G.G", "G.W","C.B","C.N","J.B","J.N","G.B","G.N","J.J"))
 
