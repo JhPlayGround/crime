@@ -7343,10 +7343,14 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111111111
+                      print("Full")
                     }
                     else
                     {
                       #1111111110
+                      number = c(10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7354,10 +7358,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111111101
+                      number = c(9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111111100
+                      number = c(9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7368,10 +7378,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111111011
+                      number = c(8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111111010
+                      number = c(8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7379,10 +7395,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111111001
+                      number = c(8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111111000
+                      number = c(8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7396,10 +7418,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111110111
+                      number = c(7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111110110
+                      number = c(7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7407,10 +7435,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111110101
+                      number = c(7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111110100
+                      number = c(7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7421,10 +7455,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111110011
+                      number = c(7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111110010
+                      number = c(7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7432,10 +7472,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111110001
+                      number = c(7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111110000
+                      number = c(7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7452,10 +7498,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111101111
+                      number = c(6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111101110
+                      number = c(6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7463,10 +7515,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111101101
+                      number = c(6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111101100
+                      number = c(6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7477,10 +7535,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111101011
+                      number = c(6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111101010
+                      number = c(6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7488,10 +7552,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111101001
+                      number = c(6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111101000
+                      number = c(6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7505,10 +7575,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111100111
+                      number = c(6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111100110
+                      number = c(6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7516,10 +7592,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111100101
+                      number = c(6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111100100
+                      number = c(6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7530,10 +7612,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111100011
+                      number = c(6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111100010
+                      number = c(6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7541,10 +7629,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111100001
+                      number = c(6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111100000
+                      number = c(6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7564,10 +7658,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111011111
+                      number = c(5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111011110
+                      number = c(5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7575,10 +7675,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111011101
+                      number = c(5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111011100
+                      number = c(5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7589,10 +7695,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111011011
+                      number = c(5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111011010
+                      number = c(5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7600,10 +7712,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111011001
+                      number = c(5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111011000
+                      number = c(5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7618,10 +7736,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111010111
+                      number = c(5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111010110
+                      number = c(5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7629,10 +7753,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111010101
+                      number = c(5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111010100
+                      number = c(5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7643,10 +7773,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111010011
+                      number = c(5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111010010
+                      number = c(5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7654,10 +7790,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111010001
+                      number = c(5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111010000
+                      number = c(5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7674,10 +7816,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111001111
+                      number = c(5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111001110
+                      number = c(5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7685,10 +7833,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111001101
+                      number = c(5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111001100
+                      number = c(5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7699,10 +7853,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111001011
+                      number = c(5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111001010
+                      number = c(5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7710,10 +7870,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111001001
+                      number = c(5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111001000
+                      number = c(5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7727,10 +7893,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111000111
+                      number = c(5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111000110
+                      number = c(5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7738,10 +7910,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111000101
+                      number = c(5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111000100
+                      number = c(5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7752,10 +7930,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111000011
+                      number = c(5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111000010
+                      number = c(5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7763,10 +7947,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1111000001
+                      number = c(5,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1111000000
+                      number = c(5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7789,10 +7979,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110111111
+                      number = c(4)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110111110
+                      number = c(4,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7800,10 +7996,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110111101
+                      number = c(4,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110111100
+                      number = c(4,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7814,10 +8016,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110111011
+                      number = c(4,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110111010
+                      number = c(4,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7825,10 +8033,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110111001
+                      number = c(4,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110111000
+                      number = c(4,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7842,10 +8056,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110110111
+                      number = c(4,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110110110
+                      number = c(4,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7853,10 +8073,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110110101
+                      number = c(4,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110110100
+                      number = c(4,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7867,10 +8093,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110110011
+                      number = c(4,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110110010
+                      number = c(4,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7878,10 +8110,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110110001
+                      number = c(4,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110110000
+                      number = c(4,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7898,10 +8136,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110101111
+                      number = c(4,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110101110
+                      number = c(4,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7909,10 +8153,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110101101
+                      number = c(4,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110101100
+                      number = c(4,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7923,10 +8173,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110101011
+                      number = c(4,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110101010
+                      number = c(4,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7934,10 +8190,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110101001
+                      number = c(4,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110101000
+                      number = c(4,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7951,10 +8213,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110100111
+                      number = c(4,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110100110
+                      number = c(4,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7962,10 +8230,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110100101
+                      number = c(4,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110100100
+                      number = c(4,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -7976,10 +8250,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110100011
+                      number = c(4,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110100010
+                      number = c(4,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -7987,10 +8267,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110100001
+                      number = c(4,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110100000
+                      number = c(4,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8010,10 +8296,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110011111
+                      number = c(4,5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110011110
+                      number = c(4,5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8021,10 +8313,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110011101
+                      number = c(4,5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110011100
+                      number = c(4,5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8035,10 +8333,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110011011
+                      number = c(4,5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110011010
+                      number = c(4,5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8046,10 +8350,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110011001
+                      number = c(4,5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110011000
+                      number = c(4,5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8063,10 +8373,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110010111
+                      number = c(4,5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110010110
+                      number = c(4,5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8074,10 +8390,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110010101
+                      number = c(4,5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110010100
+                      number = c(4,5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8088,10 +8410,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110010011
+                      number = c(4,5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110010010
+                      number = c(4,5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8099,10 +8427,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110010001
+                      number = c(4,5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110010000
+                      number = c(4,5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8119,10 +8453,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110001111
+                      number = c(4,5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110001110
+                      number = c(4,5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8130,10 +8470,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110001101
+                      number = c(4,5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110001100
+                      number = c(4,5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8144,10 +8490,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110001011
+                      number = c(4,5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110001010
+                      number = c(4,5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8155,10 +8507,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110001001
+                      number = c(4,5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110001000
+                      number = c(4,5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8172,10 +8530,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110000111
+                      number = c(4,5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110000110
+                      number = c(4,5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8183,10 +8547,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110000101
+                      number = c(4,5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110000100
+                      number = c(4,5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8197,10 +8567,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110000011
+                      number = c(4,5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110000010
+                      number = c(4,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8208,10 +8584,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1110000001
+                      number = c(4,5,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1110000000
+                      number = c(4,5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8237,10 +8619,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101111111
+                      number = c(3)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101111110
+                      number = c(3,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8248,10 +8636,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101111101
+                      number = c(3,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101111100
+                      number = c(3,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8262,10 +8656,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101111011
+                      number = c(3,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101111010
+                      number = c(3,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8273,10 +8673,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101111001
+                      number = c(3,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101111000
+                      number = c(3,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8290,10 +8696,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101110111
+                      number = c(3,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101110110
+                      number = c(3,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8301,10 +8713,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101110101
+                      number = c(3,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101110100
+                      number = c(3,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8315,10 +8733,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101110011
+                      number = c(3,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101110010
+                      number = c(3,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8326,10 +8750,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101110001
+                      number = c(3,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101110000
+                      number = c(3,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8346,10 +8776,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101101111
+                      number = c(3,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101101110
+                      number = c(3,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8357,10 +8793,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101101101
+                      number = c(3,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101101100
+                      number = c(3,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8371,10 +8813,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101101011
+                      number = c(3,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101101010
+                      number = c(3,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8382,10 +8830,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101101001
+                      number = c(3,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101101000
+                      number = c(3,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8399,10 +8853,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101100111
+                      number = c(3,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101100110
+                      number = c(3,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8410,10 +8870,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101100101
+                      number = c(3,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101100100
+                      number = c(3,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8424,10 +8890,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101100011
+                      number = c(3,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101100010
+                      number = c(3,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8435,10 +8907,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101100001
+                      number = c(3,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101100000
+                      number = c(3,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8458,10 +8936,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101011111
+                      number = c(3,5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101011110
+                      number = c(3,5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8469,10 +8953,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101011101
+                      number = c(3,5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101011100
+                      number = c(3,5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8483,22 +8973,33 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101011011
+                      number = c(3,5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101011010
+                      number = c(3,5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #110101100
                     if(spot10 == 190)
                     {
-                      
+                      #1101011001
+                      number = c(3,5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #1101011000
+                      number = c(3,5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8512,10 +9013,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101010111
+                      number = c(3,5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101010110
+                      number = c(3,5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8523,10 +9030,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101010101
+                      number = c(3,5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101010100
+                      number = c(3,5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8537,10 +9050,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101010011
+                      number = c(3,5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101010010
+                      number = c(3,5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8548,10 +9067,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101010001
+                      number = c(3,5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101010000
+                      number = c(3,5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8568,10 +9093,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101001111
+                      number = c(3,5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101001110
+                      number = c(3,5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8579,10 +9110,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101001101
+                      number = c(3,5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101001100
+                      number = c(3,5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8593,10 +9130,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101001011
+                      number = c(3,5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101001010
+                      number = c(3,5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8604,10 +9147,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101001001
+                      number = c(3,5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101001000
+                      number = c(3,5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8621,10 +9170,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101000111
+                      number = c(3,5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101000110
+                      number = c(3,5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8632,10 +9187,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101000101
+                      number = c(3,5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101000100
+                      number = c(3,5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8646,10 +9207,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101000011
+                      number = c(3,5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101000010
+                      number = c(3,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8657,10 +9224,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1101000001
+                      number = c(3,5,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1101000000
+                      number = c(3,5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8683,10 +9256,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100111111
+                      number = c(3,4)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100111110
+                      number = c(3,4,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8694,10 +9273,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100111101
+                      number = c(3,4,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100111100
+                      number = c(3,4,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8708,10 +9293,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100111011
+                      number = c(3,4,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100111010
+                      number = c(3,4,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8719,10 +9310,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100111001
+                      number = c(3,4,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100111000
+                      number = c(3,4,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8736,10 +9333,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100110111
+                      number = c(3,4,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100110110
+                      number = c(3,4,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8747,10 +9350,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100110101
+                      number = c(3,4,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100110100
+                      number = c(3,4,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8761,10 +9370,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100110011
+                      number = c(3,4,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100110010
+                      number = c(3,4,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8772,10 +9387,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100110001
+                      number = c(3,4,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100110000
+                      number = c(3,4,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8792,10 +9413,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100101111
+                      number = c(3,4,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100101110
+                      number = c(3,4,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8803,10 +9430,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100101101
+                      number = c(3,4,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100101100
+                      number = c(3,4,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8817,10 +9450,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100101011
+                      number = c(3,4,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100101010
+                      number = c(3,4,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8828,10 +9467,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100101001
+                      number = c(3,4,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100101000
+                      number = c(3,4,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8845,10 +9490,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100100111
+                      number = c(3,4,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100100110
+                      number = c(3,4,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8856,10 +9507,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100100101
+                      number = c(3,4,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100100100
+                      number = c(3,4,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8870,10 +9527,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100100011
+                      number = c(3,4,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100100010
+                      number = c(3,4,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8881,10 +9544,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100100001
+                      number = c(3,4,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100100000
+                      number = c(3,4,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8904,10 +9573,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100011111
+                      number = c(3,4,5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100011110
+                      number = c(3,4,5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8915,10 +9590,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100011101
+                      number = c(3,4,5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100011100
+                      number = c(3,4,5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8929,10 +9610,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100011011
+                      number = c(3,4,5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100011010
+                      number = c(3,4,5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8940,10 +9627,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100011001
+                      number = c(3,4,5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100011000
+                      number = c(3,4,5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8957,10 +9650,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100010111
+                      number = c(3,4,5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100010110
+                      number = c(3,4,5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8968,10 +9667,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100010101
+                      number = c(3,4,5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100010100
+                      number = c(3,4,5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -8982,10 +9687,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100010011
+                      number = c(3,4,5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100010010
+                      number = c(3,4,5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -8993,10 +9704,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100010001
+                      number = c(3,4,5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100010000
+                      number = c(3,4,5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9013,10 +9730,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100001111
+                      number = c(3,4,5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100001110
+                      number = c(3,4,5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9024,10 +9747,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100001101
+                      number = c(3,4,5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100001100
+                      number = c(3,4,5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9038,10 +9767,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100001011
+                      number = c(3,4,5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100001010
+                      number = c(3,4,5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9049,10 +9784,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100001001
+                      number = c(3,4,5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100001000
+                      number = c(3,4,5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9066,10 +9807,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100000111
+                      number = c(3,4,5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100000110
+                      number = c(3,4,5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9077,10 +9824,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100000101
+                      number = c(3,4,5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100000100 
+                      number = c(3,4,5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9091,10 +9844,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100000011
+                      number = c(3,4,5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100000010
+                      number = c(3,4,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9103,10 +9862,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1100000001
+                      number = c(3,4,5,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1100000000
+                      number = c(3,4,5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9135,10 +9900,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011111111
+                      number = c(2)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011111110
+                      number = c(2,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9146,10 +9917,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011111101
+                      number = c(2,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011111100
+                      number = c(2,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9160,10 +9937,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011111011
+                      number = c(2,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011111010
+                      number = c(2,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9171,10 +9954,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011111001
+                      number = c(2,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011111000
+                      number = c(2,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9188,10 +9977,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011110111
+                      number = c(2,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011110110
+                      number = c(2,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9199,10 +9994,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011110101
+                      number = c(2,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011110100
+                      number = c(2,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9213,10 +10014,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011110011
+                      number = c(2,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011110010
+                      number = c(2,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9224,10 +10031,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011110001
+                      number = c(2,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011110000
+                      number = c(2,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9244,10 +10057,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011101111
+                      number = c(2,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011101110
+                      number = c(2,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9255,10 +10074,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011101101
+                      number = c(2,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011101100
+                      number = c(2,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9269,10 +10094,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011101011
+                      number = c(2,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011101010
+                      number = c(2,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9280,10 +10111,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011101001
+                      number = c(2,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011101000
+                      number = c(2,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9297,10 +10134,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011100111
+                      number = c(2,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011100110
+                      number = c(2,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9308,10 +10151,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011100101
+                      number = c(2,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011100100
+                      number = c(2,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9322,10 +10171,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011100011
+                      number = c(2,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011100010
+                      number = c(2,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9333,10 +10188,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011100001
+                      number = c(2,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011100000
+                      number = c(2,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9356,10 +10217,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011011111
+                      number = c(2,5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011011110
+                      number = c(2,5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9367,10 +10234,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011011101
+                      number = c(2,5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011011100
+                      number = c(2,5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9381,10 +10254,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011011011
+                      number = c(2,5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011011010
+                      number = c(2,5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9392,10 +10271,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011011001
+                      number = c(2,5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011011000
+                      number = c(2,5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9409,10 +10294,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011010111
+                      number = c(2,5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011010110
+                      number = c(2,5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9420,10 +10311,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011010101
+                      number = c(2,5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011010100
+                      number = c(2,5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9434,10 +10331,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011010011
+                      number = c(2,5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011010010
+                      number = c(2,5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9445,10 +10348,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011010001
+                      number = c(2,5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011010000
+                      number = c(2,5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9465,10 +10374,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011001111
+                      number = c(2,5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011001110
+                      number = c(2,5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9476,10 +10391,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011001101
+                      number = c(2,5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011001100
+                      number = c(2,5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9490,10 +10411,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011001011
+                      number = c(2,5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011001010
+                      number = c(2,5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9501,10 +10428,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011001001
+                      number = c(2,5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011001000
+                      number = c(2,5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9518,10 +10451,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011000111
+                      number = c(2,5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011000110
+                      number = c(2,5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9529,10 +10468,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011000101
+                      number = c(2,5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011000100
+                      number = c(2,5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9543,10 +10488,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011000011
+                      number = c(2,5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011000010
+                      number = c(2,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9554,10 +10505,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1011000001
+                      number = c(2,5,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1011000000
+                      number = c(2,5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9580,10 +10537,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010111111
+                      number = c(2,4)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010111110
+                      number = c(2,4,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9591,10 +10554,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010111101
+                      number = c(2,4,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010111100
+                      number = c(2,4,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9605,10 +10574,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010111011
+                      number = c(2,4,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010111010
+                      number = c(2,4,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9616,10 +10591,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010111001
+                      number = c(2,4,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010111000
+                      number = c(2,4,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9633,10 +10614,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010110111
+                      number = c(2,4,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010110110
+                      number = c(2,4,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9644,10 +10631,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010110101
+                      number = c(2,4,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010110100
+                      number = c(2,4,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9658,10 +10651,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010110011
+                      number = c(2,4,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010110010
+                      number = c(2,4,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9669,10 +10668,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010110001
+                      number = c(2,4,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010110000
+                      number = c(2,4,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9689,10 +10694,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010101111
+                      number = c(2,4,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010101110
+                      number = c(2,4,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9700,10 +10711,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010101101
+                      number = c(2,4,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010101100
+                      number = c(2,4,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9714,10 +10731,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010101011
+                      number = c(2,4,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010101010 
+                      number = c(2,4,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9725,10 +10748,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010101001
+                      number = c(2,4,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010101000
+                      number = c(2,4,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9742,10 +10771,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010100111
+                      number = c(2,4,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010100110
+                      number = c(2,4,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9753,10 +10788,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010100101
+                      number = c(2,4,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010100100
+                      number = c(2,4,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9767,10 +10808,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010100011
+                      number = c(2,4,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010100010
+                      number = c(2,4,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9778,10 +10825,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010100001
+                      number = c(2,4,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010100000
+                      number = c(2,4,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9801,10 +10854,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010011111
+                      number = c(2,4,5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010011110
+                      number = c(2,4,5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9812,10 +10871,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010011101
+                      number = c(2,4,5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010011100
+                      number = c(2,4,5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9826,10 +10891,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010011011
+                      number = c(2,4,5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010011010
+                      number = c(2,4,5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9837,10 +10908,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010011001
+                      number = c(2,4,5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010011000
+                      number = c(2,4,5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9854,10 +10931,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010010111
+                      number = c(2,4,5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010010110
+                      number = c(2,4,5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9865,10 +10948,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010010101
+                      number = c(2,4,5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010010100
+                      number = c(2,4,5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9879,10 +10968,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010010011
+                      number = c(2,4,5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010010010
+                      number = c(2,4,5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9890,10 +10985,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010010001
+                      number = c(2,4,5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010010000
+                      number = c(2,4,5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9910,10 +11011,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010001111
+                      number = c(2,4,5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010001110
+                      number = c(2,4,5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9921,10 +11028,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010001101
+                      number = c(2,4,5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010001100
+                      number = c(2,4,5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9935,10 +11048,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010001011
+                      number = c(2,4,5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010001010
+                      number = c(2,4,5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9946,10 +11065,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010001001
+                      number = c(2,4,5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010001000
+                      number = c(2,4,5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9963,10 +11088,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010000111
+                      number = c(2,4,5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010000110
+                      number = c(2,4,5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9974,10 +11105,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010000101
+                      number = c(2,4,5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010000100
+                      number = c(2,4,5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -9988,10 +11125,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010000011
+                      number = c(2,4,5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010000010
+                      number = c(2,4,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -9999,10 +11142,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1010000001
+                      number = c(2,4,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1010000000
+                      number = c(2,4,5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10028,10 +11177,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001111111
+                      number = c(2,3)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001111110
+                      number = c(2,3,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10039,10 +11194,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001111101
+                      number = c(2,3,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001111100
+                      number = c(2,3,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10053,10 +11214,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001111011
+                      number = c(2,3,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001111010
+                      number = c(2,3,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10064,10 +11231,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001111001
+                      number = c(2,3,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001111000
+                      number = c(2,3,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10081,10 +11254,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001110111
+                      number = c(2,3,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001110110
+                      number = c(2,3,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10092,10 +11271,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001110101
+                      number = c(2,3,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001110100
+                      number = c(2,3,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10106,10 +11291,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001110011
+                      number = c(2,3,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001110010
+                      number = c(2,3,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10117,10 +11308,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001110001
+                      number = c(2,3,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001110000
+                      number = c(2,3,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10137,10 +11334,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001101111
+                      number = c(2,3,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001101110
+                      number = c(2,3,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10148,10 +11351,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001101101
+                      number = c(2,3,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001101100
+                      number = c(2,3,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10162,10 +11371,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001101011
+                      number = c(2,3,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001101010
+                      number = c(2,3,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10173,10 +11388,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001101001
+                      number = c(2,3,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001101000
+                      number = c(2,3,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10190,10 +11411,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001100111
+                      number = c(2,3,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001100110
+                      number = c(2,3,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10201,10 +11428,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001100101
+                      number = c(2,3,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001100100
+                      number = c(2,3,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10215,10 +11448,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001100011
+                      number = c(2,3,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001100010
+                      number = c(2,3,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10226,10 +11465,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001100001
+                      number = c(2,3,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001100000
+                      number = c(2,3,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10249,10 +11494,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001011111
+                      number = c(2,3,5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001011110
+                      number = c(2,3,5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10260,10 +11511,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001011101
+                      number = c(2,3,5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001011100
+                      number = c(2,3,5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10274,10 +11531,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001011011
+                      number = c(2,3,5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001011010
+                      number = c(2,3,5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10285,10 +11548,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001011001
+                      number = c(2,3,5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001011000
+                      number = c(2,3,5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10302,10 +11571,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001010111
+                      number = c(2,3,5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001010110
+                      number = c(2,3,5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10313,10 +11588,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001010101
+                      number = c(2,3,5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001010100
+                      number = c(2,3,5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10327,10 +11608,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001010011
+                      number = c(2,3,5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001010010
+                      number = c(2,3,5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10338,10 +11625,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001010001
+                      number = c(2,3,5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001010000
+                      number = c(2,3,5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10358,10 +11651,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001001111
+                      number = c(2,3,5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001001110
+                      number = c(2,3,5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10369,10 +11668,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001001101
+                      number = c(2,3,5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001001100
+                      number = c(2,3,5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10383,10 +11688,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001001011
+                      number = c(2,3,5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001001010
+                      number = c(2,3,5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10394,10 +11705,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001001001
+                      number = c(2,3,5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001001000
+                      number = c(2,3,5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10411,10 +11728,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001000111
+                      number = c(2,3,5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001000110
+                      number = c(2,3,5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10422,10 +11745,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001000101
+                      number = c(2,3,5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001000100
+                      number = c(2,3,5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10436,10 +11765,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001000011
+                      number = c(2,3,5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001000010
+                      number = c(2,3,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10447,10 +11782,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1001000001
+                      number = c(2,3,5,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1001000000
+                      number = c(2,3,5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10473,10 +11814,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000111111
+                      number = c(2,3,4)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000111110
+                      number = c(2,3,4,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10484,10 +11831,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000111101
+                      number = c(2,3,4,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000111100
+                      number = c(2,3,4,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10498,10 +11851,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000111011
+                      number = c(2,3,4,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000111010
+                      number = c(2,3,4,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10509,10 +11868,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000111001
+                      number = c(2,3,4,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000111000
+                      number = c(2,3,4,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10526,10 +11891,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000110111
+                      number = c(2,3,4,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000110110
+                      number = c(2,3,4,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10537,10 +11908,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000110101
+                      number = c(2,3,4,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000110100
+                      number = c(2,3,4,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10551,10 +11928,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000110011
+                      number = c(2,3,4,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000110010
+                      number = c(2,3,4,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10562,10 +11945,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000110001
+                      number = c(2,3,4,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000110000
+                      number = c(2,3,4,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10582,10 +11971,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000101111
+                      number = c(2,3,4,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000101110
+                      number = c(2,3,4,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10593,10 +11988,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000101101
+                      number = c(2,3,4,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000101100
+                      number = c(2,3,4,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10607,10 +12008,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000101011
+                      number = c(2,3,4,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000101010
+                      number = c(2,3,4,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10618,10 +12025,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000101001
+                      number = c(2,3,4,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000101000
+                      number = c(2,3,4,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10635,10 +12048,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000100111
+                      number = c(2,3,4,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000100110
+                      number = c(2,3,4,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10646,10 +12065,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000100101
+                      number = c(2,3,4,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000100100
+                      number = c(2,3,4,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10660,10 +12085,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000100011
+                      number = c(2,3,4,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000100010
+                      number = c(2,3,4,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10671,10 +12102,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000100001
+                      number = c(2,3,4,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000100000
+                      number = c(2,3,4,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10694,10 +12131,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000011111
+                      number = c(2,3,4,5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000011110
+                      number = c(2,3,4,5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10705,10 +12148,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000011101
+                      number = c(2,3,4,5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000011100
+                      number = c(2,3,4,5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10719,10 +12168,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000011011
+                      number = c(2,3,4,5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000011010
+                      number = c(2,3,4,5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10730,10 +12185,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000011001
+                      number = c(2,3,4,5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000011000
+                      number = c(2,3,4,5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10747,10 +12208,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000010111
+                      number = c(2,3,4,5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000010110
+                      number = c(2,3,4,5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10758,10 +12225,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000010101
+                      number = c(2,3,4,5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000010100
+                      number = c(2,3,4,5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10772,10 +12245,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000010011
+                      number = c(2,3,4,5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000010010
+                      number = c(2,3,4,5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10783,10 +12262,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000010001
+                      number = c(2,3,4,5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000010000
+                      number = c(2,3,4,5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10803,10 +12288,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000001111
+                      number = c(2,3,4,5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000001110
+                      number = c(2,3,4,5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10814,10 +12305,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000001101
+                      number = c(2,3,4,5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000001100
+                      number = c(2,3,4,5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10828,10 +12325,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000001011
+                      number = c(2,3,4,5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000001010
+                      number = c(2,3,4,5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10839,10 +12342,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000001001
+                      number = c(2,3,4,5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000001000
+                      number = c(2,3,4,5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10856,10 +12365,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000000111
+                      number = c(2,3,4,5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000000110
+                      number = c(2,3,4,5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10867,10 +12382,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000000101
+                      number = c(2,3,4,5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000000100
+                      number = c(2,3,4,5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10881,10 +12402,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000000011
+                      number = c(2,3,4,5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000000010
+                      number = c(2,3,4,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10892,10 +12419,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #1000000001
+                      number = c(2,3,4,5,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #1000000000
+                      number = c(2,3,4,5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10905,7 +12438,7 @@ for(i in 1:10000)
         }
       }
     }
-  }##########Ã¹ else¹®#############
+  }
   else
   {
     if(spot2 == 2160)
@@ -10927,10 +12460,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111111111
+                      number = c(1)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111111110
+                      number = c(1,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10938,10 +12477,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111111101
+                      number = c(1,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111111100
+                      number = c(1,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10952,10 +12497,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111111011
+                      number = c(1,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111111010
+                      number = c(1,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10963,10 +12514,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111111001
+                      number = c(1,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111111000
+                      number = c(1,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -10980,10 +12537,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111110111
+                      number = c(1,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111110110
+                      number = c(1,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -10991,10 +12554,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111110101
+                      number = c(1,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111110100
+                      number = c(1,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11005,10 +12574,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111110011
+                      number = c(1,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111110010
+                      number = c(1,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11016,10 +12591,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111110001
+                      number = c(1,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111110000
+                      number = c(1,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11036,10 +12617,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111101111
+                      number = c(1,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111101110
+                      number = c(1,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11047,10 +12634,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111101101
+                      number = c(1,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111101100
+                      number = c(1,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11061,10 +12654,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111101011
+                      number = c(1,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111101010
+                      number = c(1,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11072,10 +12671,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111101001
+                      number = c(1,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111101000
+                      number = c(1,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11089,10 +12694,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111100111
+                      number = c(1,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111100110
+                      number = c(1,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11100,10 +12711,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111100101
+                      number = c(1,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111100100
+                      number = c(1,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11114,10 +12731,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111100011
+                      number = c(1,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111100010
+                      number = c(1,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11125,10 +12748,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111100001
+                      number = c(1,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111100000
+                      number = c(1,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11148,10 +12777,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111011111
+                      number = c(1,5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111011110
+                      number = c(1,5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11159,10 +12794,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111011101
+                      number = c(1,5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111011100
+                      number = c(1,5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11173,10 +12814,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111011011
+                      number = c(1,5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111011010
+                      number = c(1,5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11184,10 +12831,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111011001
+                      number = c(1,5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111011000
+                      number = c(1,5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11201,10 +12854,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111010111
+                      number = c(1,5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111010110
+                      number = c(1,5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11212,10 +12871,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111010101
+                      number = c(1,5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111010100
+                      number = c(1,5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11226,10 +12891,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111010011
+                      number = c(1,5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111010010
+                      number = c(1,5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11237,10 +12908,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111010001
+                      number = c(1,5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111010000
+                      number = c(1,5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11257,10 +12934,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111001111
+                      number = c(1,5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111001110
+                      number = c(1,5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11268,10 +12951,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111001101
+                      number = c(1,5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111001100
+                      number = c(1,5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11282,10 +12971,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111001011
+                      number = c(1,5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111001010
+                      number = c(1,5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11293,10 +12988,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111001001
+                      number = c(1,5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111001000
+                      number = c(1,5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11310,10 +13011,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111000111
+                      number = c(1,5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111000110
+                      number = c(1,5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11321,10 +13028,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111000101
+                      number = c(1,5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111000100
+                      number = c(1,5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11335,10 +13048,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111000011
+                      number = c(1,5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111000010
+                      number = c(1,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11346,10 +13065,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0111000001
+                      number = c(1,5,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0111000000
+                      number = c(1,5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11372,10 +13097,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110111111
+                      number = c(1,4)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110111110
+                      number = c(1,4,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11383,10 +13114,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110111101
+                      number = c(1,4,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110111100
+                      number = c(1,4,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11397,10 +13134,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110111011
+                      number = c(1,4,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110111010
+                      number = c(1,4,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11408,10 +13151,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110111001
+                      number = c(1,4,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110111000
+                      number = c(1,4,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11425,10 +13174,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110110111
+                      number = c(1,4,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110110110
+                      number = c(1,4,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11436,10 +13191,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110110101
+                      number = c(1,4,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110110100
+                      number = c(1,4,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11450,10 +13211,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110110011
+                      number = c(1,4,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110110010
+                      number = c(1,4,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11461,10 +13228,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110110001
+                      number = c(1,4,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110110000
+                      number = c(1,4,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11481,10 +13254,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110101111
+                      number = c(1,4,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110101110
+                      number = c(1,4,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11492,10 +13271,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110101101
+                      number = c(1,4,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110101100
+                      number = c(1,4,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11506,10 +13291,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110101011
+                      number = c(1,4,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110101010
+                      number = c(1,4,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11517,10 +13308,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110101001
+                      number = c(1,4,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110101000
+                      number = c(1,4,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11534,10 +13331,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110100111
+                      number = c(1,4,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110100110
+                      number = c(1,4,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11545,10 +13348,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110100101
+                      number = c(1,4,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110100100
+                      number = c(1,4,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11559,10 +13368,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110100011
+                      number = c(1,4,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110100010
+                      number = c(1,4,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11570,10 +13385,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110100001
+                      number = c(1,4,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110100000
+                      number = c(1,4,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11593,10 +13414,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110011111
+                      number = c(1,4,5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110011110 
+                      number = c(1,4,5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11604,10 +13431,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110011101
+                      number = c(1,4,5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110011100
+                      number = c(1,4,5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11618,10 +13451,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110011011
+                      number = c(1,4,5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110011010
+                      number = c(1,4,5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11629,10 +13468,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110011001
+                      number = c(1,4,5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110011000
+                      number = c(1,4,5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11646,10 +13491,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110010111
+                      number = c(1,4,5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110010110
+                      number = c(1,4,5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11657,10 +13508,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110010101
+                      number = c(1,4,5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110010100
+                      number = c(1,4,5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11671,10 +13528,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110010011
+                      number = c(1,4,5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110010010
+                      number = c(1,4,5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11682,10 +13545,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110010001
+                      number = c(1,4,5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110010000
+                      number = c(1,4,5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11702,10 +13571,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110001111
+                      number = c(1,4,5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110001110
+                      number = c(1,4,5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11713,10 +13588,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110001101
+                      number = c(1,4,5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110001100
+                      number = c(1,4,5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11727,10 +13608,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110001011
+                      number = c(1,4,5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110001010
+                      number = c(1,4,5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11738,10 +13625,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110001001
+                      number = c(1,4,5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110001000
+                      number = c(1,4,5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11755,10 +13648,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110000111
+                      number = c(1,4,5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110000110
+                      number = c(1,4,5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11766,10 +13665,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110000101
+                      number = c(1,4,5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110000100
+                      number = c(1,4,5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11780,10 +13685,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110000011
+                      number = c(1,4,5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110000010
+                      number = c(1,4,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11791,10 +13702,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0110000001
+                      number = c(1,4,5,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0110000000
+                      number = c(1,4,5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11820,10 +13737,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101111111
+                      number = c(1,3)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101111110
+                      number = c(1,3,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11831,10 +13754,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101111101
+                      number = c(1,3,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101111100
+                      number = c(1,3,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11845,10 +13774,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101111011
+                      number = c(1,3,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101111010
+                      number = c(1,3,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11856,10 +13791,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101111001
+                      number = c(1,3,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101111000
+                      number = c(1,3,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11873,10 +13814,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101110111
+                      number = c(1,3,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101110110
+                      number = c(1,3,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11884,10 +13831,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101110101
+                      number = c(1,3,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101110100
+                      number = c(1,3,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11898,10 +13851,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101110011
+                      number = c(1,3,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101110010
+                      number = c(1,3,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11909,10 +13868,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101110001
+                      number = c(1,3,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101110000
+                      number = c(1,3,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11929,10 +13894,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101101111
+                      number = c(1,3,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101101110
+                      number = c(1,3,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11940,10 +13911,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101101101
+                      number = c(1,3,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101101100
+                      number = c(1,3,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11954,10 +13931,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101101011
+                      number = c(1,3,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101101010
+                      number = c(1,3,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11965,10 +13948,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101101001
+                      number = c(1,3,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101101000
+                      number = c(1,3,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -11982,10 +13971,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101100111
+                      number = c(1,3,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101100110
+                      number = c(1,3,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -11993,10 +13988,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101100101
+                      number = c(1,3,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101100100
+                      number = c(1,3,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12007,10 +14008,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101100011
+                      number = c(1,3,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101100010
+                      number = c(1,3,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12018,10 +14025,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101100001
+                      number = c(1,3,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101100000
+                      number = c(1,3,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12041,10 +14054,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101011111
+                      number = c(1,3,5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101011110
+                      number = c(1,3,5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12052,10 +14071,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101011101
+                      number = c(1,3,5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101011100
+                      number = c(1,3,5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12066,10 +14091,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101011011
+                      number = c(1,3,5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101011010
+                      number = c(1,3,5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12077,10 +14108,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101011001
+                      number = c(1,3,5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101011000
+                      number = c(1,3,5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12094,10 +14131,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101010111
+                      number = c(1,3,5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101010110
+                      number = c(1,3,5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12105,10 +14148,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101010101
+                      number = c(1,3,5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101010100
+                      number = c(1,3,5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12119,10 +14168,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101010011
+                      number = c(1,3,5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101010010
+                      number = c(1,3,5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12130,10 +14185,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101010001
+                      number = c(1,3,5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101010000
+                      number = c(1,3,5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12150,10 +14211,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101001111
+                      number = c(1,3,5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101001110
+                      number = c(1,3,5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12161,10 +14228,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101001101
+                      number = c(1,3,5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101001100
+                      number = c(1,3,5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12175,10 +14248,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101001011
+                      number = c(1,3,5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101001010
+                      number = c(1,3,5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12186,10 +14265,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101001001
+                      number = c(1,3,5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101001000
+                      number = c(1,3,5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12203,10 +14288,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101000111
+                      number = c(1,3,5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101000110
+                      number = c(1,3,5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12214,10 +14305,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101000101
+                      number = c(1,3,5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101000100
+                      number = c(1,3,5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12228,10 +14325,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101000011
+                      number = c(1,3,5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101000010
+                      number = c(1,3,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12239,10 +14342,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0101000001
+                      number = c(1,3,5,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0101000000
+                      number = c(1,3,5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12265,10 +14374,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100111111
+                      number = c(1,3,4)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100111110
+                      number = c(1,3,4,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12276,10 +14391,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100111101
+                      number = c(1,3,4,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100111100
+                      number = c(1,3,4,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12290,10 +14411,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100111011
+                      number = c(1,3,4,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100111010
+                      number = c(1,3,4,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12301,10 +14428,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100111001
+                      number = c(1,3,4,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100111000
+                      number = c(1,3,4,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12318,10 +14451,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100110111
+                      number = c(1,3,4,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100110110
+                      number = c(1,3,4,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12329,10 +14468,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100110101
+                      number = c(1,3,4,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100110100
+                      number = c(1,3,4,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12343,10 +14488,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100110011
+                      number = c(1,3,4,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100110010
+                      number = c(1,3,4,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12354,10 +14505,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100110001
+                      number = c(1,3,4,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100110000
+                      number = c(1,3,4,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12374,21 +14531,33 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100101111
+                      number = c(1,3,4,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100101110
+                      number = c(1,3,4,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
                     if(spot10 == 190)
                     {
-                      #010010110
+                      #0100101101
+                      number = c(1,3,4,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      #010010110
+                      #0100101100
+                      number = c(1,3,4,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12399,10 +14568,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100101011
+                      number = c(1,3,4,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100101010
+                      number = c(1,3,4,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12410,10 +14585,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100101001
+                      number = c(1,3,4,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100101000
+                      number = c(1,3,4,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12427,10 +14608,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100100111
+                      number = c(1,3,4,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100100110
+                      number = c(1,3,4,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12438,10 +14625,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100100101
+                      number = c(1,3,4,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100100100
+                      number = c(1,3,4,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12452,10 +14645,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100100011
+                      number = c(1,3,4,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100100010
+                      number = c(1,3,4,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12463,10 +14662,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100100001
+                      number = c(1,3,4,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100100000
+                      number = c(1,3,4,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12486,10 +14691,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100011111
+                      number = c(1,3,4,5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100011110
+                      number = c(1,3,4,5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12497,10 +14708,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100011101
+                      number = c(1,3,4,5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100011100
+                      number = c(1,3,4,5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12511,10 +14728,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100011011
+                      number = c(1,3,4,5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100011010
+                      number = c(1,3,4,5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12522,10 +14745,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100011001
+                      number = c(1,3,4,5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100011000
+                      number = c(1,3,4,5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12539,10 +14768,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100010111
+                      number = c(1,3,4,5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100010110
+                      number = c(1,3,4,5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12550,10 +14785,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100010101
+                      number = c(1,3,4,5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100010100
+                      number = c(1,3,4,5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12564,10 +14805,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100010011
+                      number = c(1,3,4,5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100010010
+                      number = c(1,3,4,5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12575,10 +14822,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100010001
+                      number = c(1,3,4,5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100010000
+                      number = c(1,3,4,5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12595,10 +14848,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100001111
+                      number = c(1,3,4,5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100001110
+                      number = c(1,3,4,5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12606,10 +14865,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100001101
+                      number = c(1,3,4,5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100001100
+                      number = c(1,3,4,5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12620,10 +14885,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100001011
+                      number = c(1,3,4,5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100001010
+                      number = c(1,3,4,5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12631,10 +14902,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100001001
+                      number = c(1,3,4,5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100001000
+                      number = c(1,3,4,5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12648,10 +14925,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100000111
+                      number = c(1,3,4,5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100000110
+                      number = c(1,3,4,5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12659,10 +14942,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100000101
+                      number = c(1,3,4,5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100000100
+                      number = c(1,3,4,5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12673,10 +14962,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100000011
+                      number = c(1,3,4,5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100000010
+                      number = c(1,3,4,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12684,10 +14979,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0100000001
+                      number = c(1,3,4,5,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0100000000
+                      number = c(1,3,4,5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12716,10 +15017,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011111111
+                      number = c(1,2)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011111110
+                      number = c(1,2,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12727,10 +15034,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011111101
+                      number = c(1,2,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011111100
+                      number = c(1,2,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12741,10 +15054,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011111011
+                      number = c(1,2,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011111010
+                      number = c(1,2,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12752,10 +15071,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011111001
+                      number = c(1,2,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011111000
+                      number = c(1,2,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12769,10 +15094,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011110111
+                      number = c(1,2,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      #0011110110
+                      #0011110110 
+                      number = c(1,2,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12780,10 +15111,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011110101
+                      number = c(1,2,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011110100
+                      number = c(1,2,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12794,10 +15131,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011110011
+                      number = c(1,2,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011110010
+                      number = c(1,2,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12805,10 +15148,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011110001
+                      number = c(1,2,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011110000
+                      number = c(1,2,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12825,10 +15174,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011101111
+                      number = c(1,2,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011101110
+                      number = c(1,2,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12836,10 +15191,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011101101
+                      number = c(1,2,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011101100
+                      number = c(1,2,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12850,10 +15211,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011101011
+                      number = c(1,2,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011101010
+                      number = c(1,2,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12861,10 +15228,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011101001
+                      number = c(1,2,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011101000
+                      number = c(1,2,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12878,10 +15251,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011100111
+                      number = c(1,2,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011100110
+                      number = c(1,2,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12889,10 +15268,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011100101
+                      number = c(1,2,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011100100
+                      number = c(1,2,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12903,10 +15288,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011100011
+                      number = c(1,2,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011100010
+                      number = c(1,2,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12914,10 +15305,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011100001
+                      number = c(1,2,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011100000
+                      number = c(1,2,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12937,10 +15334,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011011111
+                      number = c(1,2,5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011011110
+                      number = c(1,2,5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12948,10 +15351,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011011101
+                      number = c(1,2,5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011011100
+                      number = c(1,2,5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12962,10 +15371,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011011011
+                      number = c(1,2,5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011011010
+                      number = c(1,2,5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -12973,10 +15388,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011011001
+                      number = c(1,2,5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011011000
+                      number = c(1,2,5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -12990,10 +15411,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011010111
+                      number = c(1,2,5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011010110
+                      number = c(1,2,5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13001,10 +15428,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011010101
+                      number = c(1,2,5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011010100
+                      number = c(1,2,5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13015,10 +15448,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011010011
+                      number = c(1,2,5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011010010
+                      number = c(1,2,5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13026,10 +15465,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011010001
+                      number = c(1,2,5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011010000
+                      number = c(1,2,5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13046,10 +15491,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011001111
+                      number = c(1,2,5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011001110
+                      number = c(1,2,5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13057,10 +15508,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011001101
+                      number = c(1,2,5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011001100
+                      number = c(1,2,5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13071,10 +15528,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011001011
+                      number = c(1,2,5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011001010
+                      number = c(1,2,5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13082,10 +15545,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011001001
+                      number = c(1,2,5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011001000
+                      number = c(1,2,5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13099,10 +15568,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011000111
+                      number = c(1,2,5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011000110
+                      number = c(1,2,5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13110,10 +15585,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011000101
+                      number = c(1,2,5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011000100
+                      number = c(1,2,5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13124,10 +15605,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011000011
+                      number = c(1,2,5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011000010
+                      number = c(1,2,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13135,10 +15622,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0011000001
+                      number = c(1,2,5,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0011000000
+                      number = c(1,2,5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13161,10 +15654,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010111111
+                      number = c(1,2,4)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010111110
+                      number = c(1,2,4,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13172,10 +15671,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010111101
+                      number = c(1,2,4,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010111100
+                      number = c(1,2,4,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13186,10 +15691,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010111011
+                      number = c(1,2,4,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010111010
+                      number = c(1,2,4,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13197,10 +15708,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010111001
+                      number = c(1,2,4,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010111000
+                      number = c(1,2,4,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13214,10 +15731,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010110111
+                      number = c(1,2,4,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010110110
+                      number = c(1,2,4,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13225,10 +15748,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010110101
+                      number = c(1,2,4,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010110100
+                      number = c(1,2,4,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13239,10 +15768,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010110011
+                      number = c(1,2,4,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010110010
+                      number = c(1,2,4,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13250,10 +15785,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010110001
+                      number = c(1,2,4,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010110000
+                      number = c(1,2,4,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13270,10 +15811,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010101111
+                      number = c(1,2,4,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010101110
+                      number = c(1,2,4,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13281,10 +15828,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010101101
+                      number = c(1,2,4,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010101100
+                      number = c(1,2,4,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13295,10 +15848,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010101011
+                      number = c(1,2,4,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010101010
+                      number = c(1,2,4,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13306,10 +15865,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010101001
+                      number = c(1,2,4,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010101000
+                      number = c(1,2,4,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13323,10 +15888,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010100111
+                      number = c(1,2,4,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010100110
+                      number = c(1,2,4,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13334,10 +15905,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010100101
+                      number = c(1,2,4,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010100100
+                      number = c(1,2,4,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13348,10 +15925,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010100011
+                      number = c(1,2,4,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010100010
+                      number = c(1,2,4,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13359,10 +15942,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010100001
+                      number = c(1,2,4,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010100000
+                      number = c(1,2,4,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13382,10 +15971,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010011111
+                      number = c(1,2,4,5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010011110
+                      number = c(1,2,4,5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13393,10 +15988,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010011101
+                      number = c(1,2,4,5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010011100
+                      number = c(1,2,4,5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13407,22 +16008,33 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010011011
+                      number = c(1,2,4,5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010011010
+                      number = c(1,2,4,5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    
                     if(spot10 == 190)
                     {
                       #0010011001
+                      number = c(1,2,4,5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010011000
+                      number = c(1,2,4,5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13433,14 +16045,19 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    
                     if(spot10 == 190)
                     {
                       #0010010111
+                      number = c(1,2,4,5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010010110
+                      number = c(1,2,4,5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13449,10 +16066,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010010101
+                      number = c(1,2,4,5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010010100
+                      number = c(1,2,4,5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13463,10 +16086,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010010011
+                      number = c(1,2,4,5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010010010
+                      number = c(1,2,4,5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13474,10 +16103,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010010001
+                      number = c(1,2,4,5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010010000
+                      number = c(1,2,4,5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13494,10 +16129,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010001111
+                      number = c(1,2,4,5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010001110
+                      number = c(1,2,4,5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13505,10 +16146,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010001101
+                      number = c(1,2,4,5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010001100
+                      number = c(1,2,4,5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13519,10 +16166,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010001011
+                      number = c(1,2,4,5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010001010
+                      number = c(1,2,4,5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13530,10 +16183,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010001001
+                      number = c(1,2,4,5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010001000
+                      number = c(1,2,4,5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13547,10 +16206,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010000111
+                      number = c(1,2,4,5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010000110
+                      number = c(1,2,4,5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13558,10 +16223,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010000101
+                      number = c(1,2,4,5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010000100
+                      number = c(1,2,4,5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13572,10 +16243,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010000011
+                      number = c(1,2,4,5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010000010
+                      number = c(1,2,4,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13583,10 +16260,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0010000001
+                      number = c(1,2,4,5,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0010000000
+                      number = c(1,2,4,5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13612,10 +16295,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001111111
+                      number = c(1,2,3)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001111110
+                      number = c(1,2,3,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13623,10 +16312,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001111101
+                      number = c(1,2,3,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001111100
+                      number = c(1,2,3,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13637,10 +16332,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001111011
+                      number = c(1,2,3,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001111010
+                      number = c(1,2,3,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13648,10 +16349,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001111001
+                      number = c(1,2,3,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001111000
+                      number = c(1,2,3,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13664,11 +16371,17 @@ for(i in 1:10000)
                   {
                     if(spot10 == 190)
                     {
-                      #000111011
+                      #0001110111
+                      number = c(1,2,3,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      #000111011
+                      #0001110110
+                      number = c(1,2,3,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13676,10 +16389,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001110101
+                      number = c(1,2,3,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001110100
+                      number = c(1,2,3,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13690,10 +16409,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001110011
+                      number = c(1,2,3,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001110010
+                      number = c(1,2,3,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13701,10 +16426,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001110001
+                      number = c(1,2,3,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001110000
+                      number = c(1,2,3,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13721,10 +16452,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001101111
+                      number = c(1,2,3,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001101110
+                      number = c(1,2,3,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13732,10 +16469,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001101101
+                      number = c(1,2,3,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001101100
+                      number = c(1,2,3,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13746,10 +16489,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001101011
+                      number = c(1,2,3,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001101010
+                      number = c(1,2,3,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13757,10 +16506,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001101001
+                      number = c(1,2,3,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001101000
+                      number = c(1,2,3,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13774,10 +16529,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001100111
+                      number = c(1,2,3,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001100110
+                      number = c(1,2,3,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13785,10 +16546,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001100101
+                      number = c(1,2,3,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001100100
+                      number = c(1,2,3,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13799,10 +16566,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001100011
+                      number = c(1,2,3,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001100010
+                      number = c(1,2,3,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13810,10 +16583,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001100001
+                      number = c(1,2,3,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001100000
+                      number = c(1,2,3,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13833,10 +16612,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001011111
+                      number = c(1,2,3,5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001011110
+                      number = c(1,2,3,5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13844,10 +16629,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001011101
+                      number = c(1,2,3,5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001011100
+                      number = c(1,2,3,5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13858,10 +16649,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001011011
+                      number = c(1,2,3,5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001011010
+                      number = c(1,2,3,5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13869,10 +16666,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001011001
+                      number = c(1,2,3,5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001011000
+                      number = c(1,2,3,5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13886,10 +16689,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001010111
+                      number = c(1,2,3,5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001010110
+                      number = c(1,2,3,5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13897,10 +16706,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001010101
+                      number = c(1,2,3,5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001010100
+                      number = c(1,2,3,5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13911,10 +16726,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001010011
+                      number = c(1,2,3,5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001010010
+                      number = c(1,2,3,5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13922,10 +16743,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001010001
+                      number = c(1,2,3,5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001010000
+                      number = c(1,2,3,5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13942,10 +16769,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001001111
+                      number = c(1,2,3,5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001001110
+                      number = c(1,2,3,5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13953,10 +16786,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001001101
+                      number = c(1,2,3,5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001001100
+                      number = c(1,2,3,5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13967,10 +16806,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001001011
+                      number = c(1,2,3,5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001001010
+                      number = c(1,2,3,5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
@@ -13978,10 +16823,16 @@ for(i in 1:10000)
                     if(spot10 == 190)
                     {
                       #0001001001
+                      number = c(1,2,3,5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
                       #0001001000
+                      number = c(1,2,3,5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -13992,26 +16843,36 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000100011
                     if(spot10 == 190)
                     {
-                      
+                      #0001000111
+                      number = c(1,2,3,5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0001000110
+                      number = c(1,2,3,5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000100010
                     if(spot10 == 190)
                     {
-                      
+                      #0001000101
+                      number = c(1,2,3,5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0001000100
+                      number = c(1,2,3,5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14019,26 +16880,36 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000100001
                     if(spot10 == 190)
                     {
-                      
+                      #0001000011
+                      number = c(1,2,3,5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0001000010
+                      number = c(1,2,3,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000100000
                     if(spot10 == 190)
                     {
-                      
+                      #0001000001
+                      number = c(1,2,3,5,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0001000000
+                      number = c(1,2,3,5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14058,26 +16929,36 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000011111
                     if(spot10 == 190)
                     {
-                      
+                      #0000111111
+                      number = c(1,2,3,4)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000111110
+                      number = c(1,2,3,4,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000011110
                     if(spot10 == 190)
                     {
-                      
+                      #0000111101
+                      number = c(1,2,3,4,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000111100
+                      number = c(1,2,3,4,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14085,26 +16966,36 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000011101
                     if(spot10 == 190)
                     {
-                      
+                      #0000111011
+                      number = c(1,2,3,4,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000111010
+                      number = c(1,2,3,4,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000011100
                     if(spot10 == 190)
                     {
-                      
+                      #0000111001
+                      number = c(1,2,3,4,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000111000
+                      number = c(1,2,3,4,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14113,29 +17004,38 @@ for(i in 1:10000)
               {
                 if(spot8 == 350)
                 {
-                  
                   if(spot9 == 530)
                   {
-                    #000011011
                     if(spot10 == 190)
                     {
-                      
+                      #0000110111
+                      number = c(1,2,3,4,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000110110
+                      number = c(1,2,3,4,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000011010
                     if(spot10 == 190)
                     {
-                      
+                      #0000110101
+                      number = c(1,2,3,4,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000110100
+                      number = c(1,2,3,4,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14143,26 +17043,36 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000011001
                     if(spot10 == 190)
                     {
-                      
+                      #0000110011
+                      number = c(1,2,3,4,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000110010
+                      number = c(1,2,3,4,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000011000
                     if(spot10 == 190)
                     {
-                      
+                      #0000110001
+                      number = c(1,2,3,4,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000110000
+                      number = c(1,2,3,4,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14176,26 +17086,36 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000010111
                     if(spot10 == 190)
                     {
-                      
+                      #0000101111
+                      number = c(1,2,3,4,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000101110
+                      number = c(1,2,3,4,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000010110
                     if(spot10 == 190)
                     {
-                      
+                      #0000101101
+                      number = c(1,2,3,4,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000101100
+                      number = c(1,2,3,4,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14203,26 +17123,36 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000010101
                     if(spot10 == 190)
                     {
-                      
+                      #0000101011
+                      number = c(1,2,3,4,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000101010
+                      number = c(1,2,3,4,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000010100
                     if(spot10 == 190)
                     {
-                      
+                      #0000101001
+                      number = c(1,2,3,4,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000101000
+                      number = c(1,2,3,4,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14233,26 +17163,36 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000010011
                     if(spot10 == 190)
                     {
-                      
+                      #0000100111
+                      number = c(1,2,3,4,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000100110
+                      number = c(1,2,3,4,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000010010
                     if(spot10 == 190)
                     {
-                      
+                      #0000100101
+                      number = c(1,2,3,4,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000100100
+                      number = c(1,2,3,4,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14260,26 +17200,37 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000010001
                     if(spot10 == 190)
                     {
-                      
+                      #0000100011
+                      number = c(1,2,3,4,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000100010
+                      number = c(1,2,3,4,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000010000
+                    
                     if(spot10 == 190)
                     {
-                      
+                      #0000100001
+                      number = c(1,2,3,4,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000100000
+                      number = c(1,2,3,4,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14296,26 +17247,37 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000001111
+                    
                     if(spot10 == 190)
                     {
-                      
+                      #0000011111
+                      number = c(1,2,3,4,5)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000011110
+                      number = c(1,2,3,4,5,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000001110
                     if(spot10 == 190)
                     {
-                      
+                      #0000011101
+                      number = c(1,2,3,4,5,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000011100
+                      number = c(1,2,3,4,5,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14323,26 +17285,36 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000001101
                     if(spot10 == 190)
                     {
-                      
+                      #0000011011
+                      number = c(1,2,3,4,5,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000011010
+                      number = c(1,2,3,4,5,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000001100
                     if(spot10 == 190)
                     {
-                      
+                      #0000011001
+                      number = c(1,2,3,4,5,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000011000
+                      number = c(1,2,3,4,5,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14351,29 +17323,38 @@ for(i in 1:10000)
               {
                 if(spot8 == 350)
                 {
-                  
                   if(spot9 == 530)
                   {
-                    #000001011
                     if(spot10 == 190)
                     {
-                      
+                      #0000010111
+                      number = c(1,2,3,4,5,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000010110
+                      number = c(1,2,3,4,5,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000001010
                     if(spot10 == 190)
                     {
-                      
+                      #0000010101
+                      number = c(1,2,3,4,5,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000010100
+                      number = c(1,2,3,4,5,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14381,26 +17362,36 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000001001
                     if(spot10 == 190)
                     {
-                      
+                      #0000010011
+                      number = c(1,2,3,4,5,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000010010
+                      number = c(1,2,3,4,5,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000001000
                     if(spot10 == 190)
                     {
-                      
+                      #0000010001
+                      number = c(1,2,3,4,5,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000010000
+                      number = c(1,2,3,4,5,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14414,26 +17405,36 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000000111
                     if(spot10 == 190)
                     {
-                      
+                      #0000001111
+                      number = c(1,2,3,4,5,6)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000001110
+                      number = c(1,2,3,4,5,6,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000000110
                     if(spot10 == 190)
                     {
-                      
+                      #0000001101
+                      number = c(1,2,3,4,5,6,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000001100
+                      number = c(1,2,3,4,5,6,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14441,26 +17442,36 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000000101
                     if(spot10 == 190)
                     {
-                      
+                      #0000001011
+                      number = c(1,2,3,4,5,6,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000001010
+                      number = c(1,2,3,4,5,6,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000000100
                     if(spot10 == 190)
                     {
-                      
+                      #0000001001
+                      number = c(1,2,3,4,5,6,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000001000
+                      number = c(1,2,3,4,5,6,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14471,26 +17482,36 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000000011
                     if(spot10 == 190)
                     {
-                      
+                      #0000000111
+                      number = c(1,2,3,4,5,6,7)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000000110
+                      number = c(1,2,3,4,5,6,7,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000000010
                     if(spot10 == 190)
                     {
-                      
+                      #0000000101
+                      number = c(1,2,3,4,5,6,7,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000000100
+                      number = c(1,2,3,4,5,6,7,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14498,26 +17519,36 @@ for(i in 1:10000)
                 {
                   if(spot9 == 530)
                   {
-                    #000000001
                     if(spot10 == 190)
                     {
-                      
+                      #0000000011
+                      number = c(1,2,3,4,5,6,7,8)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000000010
+                      number = c(1,2,3,4,5,6,7,8,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                   else
                   {
-                    #000000000
                     if(spot10 == 190)
                     {
-                      
+                      #0000000001
+                      number = c(1,2,3,4,5,6,7,8,9)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                     else
                     {
-                      
+                      #0000000000
+                      number = c(1,2,3,4,5,6,7,8,9,10)
+                      spot = sample(number,1)
+                      criminal[i,10] = spot
                     }
                   }
                 }
@@ -14529,3 +17560,4 @@ for(i in 1:10000)
     }
   }
 }
+write.csv(criminal,"criminal.csv")
