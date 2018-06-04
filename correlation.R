@@ -1,9 +1,5 @@
 setwd("D:/crime")
 
-library(PerformanceAnalytics)
-library(corrplot)
-library(RColorBrewer)
-
 criminal = read.csv("criminal.csv",header=T,stringsAsFactors = F)
 criminal
 
@@ -453,10 +449,10 @@ barplot(t(criminalMAP),beside=T,col=c("black","gray","white","red"),
         main = "범죄자의 결혼여부와 부모관계 비교",xlab="결혼여부",ylab="범죄자 수",names=c("결혼","동거","이혼","사별"))
 legend("topright",c("양부모","부","모","고아"),cex = 1,fill = c("black","gray","white","red"))
 
-criminalMAP = criminal[,c(6,7)]
-criminalMAP = table(criminalMAP)
-criminalMAP
-barplot(t(criminalMAP),beside=T,col=c("black","gray"),
+criminalMAPre = criminal[,c(6,7)]
+criminalMAPre = table(criminalMAPre)
+criminalMAPre
+barplot(t(criminalMAPre),beside=T,col=c("black","gray"),
         main = "범죄자의 결혼여부와 전과 비교",xlab="결혼여부",ylab="범죄자 수",names=c("결혼","동거","이혼","사별"))
 legend("topright",c("없음","있음"),cex = 1,
        fill = c("black","gray"))
