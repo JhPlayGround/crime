@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html lang="KO">
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+
+
+
+<script type="text/javascript">
+
+function drawImage(obj){
+     var che = document.getElementsByName("c");   // name 값이 c 인 chcekbox 들을 참조.
+     var imgnum = f.s.value;  // 모든 체크 해제시 이미지에 셀렉트박스의 선택값 넣어주기위해
+
+
+
+if(obj.checked){  // 체크시 해당 값을 넣어준다.
+      f.img.src = obj.value; 
+}else{
+      for(var i=0;i<che.length;i++){ // 체크해제시 다른체크박스의값 또는 기본값을 넣어준다.
+       if(che[i].checked){imgnum = che[i].value;}
+      }
+      f.img.src = imgnum;
+}
+}
+</script>
+</head>
+<body onload="f.img.src=f.s.value;" >
+<!-- 페이지 로드시 셀렉트의 기본선택값을 이미지에 넣어준다. -->
+
+
+
+<form name='f'>
+
+<select name='s' onchange="f.img.src=this.value;" >
+<option value="white.png" > 나이
+<option value="white.png"> 성별
+<option value="white.png"> 소득수준
+<option value="white.png"> 학력수준
+<option value="white.png"> 부모관계
+<option value="white.png"> 결혼여부
+<option value="white.png"> 전과여부
+<option value="white.png"> 죄종
+<option value="white.png"> 시간
+<option value="white.png"> 요일
+<option value="white.png"> 장소
+</select>
+
+<p>
+<input type="checkbox" class="checkbox" name="c" value="age.png" onclick="drawImage(this)" />
+나이
+<input type="checkbox" class="checkbox" name="c" value="age.png" onclick="drawImage(this)" />
+성별
+<input type="checkbox" class="checkbox" name="c" value="age.png" onclick="drawImage(this)" />
+소득수준
+<input type="checkbox" class="checkbox" name="c" value="age.png" onclick="drawImage(this)" />
+학력수준
+<input type="checkbox" class="checkbox" name="c" value="age.png" onclick="drawImage(this)" />
+부모관계
+<input type="checkbox" class="checkbox" name="c" value="age.png" onclick="drawImage(this)" />
+결혼여부
+<input type="checkbox" class="checkbox" name="c" value="age.png" onclick="drawImage(this)" />
+전과여부
+<input type="checkbox" class="checkbox" name="c" value="age.png" onclick="drawImage(this)" />
+죄종
+<input type="checkbox" class="checkbox" name="c" value="age.png" onclick="drawImage(this)" />
+시간
+<input type="checkbox" class="checkbox" name="c" value="age.png" onclick="drawImage(this)" />
+요일
+<input type="checkbox" class="checkbox" name="c" value="age.png" onclick="drawImage(this)" />
+장소
+</p>
+
+
+
+
+ 
+
+<!-- 체크시 보여줄 이미지 -->
+<img name="img" src=''>
+
+
+
+</form>
+
+
+
+</body>
+</html>
