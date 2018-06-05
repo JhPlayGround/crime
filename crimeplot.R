@@ -400,26 +400,26 @@ previous = table(Total_df$Previous)
 spot = table(Total_df$Spot)
 
 
-barplot(age,xlab = "Age",ylab = "number of persons",main = "Age criminal",col="black",names=c("10~19","20~29","30~39","40~49","50~59","60~69","70~79"))
+barplot(age,xlab = "나이",main = "범죄자 나이",beside=TRUE,col="black",names=c("10~19","20~29","30~39","40~49","50~59","60~69","70~79"))
 
-barplot(gender,xlab = "Gender",ylab = "number of persons",main = "Gender criminal",col="black",names=c("Woman","Man"))
+barplot(gender,xlab = "성별",main = "범죄자 성별",beside=TRUE,col="black",names=c("여자","남자"))
 
-barplot(money,xlab = "Money",ylab = "number of persons",main = "Income criminal",col="black",names=c("Low","Mid","High"))
+barplot(money,xlab = "소득수준",main = "범죄자 소득수준",beside=TRUE,col="black",names=c("낮음","중간","높음"))
 
-barplot(education,xlab = "Education",ylab = "number of persons",main = "Education criminal",col="black",names=c("Elementary","Middle","High","Univ2","Univ4","Graduate"))
+barplot(education,xlab ="교육수준",main = "범죄자 교육수준",beside=TRUE,col="black",names=c("초등학교","중학교","고등학교","대2년제","대4년제","대학원"))
 
-barplot(parents,xlab = "Parents",ylab = "number of persons",main = "Parents criminal",col="black",names=c("Parents","Father" ,"Mother","Orphan"))
+barplot(parents,xlab = "부모여부",main = "범죄자 부모여부",beside=TRUE,col="black",names=c("있음","아빠만" ,"엄마만","없음"))
 
-barplot(marriage,xlab = "Marriage",ylab = "number of persons",main = "Marriage criminal",col="black",names=c("Marriage", "LiveTogether","divorce","bereavement"))
+barplot(marriage,xlab = "결혼여부",main = "범죄자 결혼여부",beside=TRUE,col="black",names=c("결혼", "동거","이혼","사별"))
 
-barplot(day,xlab = " Day ",ylab = "number of persons",main = "Crime Day criminal",col="black",names=c("Mon","TUE","WED","THU","FRI","SAT","SUN"))
+barplot(day,xlab = "요일",main = "범죄 요일",col="black",beside=TRUE,names=c("월","화","수","목","금","토","일"))
 
-barplot(time,xlab = " Time ",ylab = "number of persons",main = "Crime Time criminal",col="black",names=c("00~03","~06","~09","~12","~15","~18","~21","~24"))
+barplot(time,xlab = "시간",main = "범죄 시간",col="black",beside=TRUE,names=c("00~03","~06","~09","~12","~15","~18","~21","~24"))
 
-barplot(type,xlab = "Type",ylab = "number of persons",main = "Crime Type criminal",col="black",names=c("Muder","Robber","Rape","Arson","Theft","Assault"))
+barplot(type,xlab = "죄종",main = "범죄자 죄종",col="black",beside=TRUE,names=c("살인","강도","강간","방화","절도","폭행"))
 
-barplot(previous,xlab = "Previous",ylab = "number of persons",main = "Previous criminal",col="black",names=c("No","Yes"))
+barplot(previous,xlab = "전과",main = "범죄자 전과",beside=TRUE,col="black",names=c("없음","있음"))
 pie(previous)
 
-barplot(spot,xlab = "Spot",ylab = "number of persons",main = "Crime Spot",col="black",names=c("S.C","G.G", "G.W","C.B","C.N","J.B","J.N","G.B","G.N","J.J"))
+barplot(spot,xlab = "장소",main = "범죄 장소",beside=TRUE,col="black",names=c("특별,광역시","경기도", "강원도","충청북도","충청남도","전라북도","전라남도","경상북도","경상남도","제주도"))
 
