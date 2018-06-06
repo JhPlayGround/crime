@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+</style>
+
+<script src="https://use.fontawesome.com/926fe18a63.js"></script>
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script>
+$(function(){
+	$(".headC").click(function(){
+		$(".headB").slideToggle();
+	});
+});
+</script>
+</head>
+<body>
+	<div class="container">
+		<table style>
+			<h2><font size = "5px">회원가입</font></h2>
+				
+				<FORM METHOD ="post" ACTION="joincomplete.html">
+				<tr align = "left">
+					<td width = "120px">아이디</td> 
+					<td>: &nbsp;<INPUT TYPE ="text" NAME="userID"></td>
+				</tr>
+				<tr align = "left">
+					<td>이 름 </td>
+					<td>: &nbsp;<INPUT TYPE ="text" NAME="name"></td>
+				</tr>
+				<tr align = "left">
+					<td>비밀번호</td>
+					<td>: &nbsp;<INPUT TYPE = "password" NAME = "password"> </td>
+				</tr>
+				<tr align = "left">
+					<td>출생년도</td>
+					<td>: &nbsp;<INPUT TYPE ="text" NAME="birthYear"></td>
+				</tr>
+				<tr align = "left">
+					<td> 지역  </td>
+					<td>: &nbsp;<INPUT TYPE ="text" NAME="addr"> </td>
+				</tr>
+				<tr align = "left">
+					<td> 휴대전화 번호</td>
+					<td>: &nbsp;<INPUT TYPE ="text" NAME="mobile1"> </td>
+				</tr>
+				<tr align = "left">
+					<td>신장 </td>
+					<td>: &nbsp;<INPUT TYPE ="text" NAME="height"> </td>
+				<tr>
+				<tr>
+					<td colspan="2"> <INPUT TYPE="submit" VALUE="회원 가입"> </td>
+				</tr>
+		</table>
+				</FORM>
+	</div>
+</body>
+</html>
+
+

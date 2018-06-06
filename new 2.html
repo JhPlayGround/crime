@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+
+<body>
+<div>	
+		<h2>
+			<script type="text/javascript">
+				var now = new Date();
+				var nowYear = now.getFullYear();
+				var nowMonth = now.getMonth() + 1; 
+				var nowDate = now.getDate();
+				var nowHour = now.getHours();
+				var nowMt = now.getMinutes();                
+				document.write( nowYear + '년 ' + nowMonth + '월 ' + nowDate + '일 ' );
+				document.write( nowHour + '시 ' + nowMt + '분 ');
+			</script>
+		</h2>
+			<fieldset>
+				<table>
+					<tr>
+						<td><font color = "black"><b>
+						안녕하세요! &nbsp;
+						<?
+							session_start();
+							$con = mysqli_connect("localhost", "wngh9512", "pjh6208!", "wngh9512") or die("MySQL 접속 실패!!");
+							$userID = mysqli_real_escape_string($con,$_SESSION['userID']);
+							$sql = "SELECT * FROM usertbl WHERE userID = '".$userID."'";
+							$result = mysqli_query($con,$sql);
+							$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+							print_r($row["name"]);
+						?>
+						님
+						<b></font></td>
+					</tr>
+				</table>
+						<a href="new 1.html"><font color = "black">로그 아웃</font></a>
+			</fieldset>			
+</div>
+</body>
+</html>
