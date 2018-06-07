@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+</style>
+
+<script src="https://use.fontawesome.com/926fe18a63.js"></script>
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script>
+$(function(){
+	$(".headC").click(function(){
+		$(".headB").slideToggle();
+	});
+});
+</script>
+</head>
+<body class="nohero">
+<br><br><br><br><br><br>
+<center>
+<article class="post">
+<div class="container">
+	<?php
+	$con=mysqli_connect("localhost", "wngh9512", "pjh6208!", "wngh9512") or die("MySQL 접속 실패!!");
+ 
+	$userID = $_POST['userID'];
+	$name = $_POST['name'];
+	$password = $_POST['password'];
+	$birthYear = $_POST['birthYear'];
+	$addr = $_POST['addr'];
+	$mobile1 = $_POST['mobile1'];
+	$height = $_POST['height'];
+	$mDate = date('Y-m-j');
+	
+    $sql =("INSERT INTO usertbl (`userID`, `name`, `birthYear`, `addr`, `mobile1`, `height`, `mDate`, `password`) VALUES ('$userID', '$name', '$birthYear', '$addr', '$mobile1', '$height', '$mDate', '$password')"); 
+	
+	$ret = mysqli_query($con, $sql);
+
+	echo "<center><h1> 회원 가입 완료 </h1><br>";
+	if($ret) 
+	{
+		echo "회원이 되신것을 축하합니다.";.
+	}
+	else {
+		echo "데이터 입력 실패!!!"."<br>";
+		echo "실패 원인 :".mysqli_error($con);
+	}
+	mysqli_close($con);
+ 
+	echo "<br> <a href='new 1.html'> <--초기 화면</a> ";
+?></center>
+
+</div>
+</article>
+</body>
+</html>
+
+
